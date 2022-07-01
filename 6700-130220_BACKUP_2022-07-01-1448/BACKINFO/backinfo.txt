@@ -1,0 +1,77 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: /hd0a/TEMP/backup.592255
+# 2022-07-01  13:47:34
+#
+>>SYSTEM_ID:
+6700-130220
+
+>>PRODUCTS_ID:
+RobotWare Version: 6.13.01.00
+
+  RobotWare Base
+  888-3 PROFINET Device
+  997-1 PROFIsafe F-Device
+  996-1 Safety Module
+  687-1 Advanced Robot Motion
+  608-1 World Zones
+  611-1 Path Recovery
+  613-1 Collision Detection
+  616-1 PC Interface
+  617-1 FlexPendant Interface
+  623-1 Multitasking
+  689-1 Externally Guided Motion (EGM)
+  UDPUC Driver
+  1125-2 SafeMove Pro
+  Motor Commutation
+  Service Info System
+  Pendelum Calibration
+  Drive System IRB 460/640/660/760/4600/66xx/6700
+  ADU-790A in position X3
+  IRB 6700-245/3.00
+  Axis Calibration
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+PROC.cfg
+MMC.cfg
+EIO.cfg
+SIO.cfg
+MOC.cfg
+
+
+>>TASK1: (T_ROB1,T_ROB1,)
+PROGMOD/TCTM831_CYCLE_PATH_FOLLOW_CYCLE.mod @ 
+PROGMOD/TCTM830_CYCLE.mod @ 
+SYSMOD/user.sys @ 
+PROGMOD/TCTM840_HOMING.mod @ 
+PROGMOD/TCTM860_ROBOTSTUDIO.mod @ 
+SYSMOD/TS000_V30.sys @ 
+PROGMOD/TCTM850_MAINTENANCE.mod @ 
+PROGMOD/TCTM800_DATA.mod @ 
+PROGMOD/TCTM820_CALCULATE.mod @ 
+PROGMOD/TCTM810_MAIN.mod @ 
+PROGMOD/TCTM839_CYCLE_INIT.mod @ 
+PROGMOD/TS599_MULTI_TASK.mod @ 
+PROGMOD/TCTM819_SAFEMOVE.mod @ 
+
+>>TASK2: (SC_CBC,,)
+SYSMOD/user.sys @ 
+
+>>TASK3: (TASK2,,)
+SYSMOD/user.sys @ 
+SYSMOD/TS050_V10.sys @ 
+PROGMOD/TS590_MAIN.mod @ 
+PROGMOD/TS591_SPECIAL.mod @ 
+PROGMOD/TS599_MULTI_TASK.mod @ 
+
+>>TASK4: (TASK3,,)
+PROGMOD/SmartSensor.mod @ 
+SYSMOD/user.sys @ 
+
+
+>>EOF:

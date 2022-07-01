@@ -1,0 +1,4610 @@
+12:22:35 PROC Main(), Project: P21-100538
+12:22:35 PROC rInit()
+12:22:35 PROC rWorldZones()
+12:22:35 PROC rResetCommands()
+12:22:35 PROC rResetposition_in_home_box()
+12:22:35 PROC rMoveHomeSafe()
+12:22:35 PROC rLog_Current_Rob_Pos_TS000_9()
+12:22:35 CurrentRobAxisAngles = [-3,2,36,-1,52,-181]
+12:22:35 PROC rCalc_Joint_Target_For_MHS()
+12:22:38 *** Not Able To Go To Home Pos ***
+12:24:39 PROC Main(), Project: P21-100538
+12:24:39 PROC rInit()
+12:24:39 PROC rResetCommands()
+12:24:39 PROC rResetposition_in_home_box()
+12:24:39 PROC rMoveHomeSafe()
+12:24:39 PROC rLog_Current_Rob_Pos_TS000_9()
+12:24:39 CurrentRobAxisAngles = [0,-30,45,0,30,-90]
+12:24:39 PROC rCalc_Joint_Target_For_MHS()
+12:24:42 *** Not Able To Go To Home Pos ***
+12:24:51 PROC Main(), Project: P21-100538
+12:24:51 PROC rInit()
+12:24:51 PROC rWorldZones()
+12:24:51 PROC rResetCommands()
+12:24:51 PROC rResetposition_in_home_box()
+12:24:51 PROC rMoveHomeSafe()
+12:24:51 PROC rLog_Current_Rob_Pos_TS000_9()
+12:24:51 CurrentRobAxisAngles = [0,-30,45,0,30,-90]
+12:24:51 PROC rCalc_Joint_Target_For_MHS()
+12:24:53 PROC rResetCommand_After_MoveHomeSafe()
+12:24:53 PROC rResetposition_in_Coil_box()
+12:24:53 PROC rResetErrors()
+13:15:19 PROC rRunCycle()
+13:15:19 PROC rResetCommands()
+13:15:19 PROC rClear_HMI()
+13:15:19 ***** START CYCLE TIME *****
+13:15:19 *** COIL TRANSPORT BLOCKED ***
+13:15:19 PROC rInit_Received_information()
+13:15:19 rLog_Numeric_Value_TS000_2 =  0
+13:19:13 PROC rRunCycle()
+13:19:13 PROC rResetCommands()
+13:19:13 PROC rClear_HMI()
+13:19:13 ***** START CYCLE TIME *****
+13:19:13 *** COIL TRANSPORT BLOCKED ***
+13:19:13 PROC rInit_Received_information()
+13:19:13 rLog_Numeric_Value_TS000_2 =  0
+13:26:56 PROC Main(), Project: P21-100538
+13:26:56 PROC rInit()
+13:26:56 PROC rWorldZones()
+13:26:56 PROC rResetCommands()
+13:26:56 PROC rResetposition_in_home_box()
+13:26:56 PROC rMoveHomeSafe()
+13:26:56 PROC rLog_Current_Rob_Pos_TS000_9()
+13:26:56 CurrentRobAxisAngles = [22,59,-25,-51,66,123]
+13:26:56 PROC rCalc_Joint_Target_For_MHS()
+13:26:59 PROC rResetCommand_After_MoveHomeSafe()
+13:26:59 PROC rResetposition_in_Coil_box()
+13:26:59 PROC rResetErrors()
+
+# Date: 2022-04-14# Time: 13:27:48
+13:27:48 PROC rRunCycle()
+13:27:48 PROC rResetCommands()
+13:27:48 PROC rClear_HMI()
+13:27:48 ***** START CYCLE TIME *****
+13:27:48 *** COIL TRANSPORT BLOCKED ***
+13:27:48 PROC rInit_Received_information()
+13:27:48 rLog_Numeric_Value_TS000_2 =  0
+13:54:46 PROC Main(), Project: P21-100538
+13:54:46 PROC rInit()
+13:54:46 PROC rWorldZones()
+13:54:46 PROC rResetCommands()
+13:54:46 PROC rResetposition_in_home_box()
+13:54:46 PROC rMoveHomeSafe()
+13:54:46 PROC rLog_Current_Rob_Pos_TS000_9()
+13:54:46 CurrentRobAxisAngles = [23,56,-19,-59,49,101]
+13:54:46 PROC rCalc_Joint_Target_For_MHS()
+13:54:49 PROC rResetCommand_After_MoveHomeSafe()
+13:54:49 PROC rResetposition_in_Coil_box()
+13:54:49 PROC rResetErrors()
+13:56:48 PROC Main(), Project: P21-100538
+13:56:48 PROC rInit()
+13:56:48 PROC rWorldZones()
+13:56:48 PROC rResetCommands()
+13:56:48 PROC rResetposition_in_home_box()
+13:56:48 PROC rMoveHomeSafe()
+13:56:48 PROC rLog_Current_Rob_Pos_TS000_9()
+13:56:48 CurrentRobAxisAngles = [24,57,-21,-57,51,105]
+13:56:48 PROC rCalc_Joint_Target_For_MHS()
+13:56:50 PROC rResetCommand_After_MoveHomeSafe()
+13:56:50 PROC rResetposition_in_Coil_box()
+13:56:50 PROC rResetErrors()
+
+# Date: 2022-04-14# Time: 13:57:23
+13:57:23 PROC rRunCycle()
+13:57:23 PROC rResetCommands()
+13:57:23 PROC rClear_HMI()
+13:57:23 ***** START CYCLE TIME *****
+13:57:23 *** COIL TRANSPORT BLOCKED ***
+13:57:23 PROC rInit_Received_information()
+13:57:23 rLog_Numeric_Value_TS000_2 =  0
+13:59:26 PROC Main(), Project: P21-100538
+13:59:26 PROC rInit()
+13:59:26 PROC rWorldZones()
+13:59:26 PROC rResetCommands()
+13:59:26 PROC rResetposition_in_home_box()
+13:59:26 PROC rMoveHomeSafe()
+13:59:26 PROC rLog_Current_Rob_Pos_TS000_9()
+13:59:26 CurrentRobAxisAngles = [11,35,17,-114,13,134]
+13:59:26 PROC rCalc_Joint_Target_For_MHS()
+13:59:38 PROC rResetCommand_After_MoveHomeSafe()
+13:59:38 PROC rResetposition_in_Coil_box()
+13:59:38 PROC rResetErrors()
+
+# Date: 2022-04-14# Time: 14:00:44
+14:00:44 PROC rRunCycle()
+14:00:44 PROC rResetCommands()
+14:00:44 PROC rClear_HMI()
+14:00:44 ***** START CYCLE TIME *****
+14:00:44 *** COIL TRANSPORT BLOCKED ***
+14:00:44 PROC rInit_Received_information()
+14:00:44 rLog_Numeric_Value_TS000_2 =  0
+14:13:01 PROC rCalibration_Position_IRB()
+14:13:01 PROC rResetCommands()
+14:13:01 PROC rResetCommand_After_MoveHomeSafe()
+15:01:26 PROC Main(), Project: P21-100538
+15:01:26 PROC rInit()
+15:01:26 PROC rWorldZones()
+15:01:26 PROC rResetCommands()
+15:01:26 PROC rResetposition_in_home_box()
+15:01:26 PROC rMoveHomeSafe()
+15:01:26 PROC rLog_Current_Rob_Pos_TS000_9()
+15:01:26 CurrentRobAxisAngles = [0,0,0,0,0,0]
+15:01:26 PROC rCalc_Joint_Target_For_MHS()
+15:01:28 *** Not Able To Go To Home Pos ***
+10:45:01 PROC Main(), Project: P21-100538
+10:45:01 PROC rInit()
+10:45:01 PROC rWorldZones()
+10:45:01 PROC rResetCommands()
+10:45:01 PROC rResetposition_in_home_box()
+10:45:01 PROC rMoveHomeSafe()
+10:45:01 PROC rLog_Current_Rob_Pos_TS000_9()
+10:45:01 CurrentRobAxisAngles = [0,-30,45,0,30,90]
+10:45:01 PROC rCalc_Joint_Target_For_MHS()
+10:45:05 PROC rResetCommand_After_MoveHomeSafe()
+10:45:05 PROC rResetposition_in_Coil_box()
+10:45:05 PROC rResetErrors()
+13:54:13 PROC Main(), Project: P21-100538
+13:54:13 PROC rInit()
+13:54:13 PROC rWorldZones()
+13:54:13 PROC rResetCommands()
+13:54:13 PROC rResetposition_in_home_box()
+13:54:13 PROC rMoveHomeSafe()
+13:54:13 PROC rLog_Current_Rob_Pos_TS000_9()
+13:54:13 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+13:54:13 PROC rCalc_Joint_Target_For_MHS()
+13:54:16 *** Not Able To Go To Home Pos ***
+13:54:27 PROC Main(), Project: P21-100538
+13:54:27 PROC rInit()
+13:54:27 PROC rWorldZones()
+13:54:27 PROC rResetCommands()
+13:54:27 PROC rResetposition_in_home_box()
+13:54:27 PROC rMoveHomeSafe()
+13:54:27 PROC rLog_Current_Rob_Pos_TS000_9()
+13:54:27 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+13:54:27 PROC rCalc_Joint_Target_For_MHS()
+13:54:31 PROC rResetCommand_After_MoveHomeSafe()
+13:54:31 PROC rResetposition_in_Coil_box()
+13:54:31 PROC rResetErrors()
+
+# Date: 2022-04-21# Time: 13:54:40
+13:54:40 PROC rRunCyclicBrakeCheck()
+14:01:14 PROC Main(), Project: P21-100538
+14:01:14 PROC rInit()
+14:01:14 PROC rWorldZones()
+14:01:14 PROC rResetCommands()
+14:01:14 PROC rResetposition_in_home_box()
+14:01:14 PROC rMoveHomeSafe()
+14:01:14 PROC rLog_Current_Rob_Pos_TS000_9()
+14:01:14 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+14:01:14 PROC rCalc_Joint_Target_For_MHS()
+14:01:17 PROC rResetCommand_After_MoveHomeSafe()
+14:01:17 PROC rResetposition_in_Coil_box()
+14:01:17 PROC rResetErrors()
+14:02:48 PROC Main(), Project: P21-100538
+14:02:48 PROC rInit()
+14:02:48 PROC rWorldZones()
+14:02:48 PROC rResetCommands()
+14:02:48 PROC rResetposition_in_home_box()
+14:02:48 PROC rMoveHomeSafe()
+14:02:48 PROC rLog_Current_Rob_Pos_TS000_9()
+14:02:48 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+14:02:48 PROC rCalc_Joint_Target_For_MHS()
+14:02:51 PROC rResetCommand_After_MoveHomeSafe()
+14:02:51 PROC rResetposition_in_Coil_box()
+14:02:51 PROC rResetErrors()
+14:03:51 PROC Main(), Project: P21-100538
+14:03:51 PROC rInit()
+14:03:51 PROC rWorldZones()
+14:03:51 PROC rResetCommands()
+14:03:51 PROC rResetposition_in_home_box()
+14:03:51 PROC rMoveHomeSafe()
+14:03:51 PROC rLog_Current_Rob_Pos_TS000_9()
+14:03:51 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+14:03:51 PROC rCalc_Joint_Target_For_MHS()
+14:03:57 PROC rResetCommand_After_MoveHomeSafe()
+14:03:57 PROC rResetposition_in_Coil_box()
+14:03:57 PROC rResetErrors()
+
+# Date: 2022-04-21# Time: 14:04:00
+14:04:00 PROC rRunCycle()
+14:04:00 PROC rResetCommands()
+14:04:00 PROC rClear_HMI()
+14:04:00 ***** START CYCLE TIME *****
+14:04:00 *** COIL TRANSPORT BLOCKED ***
+14:04:00 PROC rInit_Received_information()
+14:04:00 rLog_Numeric_Value_TS000_2 =  0
+14:05:34 PROC Main(), Project: P21-100538
+14:05:34 PROC rInit()
+14:05:34 PROC rWorldZones()
+14:05:34 PROC rResetCommands()
+14:05:34 PROC rResetposition_in_home_box()
+14:05:34 PROC rMoveHomeSafe()
+14:05:34 PROC rLog_Current_Rob_Pos_TS000_9()
+14:05:34 CurrentRobAxisAngles = [17,40,9,-82,27,115]
+14:05:34 PROC rCalc_Joint_Target_For_MHS()
+14:05:38 *** Not Able To Go To Home Pos ***
+14:06:38 PROC Main(), Project: P21-100538
+14:06:38 PROC rInit()
+14:06:38 PROC rWorldZones()
+14:06:38 PROC rResetCommands()
+14:06:38 PROC rResetposition_in_home_box()
+14:06:38 PROC rMoveHomeSafe()
+14:06:38 PROC rLog_Current_Rob_Pos_TS000_9()
+14:06:38 CurrentRobAxisAngles = [17,40,9,-82,27,115]
+14:06:38 PROC rCalc_Joint_Target_For_MHS()
+15:07:38 PROC Main(), Project: P21-100538
+15:07:38 PROC rInit()
+15:07:38 PROC rWorldZones()
+15:07:38 PROC rResetCommands()
+15:07:38 PROC rResetposition_in_home_box()
+15:07:38 PROC rMoveHomeSafe()
+15:07:38 PROC rLog_Current_Rob_Pos_TS000_9()
+15:07:38 CurrentRobAxisAngles = [17,40,9,-82,27,115]
+15:07:38 PROC rCalc_Joint_Target_For_MHS()
+15:07:56 PROC rResetCommand_After_MoveHomeSafe()
+15:07:56 PROC rResetposition_in_Coil_box()
+15:07:56 PROC rResetErrors()
+15:09:30 PROC Main(), Project: P21-100538
+15:09:30 PROC rInit()
+15:09:30 PROC rWorldZones()
+15:09:30 PROC rResetCommands()
+15:09:30 PROC rResetposition_in_home_box()
+15:09:30 PROC rMoveHomeSafe()
+15:09:30 PROC rLog_Current_Rob_Pos_TS000_9()
+15:09:30 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+15:09:30 PROC rCalc_Joint_Target_For_MHS()
+15:09:41 PROC rResetCommand_After_MoveHomeSafe()
+15:09:41 PROC rResetposition_in_Coil_box()
+15:09:41 PROC rResetErrors()
+
+# Date: 2022-04-21# Time: 15:09:44
+15:09:44 PROC rRunCycle()
+15:09:44 PROC rResetCommands()
+15:09:44 PROC rClear_HMI()
+15:09:44 ***** START CYCLE TIME *****
+15:09:44 *** COIL TRANSPORT BLOCKED ***
+15:09:44 PROC rInit_Received_information()
+15:09:44 rLog_Numeric_Value_TS000_2 =  0
+15:11:24 PROC Main(), Project: P21-100538
+15:11:24 PROC rInit()
+15:11:24 PROC rWorldZones()
+15:11:24 PROC rResetCommands()
+15:11:24 PROC rResetposition_in_home_box()
+15:11:24 PROC rMoveHomeSafe()
+15:11:24 PROC rLog_Current_Rob_Pos_TS000_9()
+15:11:24 CurrentRobAxisAngles = [11,35,16,-113,13,125]
+15:11:24 PROC rCalc_Joint_Target_For_MHS()
+15:11:40 PROC rResetCommand_After_MoveHomeSafe()
+15:11:40 PROC rResetposition_in_Coil_box()
+15:11:40 PROC rResetErrors()
+15:24:22 PROC Main(), Project: P21-100538
+15:24:22 PROC rInit()
+15:24:22 PROC rWorldZones()
+15:24:22 PROC rResetCommands()
+15:24:22 PROC rResetposition_in_home_box()
+15:24:22 PROC rMoveHomeSafe()
+15:24:22 PROC rLog_Current_Rob_Pos_TS000_9()
+15:24:22 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+15:24:22 PROC rCalc_Joint_Target_For_MHS()
+15:24:33 PROC rResetCommand_After_MoveHomeSafe()
+15:24:33 PROC rResetposition_in_Coil_box()
+15:24:33 PROC rResetErrors()
+
+# Date: 2022-04-21# Time: 15:24:35
+15:24:35 PROC rRunCycle()
+15:24:35 PROC rResetCommands()
+15:24:35 PROC rClear_HMI()
+15:24:35 ***** START CYCLE TIME *****
+15:24:35 *** COIL TRANSPORT BLOCKED ***
+15:24:35 PROC rInit_Received_information()
+15:24:35 rLog_Numeric_Value_TS000_2 =  0
+15:25:56 PROC Main(), Project: P21-100538
+15:25:56 PROC rInit()
+15:25:56 PROC rWorldZones()
+15:25:56 PROC rResetCommands()
+15:25:56 PROC rResetposition_in_home_box()
+15:25:56 PROC rMoveHomeSafe()
+15:25:56 PROC rLog_Current_Rob_Pos_TS000_9()
+15:25:56 CurrentRobAxisAngles = [15,38,11,-90,22,114]
+15:25:56 PROC rCalc_Joint_Target_For_MHS()
+15:26:11 PROC rResetCommand_After_MoveHomeSafe()
+15:26:11 PROC rResetposition_in_Coil_box()
+15:26:11 PROC rResetErrors()
+11:12:53 PROC Main(), Project: P21-100538
+11:12:53 PROC rInit()
+11:12:53 PROC rWorldZones()
+11:12:53 PROC rResetCommands()
+11:12:53 PROC rResetposition_in_home_box()
+11:12:53 PROC rMoveHomeSafe()
+11:12:53 PROC rLog_Current_Rob_Pos_TS000_9()
+11:12:53 CurrentRobAxisAngles = [24,58,-22,-57,52,105]
+11:12:53 PROC rCalc_Joint_Target_For_MHS()
+11:13:04 PROC rResetCommand_After_MoveHomeSafe()
+11:13:04 PROC rResetposition_in_Coil_box()
+11:13:04 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 11:13:10
+11:13:10 PROC rRunCycle()
+11:13:10 PROC rResetCommands()
+11:13:10 PROC rClear_HMI()
+11:13:10 ***** START CYCLE TIME *****
+11:13:10 *** COIL TRANSPORT BLOCKED ***
+11:13:10 PROC rInit_Received_information()
+11:13:10 rLog_Numeric_Value_TS000_2 =  0
+11:31:28 PROC Main(), Project: P21-100538
+11:31:28 PROC rInit()
+11:31:28 PROC rWorldZones()
+11:31:28 PROC rResetCommands()
+11:31:28 PROC rResetposition_in_home_box()
+11:31:28 PROC rMoveHomeSafe()
+11:31:28 PROC rLog_Current_Rob_Pos_TS000_9()
+11:31:28 CurrentRobAxisAngles = [18,41,6,-79,29,113]
+11:31:28 PROC rCalc_Joint_Target_For_MHS()
+11:31:42 PROC rResetCommand_After_MoveHomeSafe()
+11:31:42 PROC rResetposition_in_Coil_box()
+11:31:42 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 11:31:46
+11:31:46 PROC rRunCycle()
+11:31:46 PROC rResetCommands()
+11:31:46 PROC rClear_HMI()
+11:31:46 ***** START CYCLE TIME *****
+11:31:46 *** COIL TRANSPORT BLOCKED ***
+11:31:46 PROC rInit_Received_information()
+11:31:46 rLog_Numeric_Value_TS000_2 =  0
+12:31:05 PROC Main(), Project: P21-100538
+12:31:05 PROC rInit()
+12:31:05 PROC rWorldZones()
+12:31:05 PROC rResetCommands()
+12:31:05 PROC rResetposition_in_home_box()
+12:31:05 PROC rMoveHomeSafe()
+12:31:05 PROC rLog_Current_Rob_Pos_TS000_9()
+12:31:05 CurrentRobAxisAngles = [18,41,7,-78,30,113]
+12:31:05 PROC rCalc_Joint_Target_For_MHS()
+12:31:19 PROC rResetCommand_After_MoveHomeSafe()
+12:31:19 PROC rResetposition_in_Coil_box()
+12:31:19 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 12:31:21
+12:31:21 PROC rRunCycle()
+12:31:21 PROC rResetCommands()
+12:31:21 PROC rClear_HMI()
+12:31:21 ***** START CYCLE TIME *****
+12:31:21 *** COIL TRANSPORT BLOCKED ***
+12:31:21 PROC rInit_Received_information()
+12:31:21 rLog_Numeric_Value_TS000_2 =  0
+12:47:31 PROC Main(), Project: P21-100538
+12:47:31 PROC rInit()
+12:47:31 PROC rWorldZones()
+12:47:31 PROC rResetCommands()
+12:47:31 PROC rResetposition_in_home_box()
+12:47:31 PROC rMoveHomeSafe()
+12:47:31 PROC rLog_Current_Rob_Pos_TS000_9()
+12:47:31 CurrentRobAxisAngles = [22,51,-11,-62,45,108]
+12:47:31 PROC rCalc_Joint_Target_For_MHS()
+12:47:42 PROC rResetCommand_After_MoveHomeSafe()
+12:47:42 PROC rResetposition_in_Coil_box()
+12:47:42 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 12:47:58
+12:47:58 PROC rRunCycle()
+12:47:58 PROC rResetCommands()
+12:47:58 PROC rClear_HMI()
+12:47:58 ***** START CYCLE TIME *****
+12:47:58 *** COIL TRANSPORT BLOCKED ***
+12:47:58 PROC rInit_Received_information()
+12:47:58 rLog_Numeric_Value_TS000_2 =  0
+13:18:32 PROC Main(), Project: P21-100538
+13:18:32 PROC rInit()
+13:18:32 PROC rWorldZones()
+13:18:32 PROC rResetCommands()
+13:18:32 PROC rResetposition_in_home_box()
+13:18:32 PROC rMoveHomeSafe()
+13:18:32 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:32 CurrentRobAxisAngles = [12,35,16,-118,11,133]
+13:18:32 PROC rCalc_Joint_Target_For_MHS()
+13:18:48 PROC rResetCommand_After_MoveHomeSafe()
+13:18:48 PROC rResetposition_in_Coil_box()
+13:18:48 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 13:18:51
+13:18:51 PROC rRunCycle()
+13:18:51 PROC rResetCommands()
+13:18:51 PROC rClear_HMI()
+13:18:51 ***** START CYCLE TIME *****
+13:18:51 *** COIL TRANSPORT BLOCKED ***
+13:18:51 PROC rInit_Received_information()
+13:18:51 rLog_Numeric_Value_TS000_2 =  0
+15:40:51 PROC Main(), Project: P21-100538
+15:40:51 PROC rInit()
+15:40:51 PROC rWorldZones()
+15:40:51 PROC rResetCommands()
+15:40:51 PROC rResetposition_in_home_box()
+15:40:51 PROC rMoveHomeSafe()
+15:40:51 PROC rLog_Current_Rob_Pos_TS000_9()
+15:40:51 CurrentRobAxisAngles = [13,-35,34,-20,60,39]
+15:40:51 PROC rCalc_Joint_Target_For_MHS()
+15:41:22 PROC rResetCommand_After_MoveHomeSafe()
+15:41:22 PROC rResetposition_in_Coil_box()
+15:41:22 PROC rResetErrors()
+
+# Date: 2022-04-22# Time: 15:42:19
+15:42:19 PROC rRunCycle()
+15:42:19 PROC rResetCommands()
+15:42:19 PROC rClear_HMI()
+15:42:19 ***** START CYCLE TIME *****
+15:42:19 *** COIL TRANSPORT BLOCKED ***
+15:42:19 PROC rInit_Received_information()
+15:42:19 rLog_Numeric_Value_TS000_2 =  0
+11:26:36 PROC Main(), Project: P21-100538
+11:26:36 PROC rInit()
+11:26:36 PROC rWorldZones()
+11:26:36 PROC rResetCommands()
+11:26:36 PROC rResetposition_in_home_box()
+11:26:36 PROC rMoveHomeSafe()
+11:26:36 PROC rLog_Current_Rob_Pos_TS000_9()
+11:26:36 CurrentRobAxisAngles = [19,42,4,-76,31,112]
+11:26:36 PROC rCalc_Joint_Target_For_MHS()
+11:26:49 PROC rResetCommand_After_MoveHomeSafe()
+11:26:49 PROC rResetposition_in_Coil_box()
+11:26:49 PROC rResetErrors()
+
+# Date: 2022-04-25# Time: 11:27:01
+11:27:01 PROC rRunCycle()
+11:27:01 PROC rResetCommands()
+11:27:01 PROC rClear_HMI()
+11:27:01 ***** START CYCLE TIME *****
+11:27:01 *** COIL TRANSPORT BLOCKED ***
+11:27:01 PROC rInit_Received_information()
+11:27:01 rLog_Numeric_Value_TS000_2 =  0
+13:33:45 PROC Main(), Project: P21-100538
+13:33:45 PROC rInit()
+13:33:45 PROC rWorldZones()
+13:33:45 PROC rResetCommands()
+13:33:45 PROC rResetposition_in_home_box()
+13:33:45 PROC rMoveHomeSafe()
+13:33:45 PROC rLog_Current_Rob_Pos_TS000_9()
+13:33:45 CurrentRobAxisAngles = [15,38,10,-80,21,108]
+13:33:45 PROC rCalc_Joint_Target_For_MHS()
+13:33:59 PROC rResetCommand_After_MoveHomeSafe()
+13:33:59 PROC rResetposition_in_Coil_box()
+13:33:59 PROC rResetErrors()
+
+# Date: 2022-04-25# Time: 13:34:03
+13:34:03 PROC rRunCycle()
+13:34:03 PROC rResetCommands()
+13:34:03 PROC rClear_HMI()
+13:34:03 ***** START CYCLE TIME *****
+13:34:03 *** COIL TRANSPORT BLOCKED ***
+13:34:03 PROC rInit_Received_information()
+13:34:03 rLog_Numeric_Value_TS000_2 =  0
+15:29:47 PROC Main(), Project: P21-100538
+15:29:47 PROC rInit()
+15:29:47 PROC rWorldZones()
+15:29:47 PROC rResetCommands()
+15:29:47 PROC rResetposition_in_home_box()
+15:29:47 PROC rMoveHomeSafe()
+15:29:47 PROC rLog_Current_Rob_Pos_TS000_9()
+15:29:47 CurrentRobAxisAngles = [13,36,15,-100,17,121]
+15:29:47 PROC rCalc_Joint_Target_For_MHS()
+15:30:03 PROC rResetCommand_After_MoveHomeSafe()
+15:30:03 PROC rResetposition_in_Coil_box()
+15:30:03 PROC rResetErrors()
+
+# Date: 2022-04-25# Time: 15:30:08
+15:30:08 PROC rRunCycle()
+15:30:08 PROC rResetCommands()
+15:30:08 PROC rClear_HMI()
+15:30:08 ***** START CYCLE TIME *****
+15:30:08 *** COIL TRANSPORT BLOCKED ***
+15:30:08 PROC rInit_Received_information()
+15:30:08 rLog_Numeric_Value_TS000_2 =  0
+15:44:34 PROC Main(), Project: P21-100538
+15:44:34 PROC rInit()
+15:44:34 PROC rWorldZones()
+15:44:34 PROC rResetCommands()
+15:44:34 PROC rResetposition_in_home_box()
+15:44:34 PROC rMoveHomeSafe()
+15:44:34 PROC rLog_Current_Rob_Pos_TS000_9()
+15:44:34 CurrentRobAxisAngles = [18,41,7,-79,30,111]
+15:44:34 PROC rCalc_Joint_Target_For_MHS()
+15:44:48 PROC rResetCommand_After_MoveHomeSafe()
+15:44:48 PROC rResetposition_in_Coil_box()
+15:44:48 PROC rResetErrors()
+
+# Date: 2022-04-25# Time: 15:44:53
+15:44:53 PROC rRunCycle()
+15:44:53 PROC rResetCommands()
+15:44:53 PROC rClear_HMI()
+15:44:53 ***** START CYCLE TIME *****
+15:44:53 *** COIL TRANSPORT BLOCKED ***
+15:44:53 PROC rInit_Received_information()
+15:44:53 rLog_Numeric_Value_TS000_2 =  0
+08:19:58 PROC Main(), Project: P21-100538
+08:19:58 PROC rInit()
+08:19:58 PROC rWorldZones()
+08:19:58 PROC rResetCommands()
+08:19:58 PROC rResetposition_in_home_box()
+08:19:58 PROC rMoveHomeSafe()
+08:19:58 PROC rLog_Current_Rob_Pos_TS000_9()
+08:19:58 CurrentRobAxisAngles = [-17,33,15,-96,19,120]
+08:19:58 PROC rCalc_Joint_Target_For_MHS()
+08:20:25 PROC rResetCommand_After_MoveHomeSafe()
+08:20:25 PROC rResetposition_in_Coil_box()
+08:20:25 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 08:22:32
+08:22:32 PROC rRunCycle()
+08:22:32 PROC rResetCommands()
+08:22:32 PROC rClear_HMI()
+08:22:32 ***** START CYCLE TIME *****
+08:22:32 *** COIL TRANSPORT BLOCKED ***
+08:22:32 PROC rInit_Received_information()
+08:22:32 rLog_Numeric_Value_TS000_2 =  0
+08:23:24 PROC Main(), Project: P21-100538
+08:23:24 PROC rInit()
+08:23:24 PROC rWorldZones()
+08:23:24 PROC rResetCommands()
+08:23:24 PROC rResetposition_in_home_box()
+08:23:24 PROC rMoveHomeSafe()
+08:23:24 PROC rLog_Current_Rob_Pos_TS000_9()
+08:23:24 CurrentRobAxisAngles = [22,49,-8,-64,44,109]
+08:23:24 PROC rCalc_Joint_Target_For_MHS()
+08:23:53 PROC rResetCommand_After_MoveHomeSafe()
+08:23:53 PROC rResetposition_in_Coil_box()
+08:23:53 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 08:27:18
+08:27:18 PROC rRunCycle()
+08:27:18 PROC rResetCommands()
+08:27:18 PROC rClear_HMI()
+08:27:18 ***** START CYCLE TIME *****
+08:27:18 *** COIL TRANSPORT BLOCKED ***
+08:27:18 PROC rInit_Received_information()
+08:27:18 rLog_Numeric_Value_TS000_2 =  0
+08:41:49 PROC Main(), Project: P21-100538
+08:41:49 PROC rInit()
+08:41:49 PROC rWorldZones()
+08:41:49 PROC rResetCommands()
+08:41:49 PROC rResetposition_in_home_box()
+08:41:49 PROC rMoveHomeSafe()
+08:41:49 PROC rLog_Current_Rob_Pos_TS000_9()
+08:41:49 CurrentRobAxisAngles = [23,55,-17,-60,48,106]
+08:41:49 PROC rCalc_Joint_Target_For_MHS()
+08:41:59 PROC rResetCommand_After_MoveHomeSafe()
+08:41:59 PROC rResetposition_in_Coil_box()
+08:41:59 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 08:42:03
+08:42:03 PROC rRunCycle()
+08:42:03 PROC rResetCommands()
+08:42:03 PROC rClear_HMI()
+08:42:03 ***** START CYCLE TIME *****
+08:42:03 *** COIL TRANSPORT BLOCKED ***
+08:42:03 PROC rInit_Received_information()
+08:42:03 rLog_Numeric_Value_TS000_2 =  0
+08:52:39 PROC Main(), Project: P21-100538
+08:52:39 PROC rInit()
+08:52:39 PROC rWorldZones()
+08:52:39 PROC rResetCommands()
+08:52:39 PROC rResetposition_in_home_box()
+08:52:39 PROC rMoveHomeSafe()
+08:52:39 PROC rLog_Current_Rob_Pos_TS000_9()
+08:52:39 CurrentRobAxisAngles = [22,49,-8,-64,43,109]
+08:52:39 PROC rCalc_Joint_Target_For_MHS()
+08:52:51 PROC rResetCommand_After_MoveHomeSafe()
+08:52:51 PROC rResetposition_in_Coil_box()
+08:52:51 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 08:52:54
+08:52:54 PROC rRunCycle()
+08:52:54 PROC rResetCommands()
+08:52:54 PROC rClear_HMI()
+08:52:54 ***** START CYCLE TIME *****
+08:52:54 *** COIL TRANSPORT BLOCKED ***
+08:52:54 PROC rInit_Received_information()
+08:52:54 rLog_Numeric_Value_TS000_2 =  0
+09:47:58 PROC Main(), Project: P21-100538
+09:47:58 PROC rInit()
+09:47:58 PROC rWorldZones()
+09:47:58 PROC rResetCommands()
+09:47:58 PROC rResetposition_in_home_box()
+09:47:58 PROC rMoveHomeSafe()
+09:47:58 PROC rLog_Current_Rob_Pos_TS000_9()
+09:47:58 CurrentRobAxisAngles = [22,49,-8,-64,44,109]
+09:47:58 PROC rCalc_Joint_Target_For_MHS()
+09:48:09 PROC rResetCommand_After_MoveHomeSafe()
+09:48:09 PROC rResetposition_in_Coil_box()
+09:48:09 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 09:48:20
+09:48:20 PROC rRunCycle()
+09:48:20 PROC rResetCommands()
+09:48:20 PROC rClear_HMI()
+09:48:20 ***** START CYCLE TIME *****
+09:48:20 *** COIL TRANSPORT BLOCKED ***
+09:48:20 PROC rInit_Received_information()
+09:48:20 rLog_Numeric_Value_TS000_2 =  0
+10:00:16 PROC Main(), Project: P21-100538
+10:00:16 PROC rInit()
+10:00:16 PROC rWorldZones()
+10:00:16 PROC rResetCommands()
+10:00:16 PROC rResetposition_in_home_box()
+10:00:16 PROC rMoveHomeSafe()
+10:00:16 PROC rLog_Current_Rob_Pos_TS000_9()
+10:00:16 CurrentRobAxisAngles = [23,55,-17,-60,48,106]
+10:00:16 PROC rCalc_Joint_Target_For_MHS()
+10:00:27 PROC rResetCommand_After_MoveHomeSafe()
+10:00:27 PROC rResetposition_in_Coil_box()
+10:00:27 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 10:00:37
+10:00:37 PROC rRunCycle()
+10:00:37 PROC rResetCommands()
+10:00:37 PROC rClear_HMI()
+10:00:37 ***** START CYCLE TIME *****
+10:00:37 *** COIL TRANSPORT BLOCKED ***
+10:00:37 PROC rInit_Received_information()
+10:00:37 rLog_Numeric_Value_TS000_2 =  0
+10:02:16 PROC Main(), Project: P21-100538
+10:02:16 PROC rInit()
+10:02:16 PROC rWorldZones()
+10:02:16 PROC rResetCommands()
+10:02:16 PROC rResetposition_in_home_box()
+10:02:16 PROC rMoveHomeSafe()
+10:02:16 PROC rLog_Current_Rob_Pos_TS000_9()
+10:02:16 CurrentRobAxisAngles = [23,55,-18,-59,48,105]
+10:02:16 PROC rCalc_Joint_Target_For_MHS()
+10:02:26 PROC rResetCommand_After_MoveHomeSafe()
+10:02:26 PROC rResetposition_in_Coil_box()
+10:02:26 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 10:02:29
+10:02:29 PROC rRunCycle()
+10:02:29 PROC rResetCommands()
+10:02:29 PROC rClear_HMI()
+10:02:29 ***** START CYCLE TIME *****
+10:02:29 *** COIL TRANSPORT BLOCKED ***
+10:02:29 PROC rInit_Received_information()
+10:02:29 rLog_Numeric_Value_TS000_2 =  0
+11:05:26 PROC Main(), Project: P21-100538
+11:05:26 PROC rInit()
+11:05:26 PROC rWorldZones()
+11:05:26 PROC rResetCommands()
+11:05:26 PROC rResetposition_in_home_box()
+11:05:26 PROC rMoveHomeSafe()
+11:05:26 PROC rLog_Current_Rob_Pos_TS000_9()
+11:05:26 CurrentRobAxisAngles = [16,39,10,-90,21,117]
+11:05:26 PROC rCalc_Joint_Target_For_MHS()
+11:05:40 PROC rResetCommand_After_MoveHomeSafe()
+11:05:40 PROC rResetposition_in_Coil_box()
+11:05:40 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 11:05:46
+11:05:46 PROC rRunCycle()
+11:05:46 PROC rResetCommands()
+11:05:46 PROC rClear_HMI()
+11:05:46 ***** START CYCLE TIME *****
+11:05:46 *** COIL TRANSPORT BLOCKED ***
+11:05:46 PROC rInit_Received_information()
+11:05:46 rLog_Numeric_Value_TS000_2 =  0
+11:08:34 PROC Main(), Project: P21-100538
+11:08:34 PROC rInit()
+11:08:34 PROC rWorldZones()
+11:08:34 PROC rResetCommands()
+11:08:34 PROC rResetposition_in_home_box()
+11:08:34 PROC rMoveHomeSafe()
+11:08:34 PROC rLog_Current_Rob_Pos_TS000_9()
+11:08:34 CurrentRobAxisAngles = [13,36,14,-101,17,121]
+11:08:34 PROC rCalc_Joint_Target_For_MHS()
+11:08:50 PROC rResetCommand_After_MoveHomeSafe()
+11:08:50 PROC rResetposition_in_Coil_box()
+11:08:50 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 11:10:16
+11:10:16 PROC rRunCycle()
+11:10:16 PROC rResetCommands()
+11:10:16 PROC rClear_HMI()
+11:10:16 ***** START CYCLE TIME *****
+11:10:16 *** COIL TRANSPORT BLOCKED ***
+11:10:16 PROC rInit_Received_information()
+11:10:16 rLog_Numeric_Value_TS000_2 =  0
+11:13:11 PROC Main(), Project: P21-100538
+11:13:11 PROC rInit()
+11:13:11 PROC rWorldZones()
+11:13:11 PROC rResetCommands()
+11:13:11 PROC rResetposition_in_home_box()
+11:13:11 PROC rMoveHomeSafe()
+11:13:11 PROC rLog_Current_Rob_Pos_TS000_9()
+11:13:11 CurrentRobAxisAngles = [16,40,8,-78,34,115]
+11:13:11 PROC rCalc_Joint_Target_For_MHS()
+11:13:26 PROC rResetCommand_After_MoveHomeSafe()
+11:13:26 PROC rResetposition_in_Coil_box()
+11:13:26 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 11:13:36
+11:13:36 PROC rRunCycle()
+11:13:36 PROC rResetCommands()
+11:13:36 PROC rClear_HMI()
+11:13:36 ***** START CYCLE TIME *****
+11:13:36 *** COIL TRANSPORT BLOCKED ***
+11:13:36 PROC rInit_Received_information()
+11:13:36 rLog_Numeric_Value_TS000_2 =  0
+11:15:37 PROC Main(), Project: P21-100538
+11:15:37 PROC rInit()
+11:15:37 PROC rWorldZones()
+11:15:37 PROC rResetCommands()
+11:15:37 PROC rResetposition_in_home_box()
+11:15:37 PROC rMoveHomeSafe()
+11:15:37 PROC rLog_Current_Rob_Pos_TS000_9()
+11:15:37 CurrentRobAxisAngles = [10,35,17,-121,11,135]
+11:15:37 PROC rCalc_Joint_Target_For_MHS()
+11:15:54 PROC Main(), Project: P21-100538
+11:15:54 PROC rInit()
+11:15:54 PROC rWorldZones()
+11:15:54 PROC rResetCommands()
+11:15:54 PROC rResetposition_in_home_box()
+11:15:54 PROC rMoveHomeSafe()
+11:15:54 PROC rLog_Current_Rob_Pos_TS000_9()
+11:15:54 CurrentRobAxisAngles = [16,16,25,-72,21,94]
+11:15:54 PROC rCalc_Joint_Target_For_MHS()
+11:16:12 PROC rResetCommand_After_MoveHomeSafe()
+11:16:12 PROC rResetposition_in_Coil_box()
+11:16:12 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 11:16:15
+11:16:15 PROC rRunCycle()
+11:16:15 PROC rResetCommands()
+11:16:15 PROC rClear_HMI()
+11:16:15 ***** START CYCLE TIME *****
+11:16:15 *** COIL TRANSPORT BLOCKED ***
+11:16:15 PROC rInit_Received_information()
+11:16:15 rLog_Numeric_Value_TS000_2 =  0
+11:18:08 PROC Main(), Project: P21-100538
+11:18:08 PROC rInit()
+11:18:08 PROC rWorldZones()
+11:18:08 PROC rResetCommands()
+11:18:08 PROC rResetposition_in_home_box()
+11:18:08 PROC rMoveHomeSafe()
+11:18:08 PROC rLog_Current_Rob_Pos_TS000_9()
+11:18:08 CurrentRobAxisAngles = [10,35,17,-121,11,135]
+11:18:08 PROC rCalc_Joint_Target_For_MHS()
+11:18:12 PROC Main(), Project: P21-100538
+11:18:12 PROC rInit()
+11:18:12 PROC rWorldZones()
+11:18:12 PROC rResetCommands()
+11:18:12 PROC rResetposition_in_home_box()
+11:18:12 PROC rMoveHomeSafe()
+11:18:12 PROC rLog_Current_Rob_Pos_TS000_9()
+11:18:12 CurrentRobAxisAngles = [11,25,25,-109,11,123]
+11:18:12 PROC rCalc_Joint_Target_For_MHS()
+11:18:30 PROC rResetCommand_After_MoveHomeSafe()
+11:18:30 PROC rResetposition_in_Coil_box()
+11:18:30 PROC rResetErrors()
+12:40:14 PROC Main(), Project: P21-100538
+12:40:14 PROC rInit()
+12:40:14 PROC rWorldZones()
+12:40:14 PROC rResetCommands()
+12:40:14 PROC rResetposition_in_home_box()
+12:40:14 PROC rMoveHomeSafe()
+12:40:14 PROC rLog_Current_Rob_Pos_TS000_9()
+12:40:14 CurrentRobAxisAngles = [24,73,-49,-39,87,121]
+12:40:14 PROC rCalc_Joint_Target_For_MHS()
+12:40:49 PROC rResetCommand_After_MoveHomeSafe()
+12:40:49 PROC rResetposition_in_Coil_box()
+12:40:49 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 12:41:26
+12:41:26 PROC rRunCycle()
+12:41:26 PROC rResetCommands()
+12:41:26 PROC rClear_HMI()
+12:41:26 ***** START CYCLE TIME *****
+12:41:26 *** COIL TRANSPORT BLOCKED ***
+12:41:26 PROC rInit_Received_information()
+12:41:26 rLog_Numeric_Value_TS000_2 =  0
+13:31:51 PROC Main(), Project: P21-100538
+13:31:51 PROC rInit()
+13:31:51 PROC rWorldZones()
+13:31:51 PROC rResetCommands()
+13:31:51 PROC rResetposition_in_home_box()
+13:31:51 PROC rMoveHomeSafe()
+13:31:51 PROC rLog_Current_Rob_Pos_TS000_9()
+13:31:51 CurrentRobAxisAngles = [25,39,12,-57,59,132]
+13:31:51 PROC rCalc_Joint_Target_For_MHS()
+13:32:43 PROC Main(), Project: P21-100538
+13:32:43 PROC rInit()
+13:32:43 PROC rWorldZones()
+13:32:43 PROC rResetCommands()
+13:32:43 PROC rResetposition_in_home_box()
+13:32:43 PROC rMoveHomeSafe()
+13:32:43 PROC rLog_Current_Rob_Pos_TS000_9()
+13:32:43 CurrentRobAxisAngles = [35,37,-2,-47,75,124]
+13:32:43 PROC rCalc_Joint_Target_For_MHS()
+13:34:50 PROC Main(), Project: P21-100538
+13:34:50 PROC rInit()
+13:34:50 PROC rWorldZones()
+13:34:50 PROC rResetCommands()
+13:34:50 PROC rResetposition_in_home_box()
+13:34:50 PROC rMoveHomeSafe()
+13:34:50 PROC rLog_Current_Rob_Pos_TS000_9()
+13:34:50 CurrentRobAxisAngles = [26,62,-30,-47,75,121]
+13:34:50 PROC rCalc_Joint_Target_For_MHS()
+13:41:39 PROC rResetCommand_After_MoveHomeSafe()
+13:41:39 PROC rResetposition_in_Coil_box()
+13:41:39 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 13:50:53
+13:50:53 PROC rRunCycle()
+13:50:53 PROC rResetCommands()
+13:50:53 PROC rClear_HMI()
+13:50:53 ***** START CYCLE TIME *****
+13:50:53 *** COIL TRANSPORT BLOCKED ***
+13:50:53 PROC rInit_Received_information()
+13:50:53 rLog_Numeric_Value_TS000_2 =  0
+14:01:11 PROC Main(), Project: P21-100538
+14:01:11 PROC rInit()
+14:01:11 PROC rWorldZones()
+14:01:11 PROC rResetCommands()
+14:01:11 PROC rResetposition_in_home_box()
+14:01:11 PROC rMoveHomeSafe()
+14:01:11 PROC rLog_Current_Rob_Pos_TS000_9()
+14:01:11 CurrentRobAxisAngles = [22,27,30,-89,34,135]
+14:01:11 PROC rCalc_Joint_Target_For_MHS()
+14:02:39 PROC rResetCommand_After_MoveHomeSafe()
+14:02:39 PROC rResetposition_in_Coil_box()
+14:02:39 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 14:02:53
+14:02:53 PROC rRunCycle()
+14:02:53 PROC rResetCommands()
+14:02:53 PROC rClear_HMI()
+14:02:53 ***** START CYCLE TIME *****
+14:02:53 *** COIL TRANSPORT BLOCKED ***
+14:02:53 PROC rInit_Received_information()
+14:02:53 rLog_Numeric_Value_TS000_2 =  0
+14:51:22 PROC Main(), Project: P21-100538
+14:51:22 PROC rInit()
+14:51:22 PROC rWorldZones()
+14:51:22 PROC rResetCommands()
+14:51:22 PROC rResetposition_in_home_box()
+14:51:22 PROC rMoveHomeSafe()
+14:51:22 PROC rLog_Current_Rob_Pos_TS000_9()
+14:51:23 CurrentRobAxisAngles = [6,19,44,-142,22,142]
+14:51:23 PROC rCalc_Joint_Target_For_MHS()
+14:52:45 PROC rResetCommand_After_MoveHomeSafe()
+14:52:45 PROC rResetposition_in_Coil_box()
+14:52:45 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 14:52:50
+14:52:50 PROC rRunCycle()
+14:52:50 PROC rResetCommands()
+14:52:50 PROC rClear_HMI()
+14:52:50 ***** START CYCLE TIME *****
+14:52:50 *** COIL TRANSPORT BLOCKED ***
+14:52:50 PROC rInit_Received_information()
+14:52:50 rLog_Numeric_Value_TS000_2 =  0
+15:12:40 PROC Main(), Project: P21-100538
+15:12:40 PROC rInit()
+15:12:40 PROC rWorldZones()
+15:12:40 PROC rResetCommands()
+15:12:40 PROC rResetposition_in_home_box()
+15:12:40 PROC rMoveHomeSafe()
+15:12:40 PROC rLog_Current_Rob_Pos_TS000_9()
+15:12:40 CurrentRobAxisAngles = [27,51,-14,-51,62,116]
+15:12:40 PROC rCalc_Joint_Target_For_MHS()
+15:12:53 PROC rResetCommand_After_MoveHomeSafe()
+15:12:53 PROC rResetposition_in_Coil_box()
+15:12:53 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 15:14:25
+15:14:25 PROC rRunCycle()
+15:14:25 PROC rResetCommands()
+15:14:25 PROC rClear_HMI()
+15:14:25 ***** START CYCLE TIME *****
+15:14:25 *** COIL TRANSPORT BLOCKED ***
+15:14:25 PROC rInit_Received_information()
+15:14:25 rLog_Numeric_Value_TS000_2 =  0
+15:31:16 PROC Main(), Project: P21-100538
+15:31:16 PROC rInit()
+15:31:16 PROC rWorldZones()
+15:31:16 PROC rResetCommands()
+15:31:16 PROC rResetposition_in_home_box()
+15:31:16 PROC rMoveHomeSafe()
+15:31:16 PROC rLog_Current_Rob_Pos_TS000_9()
+15:31:16 CurrentRobAxisAngles = [15,14,43,-131,16,145]
+15:31:16 PROC rCalc_Joint_Target_For_MHS()
+15:32:44 PROC rResetCommand_After_MoveHomeSafe()
+15:32:44 PROC rResetposition_in_Coil_box()
+15:32:44 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 15:32:51
+15:32:51 PROC rRunCycle()
+15:32:51 PROC rResetCommands()
+15:32:51 PROC rClear_HMI()
+15:32:51 ***** START CYCLE TIME *****
+15:32:51 *** COIL TRANSPORT BLOCKED ***
+15:32:51 PROC rInit_Received_information()
+15:32:51 rLog_Numeric_Value_TS000_2 =  0
+15:47:58 PROC Main(), Project: P21-100538
+15:47:58 PROC rInit()
+15:47:58 PROC rWorldZones()
+15:47:58 PROC rResetCommands()
+15:47:58 PROC rResetposition_in_home_box()
+15:47:58 PROC rMoveHomeSafe()
+15:47:58 PROC rLog_Current_Rob_Pos_TS000_9()
+15:47:58 CurrentRobAxisAngles = [6,22,41,-61,54,148]
+15:47:58 PROC rCalc_Joint_Target_For_MHS()
+15:49:18 PROC rResetCommand_After_MoveHomeSafe()
+15:49:18 PROC rResetposition_in_Coil_box()
+15:49:18 PROC rResetErrors()
+
+# Date: 2022-04-26# Time: 15:49:43
+15:49:43 PROC rRunCycle()
+15:49:43 PROC rResetCommands()
+15:49:43 PROC rClear_HMI()
+15:49:43 ***** START CYCLE TIME *****
+15:49:43 *** COIL TRANSPORT BLOCKED ***
+15:49:43 PROC rInit_Received_information()
+15:49:43 rLog_Numeric_Value_TS000_2 =  0
+16:09:42 PROC Main(), Project: P21-100538
+16:09:42 PROC rInit()
+16:09:42 PROC rWorldZones()
+16:09:42 PROC rResetCommands()
+16:09:42 PROC rResetposition_in_home_box()
+16:09:42 PROC rMoveHomeSafe()
+16:09:42 PROC rLog_Current_Rob_Pos_TS000_9()
+16:09:42 CurrentRobAxisAngles = [6,22,41,-61,54,148]
+16:09:42 PROC rCalc_Joint_Target_For_MHS()
+08:51:32 PROC Main(), Project: P21-100538
+08:51:32 PROC rInit()
+08:51:32 PROC rWorldZones()
+08:51:32 PROC rResetCommands()
+08:51:32 PROC rResetposition_in_home_box()
+08:51:32 PROC rMoveHomeSafe()
+08:51:32 PROC rLog_Current_Rob_Pos_TS000_9()
+08:51:32 CurrentRobAxisAngles = [7,21,41,-60,54,147]
+08:51:32 PROC rCalc_Joint_Target_For_MHS()
+08:53:58 PROC rResetCommand_After_MoveHomeSafe()
+08:53:58 PROC rResetposition_in_Coil_box()
+08:53:58 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 08:54:32
+08:54:32 PROC rRunCycle()
+08:54:32 PROC rResetCommands()
+08:54:32 PROC rClear_HMI()
+08:54:32 ***** START CYCLE TIME *****
+08:54:32 *** COIL TRANSPORT BLOCKED ***
+08:54:32 PROC rInit_Received_information()
+08:54:32 rLog_Numeric_Value_TS000_2 =  0
+12:11:29 PROC Main(), Project: P21-100538
+12:11:29 PROC rInit()
+12:11:29 PROC rWorldZones()
+12:11:29 PROC rResetCommands()
+12:11:29 PROC rResetposition_in_home_box()
+12:11:29 PROC rMoveHomeSafe()
+12:11:29 PROC rLog_Current_Rob_Pos_TS000_9()
+12:11:29 CurrentRobAxisAngles = [26,59,-26,-45,74,127]
+12:11:29 PROC rCalc_Joint_Target_For_MHS()
+12:11:44 PROC rResetCommand_After_MoveHomeSafe()
+12:11:44 PROC rResetposition_in_Coil_box()
+12:11:44 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 12:11:47
+12:11:47 PROC rRunCycle()
+12:11:47 PROC rResetCommands()
+12:11:47 PROC rClear_HMI()
+12:11:47 ***** START CYCLE TIME *****
+12:11:47 *** COIL TRANSPORT BLOCKED ***
+12:11:47 PROC rInit_Received_information()
+12:11:47 rLog_Numeric_Value_TS000_2 =  0
+12:18:35 PROC Main(), Project: P21-100538
+12:18:35 PROC rInit()
+12:18:35 PROC rWorldZones()
+12:18:35 PROC rResetCommands()
+12:18:35 PROC rResetposition_in_home_box()
+12:18:35 PROC rMoveHomeSafe()
+12:18:35 PROC rLog_Current_Rob_Pos_TS000_9()
+12:18:35 CurrentRobAxisAngles = [24,71,-45,-38,89,138]
+12:18:35 PROC rCalc_Joint_Target_For_MHS()
+12:18:46 PROC Main(), Project: P21-100538
+12:18:46 PROC rInit()
+12:18:46 PROC rWorldZones()
+12:18:46 PROC rResetCommands()
+12:18:46 PROC rResetposition_in_home_box()
+12:18:46 PROC rMoveHomeSafe()
+12:18:46 PROC rLog_Current_Rob_Pos_TS000_9()
+12:18:46 CurrentRobAxisAngles = [24,71,-45,-38,89,138]
+12:18:46 PROC rCalc_Joint_Target_For_MHS()
+12:19:12 PROC Main(), Project: P21-100538
+12:19:12 PROC rInit()
+12:19:12 PROC rWorldZones()
+12:19:12 PROC rResetCommands()
+12:19:12 PROC rResetposition_in_home_box()
+12:19:12 PROC rMoveHomeSafe()
+12:19:12 PROC rLog_Current_Rob_Pos_TS000_9()
+12:19:12 CurrentRobAxisAngles = [24,71,-45,-38,89,123]
+12:19:12 PROC rCalc_Joint_Target_For_MHS()
+12:19:35 PROC Main(), Project: P21-100538
+12:19:35 PROC rInit()
+12:19:35 PROC rWorldZones()
+12:19:35 PROC rResetCommands()
+12:19:35 PROC rResetposition_in_home_box()
+12:19:35 PROC rMoveHomeSafe()
+12:19:35 PROC rLog_Current_Rob_Pos_TS000_9()
+12:19:35 CurrentRobAxisAngles = [24,71,-45,-38,89,123]
+12:19:35 PROC rCalc_Joint_Target_For_MHS()
+12:19:58 PROC Main(), Project: P21-100538
+12:19:58 PROC rInit()
+12:19:58 PROC rWorldZones()
+12:19:58 PROC rResetCommands()
+12:19:58 PROC rResetposition_in_home_box()
+12:19:58 PROC rMoveHomeSafe()
+12:19:58 PROC rLog_Current_Rob_Pos_TS000_9()
+12:19:58 CurrentRobAxisAngles = [25,65,-35,-38,87,126]
+12:19:58 PROC rCalc_Joint_Target_For_MHS()
+12:20:31 PROC rResetCommand_After_MoveHomeSafe()
+12:20:31 PROC rResetposition_in_Coil_box()
+12:20:31 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 12:20:35
+12:20:35 PROC rRunCycle()
+12:20:35 PROC rResetCommands()
+12:20:35 PROC rClear_HMI()
+12:20:35 ***** START CYCLE TIME *****
+12:20:35 *** COIL TRANSPORT BLOCKED ***
+12:20:35 PROC rInit_Received_information()
+12:20:35 rLog_Numeric_Value_TS000_2 =  0
+12:33:44 PROC Main(), Project: P21-100538
+12:33:44 PROC rInit()
+12:33:44 PROC rWorldZones()
+12:33:44 PROC rResetCommands()
+12:33:44 PROC rResetposition_in_home_box()
+12:33:44 PROC rMoveHomeSafe()
+12:33:44 PROC rLog_Current_Rob_Pos_TS000_9()
+12:33:44 CurrentRobAxisAngles = [6,22,41,-61,54,147]
+12:33:44 PROC rCalc_Joint_Target_For_MHS()
+12:34:56 PROC rResetCommand_After_MoveHomeSafe()
+12:34:56 PROC rResetposition_in_Coil_box()
+12:34:56 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 12:35:10
+12:35:10 PROC rRunCycle()
+12:35:10 PROC rResetCommands()
+12:35:10 PROC rClear_HMI()
+12:35:10 ***** START CYCLE TIME *****
+12:35:10 *** COIL TRANSPORT BLOCKED ***
+12:35:10 PROC rInit_Received_information()
+12:35:10 rLog_Numeric_Value_TS000_2 =  0
+13:03:41 PROC Main(), Project: P21-100538
+13:03:41 PROC rInit()
+13:03:41 PROC rWorldZones()
+13:03:41 PROC rResetCommands()
+13:03:41 PROC rResetposition_in_home_box()
+13:03:41 PROC rMoveHomeSafe()
+13:03:41 PROC rLog_Current_Rob_Pos_TS000_9()
+13:03:41 CurrentRobAxisAngles = [26,48,-4,-54,61,128]
+13:03:41 PROC rCalc_Joint_Target_For_MHS()
+13:03:55 PROC rResetCommand_After_MoveHomeSafe()
+13:03:55 PROC rResetposition_in_Coil_box()
+13:03:55 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 13:04:00
+13:04:00 PROC rRunCycle()
+13:04:00 PROC rResetCommands()
+13:04:00 PROC rClear_HMI()
+13:04:00 ***** START CYCLE TIME *****
+13:04:00 *** COIL TRANSPORT BLOCKED ***
+13:04:00 PROC rInit_Received_information()
+13:04:00 rLog_Numeric_Value_TS000_2 =  0
+13:34:55 PROC Main(), Project: P21-100538
+13:34:55 PROC rInit()
+13:34:55 PROC rWorldZones()
+13:34:55 PROC rResetCommands()
+13:34:55 PROC rResetposition_in_home_box()
+13:34:55 PROC rMoveHomeSafe()
+13:34:55 PROC rLog_Current_Rob_Pos_TS000_9()
+13:34:55 CurrentRobAxisAngles = [26,53,-13,-50,67,127]
+13:34:55 PROC rCalc_Joint_Target_For_MHS()
+13:46:29 PROC Main(), Project: P21-100538
+13:46:29 PROC rInit()
+13:46:29 PROC rWorldZones()
+13:46:29 PROC rResetCommands()
+13:46:29 PROC rResetposition_in_home_box()
+13:46:29 PROC rMoveHomeSafe()
+13:46:29 PROC rLog_Current_Rob_Pos_TS000_9()
+13:46:29 CurrentRobAxisAngles = [27,52,-13,-49,68,127]
+13:46:29 PROC rCalc_Joint_Target_For_MHS()
+13:46:48 PROC rResetCommand_After_MoveHomeSafe()
+13:46:48 PROC rResetposition_in_Coil_box()
+13:46:48 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 13:50:57
+13:50:57 PROC rRunCycle()
+13:50:57 PROC rResetCommands()
+13:50:57 PROC rClear_HMI()
+13:50:57 ***** START CYCLE TIME *****
+13:50:57 *** COIL TRANSPORT BLOCKED ***
+13:50:57 PROC rInit_Received_information()
+13:50:57 rLog_Numeric_Value_TS000_2 =  0
+13:51:39 PROC Main(), Project: P21-100538
+13:51:39 PROC rInit()
+13:51:39 PROC rWorldZones()
+13:51:39 PROC rResetCommands()
+13:51:39 PROC rResetposition_in_home_box()
+13:51:39 PROC rMoveHomeSafe()
+13:51:39 PROC rLog_Current_Rob_Pos_TS000_9()
+13:51:39 CurrentRobAxisAngles = [26,55,-17,-48,70,127]
+13:51:39 PROC rCalc_Joint_Target_For_MHS()
+13:51:57 PROC rResetCommand_After_MoveHomeSafe()
+13:51:57 PROC rResetposition_in_Coil_box()
+13:51:57 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 13:52:04
+13:52:04 PROC rRunCycle()
+13:52:04 PROC rResetCommands()
+13:52:04 PROC rClear_HMI()
+13:52:04 ***** START CYCLE TIME *****
+13:52:04 *** COIL TRANSPORT BLOCKED ***
+13:52:04 PROC rInit_Received_information()
+13:52:04 rLog_Numeric_Value_TS000_2 =  0
+14:30:36 PROC Main(), Project: P21-100538
+14:30:36 PROC rInit()
+14:30:36 PROC rWorldZones()
+14:30:36 PROC rResetCommands()
+14:30:36 PROC rResetposition_in_home_box()
+14:30:36 PROC rMoveHomeSafe()
+14:30:36 PROC rLog_Current_Rob_Pos_TS000_9()
+14:30:36 CurrentRobAxisAngles = [7,18,45,-160,19,173]
+14:30:36 PROC rCalc_Joint_Target_For_MHS()
+14:33:08 PROC Main(), Project: P21-100538
+14:33:08 PROC rInit()
+14:33:08 PROC rWorldZones()
+14:33:08 PROC rResetCommands()
+14:33:08 PROC rResetposition_in_home_box()
+14:33:08 PROC rMoveHomeSafe()
+14:33:08 PROC rLog_Current_Rob_Pos_TS000_9()
+14:33:08 CurrentRobAxisAngles = [7,16,46,-159,18,172]
+14:33:08 PROC rCalc_Joint_Target_For_MHS()
+14:37:58 PROC Main(), Project: P21-100538
+14:37:58 PROC rInit()
+14:37:58 PROC rWorldZones()
+14:37:58 PROC rResetCommands()
+14:37:58 PROC rResetposition_in_home_box()
+14:37:58 PROC rMoveHomeSafe()
+14:37:58 PROC rLog_Current_Rob_Pos_TS000_9()
+14:37:58 CurrentRobAxisAngles = [8,19,44,-155,20,170]
+14:37:58 PROC rCalc_Joint_Target_For_MHS()
+14:39:46 PROC rResetCommand_After_MoveHomeSafe()
+14:39:46 PROC rResetposition_in_Coil_box()
+14:39:46 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 14:39:52
+14:39:52 PROC rRunCycle()
+14:39:52 PROC rResetCommands()
+14:39:52 PROC rClear_HMI()
+14:39:52 ***** START CYCLE TIME *****
+14:39:52 *** COIL TRANSPORT BLOCKED ***
+14:39:52 PROC rInit_Received_information()
+14:39:52 rLog_Numeric_Value_TS000_2 =  0
+14:58:21 PROC Main(), Project: P21-100538
+14:58:21 PROC rInit()
+14:58:21 PROC rWorldZones()
+14:58:21 PROC rResetCommands()
+14:58:21 PROC rResetposition_in_home_box()
+14:58:21 PROC rMoveHomeSafe()
+14:58:21 PROC rLog_Current_Rob_Pos_TS000_9()
+14:58:21 CurrentRobAxisAngles = [6,21,43,-174,21,185]
+14:58:21 PROC rCalc_Joint_Target_For_MHS()
+15:00:01 PROC Main(), Project: P21-100538
+15:00:01 PROC rInit()
+15:00:01 PROC rWorldZones()
+15:00:01 PROC rResetCommands()
+15:00:01 PROC rResetposition_in_home_box()
+15:00:01 PROC rMoveHomeSafe()
+15:00:01 PROC rLog_Current_Rob_Pos_TS000_9()
+15:00:01 CurrentRobAxisAngles = [6,19,45,-174,20,185]
+15:00:01 PROC rCalc_Joint_Target_For_MHS()
+15:00:15 PROC rResetCommand_After_MoveHomeSafe()
+15:00:15 PROC rResetposition_in_Coil_box()
+15:00:15 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 15:00:28
+15:00:28 PROC rRunCycle()
+15:00:28 PROC rResetCommands()
+15:00:28 PROC rClear_HMI()
+15:00:28 ***** START CYCLE TIME *****
+15:00:28 *** COIL TRANSPORT BLOCKED ***
+15:00:28 PROC rInit_Received_information()
+15:00:28 rLog_Numeric_Value_TS000_2 =  0
+15:02:27 PROC Main(), Project: P21-100538
+15:02:27 PROC rInit()
+15:02:27 PROC rWorldZones()
+15:02:27 PROC rResetCommands()
+15:02:27 PROC rResetposition_in_home_box()
+15:02:27 PROC rMoveHomeSafe()
+15:02:27 PROC rLog_Current_Rob_Pos_TS000_9()
+15:02:27 CurrentRobAxisAngles = [6,25,41,-62,53,150]
+15:02:27 PROC rCalc_Joint_Target_For_MHS()
+15:02:42 PROC rResetCommand_After_MoveHomeSafe()
+15:02:42 PROC rResetposition_in_Coil_box()
+15:02:42 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 15:02:46
+15:02:46 PROC rRunCycle()
+15:02:46 PROC rResetCommands()
+15:02:46 PROC rClear_HMI()
+15:02:46 ***** START CYCLE TIME *****
+15:02:46 *** COIL TRANSPORT BLOCKED ***
+15:02:46 PROC rInit_Received_information()
+15:02:46 rLog_Numeric_Value_TS000_2 =  0
+15:15:02 PROC Main(), Project: P21-100538
+15:15:02 PROC rInit()
+15:15:02 PROC rWorldZones()
+15:15:02 PROC rResetCommands()
+15:15:02 PROC rResetposition_in_home_box()
+15:15:02 PROC rMoveHomeSafe()
+15:15:02 PROC rLog_Current_Rob_Pos_TS000_9()
+15:15:02 CurrentRobAxisAngles = [-1,20,45,-193,21,198]
+15:15:02 PROC rCalc_Joint_Target_For_MHS()
+15:15:15 PROC rResetCommand_After_MoveHomeSafe()
+15:15:15 PROC rResetposition_in_Coil_box()
+15:15:15 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 15:15:20
+15:15:20 PROC rRunCycle()
+15:15:20 PROC rResetCommands()
+15:15:20 PROC rClear_HMI()
+15:15:20 ***** START CYCLE TIME *****
+15:15:20 *** COIL TRANSPORT BLOCKED ***
+15:15:20 PROC rInit_Received_information()
+15:15:20 rLog_Numeric_Value_TS000_2 =  0
+15:16:18 PROC Main(), Project: P21-100538
+15:16:18 PROC rInit()
+15:16:18 PROC rWorldZones()
+15:16:18 PROC rResetCommands()
+15:16:18 PROC rResetposition_in_home_box()
+15:16:18 PROC rMoveHomeSafe()
+15:16:18 PROC rLog_Current_Rob_Pos_TS000_9()
+15:16:18 CurrentRobAxisAngles = [7,25,41,-62,53,150]
+15:16:18 PROC rCalc_Joint_Target_For_MHS()
+15:16:33 PROC rResetCommand_After_MoveHomeSafe()
+15:16:33 PROC rResetposition_in_Coil_box()
+15:16:33 PROC rResetErrors()
+
+# Date: 2022-04-28# Time: 15:16:35
+15:16:35 PROC rRunCycle()
+15:16:35 PROC rResetCommands()
+15:16:35 PROC rClear_HMI()
+15:16:35 ***** START CYCLE TIME *****
+15:16:35 *** COIL TRANSPORT BLOCKED ***
+15:16:35 PROC rInit_Received_information()
+15:16:35 rLog_Numeric_Value_TS000_2 =  0
+15:49:20 PROC Main(), Project: P21-100538
+15:49:20 PROC rInit()
+15:49:20 PROC rWorldZones()
+15:49:20 PROC rResetCommands()
+15:49:20 PROC rResetposition_in_home_box()
+15:49:20 PROC rMoveHomeSafe()
+15:49:20 PROC rLog_Current_Rob_Pos_TS000_9()
+15:49:20 CurrentRobAxisAngles = [7,24,41,-62,52,150]
+15:49:20 PROC rCalc_Joint_Target_For_MHS()
+12:49:12 PROC Main(), Project: P21-100538
+12:49:12 PROC rInit()
+12:49:12 PROC rWorldZones()
+12:49:12 PROC rResetCommands()
+12:49:12 PROC rResetposition_in_home_box()
+12:49:12 PROC rMoveHomeSafe()
+12:49:12 PROC rLog_Current_Rob_Pos_TS000_9()
+12:49:12 CurrentRobAxisAngles = [12,15,43,-130,17,145]
+12:49:12 PROC rCalc_Joint_Target_For_MHS()
+12:51:19 PROC rResetCommand_After_MoveHomeSafe()
+12:51:19 PROC rResetposition_in_Coil_box()
+12:51:19 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 12:57:18
+12:57:18 PROC rRunCycle()
+12:57:18 PROC rResetCommands()
+12:57:18 PROC rClear_HMI()
+12:57:18 ***** START CYCLE TIME *****
+12:57:18 *** COIL TRANSPORT BLOCKED ***
+12:57:18 PROC rInit_Received_information()
+12:57:18 rLog_Numeric_Value_TS000_2 =  0
+12:58:50 PROC Main(), Project: P21-100538
+12:58:51 PROC rInit()
+12:58:51 PROC rWorldZones()
+12:58:51 PROC rResetCommands()
+12:58:51 PROC rResetposition_in_home_box()
+12:58:51 PROC rMoveHomeSafe()
+12:58:51 PROC rLog_Current_Rob_Pos_TS000_9()
+12:58:51 CurrentRobAxisAngles = [-1,22,44,-214,28,229]
+12:58:51 PROC rCalc_Joint_Target_For_MHS()
+12:59:08 PROC rResetCommand_After_MoveHomeSafe()
+12:59:08 PROC rResetposition_in_Coil_box()
+12:59:08 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 12:59:11
+12:59:11 PROC rRunCycle()
+12:59:11 PROC rResetCommands()
+12:59:11 PROC rClear_HMI()
+12:59:11 ***** START CYCLE TIME *****
+12:59:11 *** COIL TRANSPORT BLOCKED ***
+12:59:11 PROC rInit_Received_information()
+12:59:11 rLog_Numeric_Value_TS000_2 =  0
+13:00:17 PROC Main(), Project: P21-100538
+13:00:17 PROC rInit()
+13:00:17 PROC rWorldZones()
+13:00:17 PROC rResetCommands()
+13:00:17 PROC rResetposition_in_home_box()
+13:00:17 PROC rMoveHomeSafe()
+13:00:17 PROC rLog_Current_Rob_Pos_TS000_9()
+13:00:17 CurrentRobAxisAngles = [0,21,44,-205,24,218]
+13:00:17 PROC rCalc_Joint_Target_For_MHS()
+13:00:35 PROC rResetCommand_After_MoveHomeSafe()
+13:00:35 PROC rResetposition_in_Coil_box()
+13:00:35 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 13:00:37
+13:00:37 PROC rRunCycle()
+13:00:37 PROC rResetCommands()
+13:00:37 PROC rClear_HMI()
+13:00:37 ***** START CYCLE TIME *****
+13:00:37 *** COIL TRANSPORT BLOCKED ***
+13:00:37 PROC rInit_Received_information()
+13:00:37 rLog_Numeric_Value_TS000_2 =  0
+13:01:52 PROC Main(), Project: P21-100538
+13:01:52 PROC rInit()
+13:01:52 PROC rWorldZones()
+13:01:52 PROC rResetCommands()
+13:01:52 PROC rResetposition_in_home_box()
+13:01:52 PROC rMoveHomeSafe()
+13:01:52 PROC rLog_Current_Rob_Pos_TS000_9()
+13:01:52 CurrentRobAxisAngles = [8,26,40,-60,54,150]
+13:01:52 PROC rCalc_Joint_Target_For_MHS()
+13:02:08 PROC rResetCommand_After_MoveHomeSafe()
+13:02:08 PROC rResetposition_in_Coil_box()
+13:02:08 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 13:02:45
+13:02:45 PROC rRunCycle()
+13:02:45 PROC rResetCommands()
+13:02:45 PROC rClear_HMI()
+13:02:45 ***** START CYCLE TIME *****
+13:02:45 *** COIL TRANSPORT BLOCKED ***
+13:02:45 PROC rInit_Received_information()
+13:02:45 rLog_Numeric_Value_TS000_2 =  0
+13:06:17 PROC Main(), Project: P21-100538
+13:06:17 PROC rInit()
+13:06:17 PROC rWorldZones()
+13:06:17 PROC rResetCommands()
+13:06:17 PROC rResetposition_in_home_box()
+13:06:17 PROC rMoveHomeSafe()
+13:06:17 PROC rLog_Current_Rob_Pos_TS000_9()
+13:06:17 CurrentRobAxisAngles = [11,27,38,-52,57,153]
+13:06:17 PROC rCalc_Joint_Target_For_MHS()
+13:07:28 PROC rResetCommand_After_MoveHomeSafe()
+13:07:28 PROC rResetposition_in_Coil_box()
+13:07:28 PROC rResetErrors()
+13:44:04 PROC Main(), Project: P21-100538
+13:44:04 PROC rInit()
+13:44:04 PROC rWorldZones()
+13:44:04 PROC rResetCommands()
+13:44:04 PROC rResetposition_in_home_box()
+13:44:04 PROC rMoveHomeSafe()
+13:44:04 PROC rLog_Current_Rob_Pos_TS000_9()
+13:44:04 CurrentRobAxisAngles = [10,22,42,-145,21,159]
+13:44:04 PROC rCalc_Joint_Target_For_MHS()
+13:44:18 PROC rResetCommand_After_MoveHomeSafe()
+13:44:18 PROC rResetposition_in_Coil_box()
+13:44:18 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 13:44:22
+13:44:22 PROC rRunCycle()
+13:44:22 PROC rResetCommands()
+13:44:22 PROC rClear_HMI()
+13:44:22 ***** START CYCLE TIME *****
+13:44:22 *** COIL TRANSPORT BLOCKED ***
+13:44:22 PROC rInit_Received_information()
+13:44:22 rLog_Numeric_Value_TS000_2 =  0
+13:59:13 PROC Main(), Project: P21-100538
+13:59:13 PROC rInit()
+13:59:13 PROC rWorldZones()
+13:59:13 PROC rResetCommands()
+13:59:13 PROC rResetposition_in_home_box()
+13:59:13 PROC rMoveHomeSafe()
+13:59:13 PROC rLog_Current_Rob_Pos_TS000_9()
+13:59:13 CurrentRobAxisAngles = [1,21,46,-205,27,222]
+13:59:13 PROC rCalc_Joint_Target_For_MHS()
+13:59:29 PROC rResetCommand_After_MoveHomeSafe()
+13:59:29 PROC rResetposition_in_Coil_box()
+13:59:29 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 13:59:33
+13:59:33 PROC rRunCycle()
+13:59:33 PROC rResetCommands()
+13:59:33 PROC rClear_HMI()
+13:59:33 ***** START CYCLE TIME *****
+13:59:33 *** COIL TRANSPORT BLOCKED ***
+13:59:33 PROC rInit_Received_information()
+13:59:33 rLog_Numeric_Value_TS000_2 =  0
+14:00:35 PROC Main(), Project: P21-100538
+14:00:35 PROC rInit()
+14:00:35 PROC rWorldZones()
+14:00:35 PROC rResetCommands()
+14:00:35 PROC rResetposition_in_home_box()
+14:00:35 PROC rMoveHomeSafe()
+14:00:35 PROC rLog_Current_Rob_Pos_TS000_9()
+14:00:35 CurrentRobAxisAngles = [10,25,41,-58,54,152]
+14:00:35 PROC rCalc_Joint_Target_For_MHS()
+14:09:34 PROC Main(), Project: P21-100538
+14:09:34 PROC rInit()
+14:09:34 PROC rWorldZones()
+14:09:34 PROC rResetCommands()
+14:09:34 PROC rResetposition_in_home_box()
+14:09:34 PROC rMoveHomeSafe()
+14:09:34 PROC rLog_Current_Rob_Pos_TS000_9()
+14:09:34 CurrentRobAxisAngles = [25,72,-46,-40,88,127]
+14:09:34 PROC rCalc_Joint_Target_For_MHS()
+14:09:50 PROC rResetCommand_After_MoveHomeSafe()
+14:09:50 PROC rResetposition_in_Coil_box()
+14:09:50 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 14:10:22
+14:10:22 PROC rRunCycle()
+14:10:22 PROC rResetCommands()
+14:10:22 PROC rClear_HMI()
+14:10:22 ***** START CYCLE TIME *****
+14:10:22 *** COIL TRANSPORT BLOCKED ***
+14:10:22 PROC rInit_Received_information()
+14:10:22 rLog_Numeric_Value_TS000_2 =  0
+14:10:39 PROC Main(), Project: P21-100538
+14:10:39 PROC rInit()
+14:10:39 PROC rWorldZones()
+14:10:39 PROC rResetCommands()
+14:10:39 PROC rResetposition_in_home_box()
+14:10:39 PROC rMoveHomeSafe()
+14:10:39 PROC rLog_Current_Rob_Pos_TS000_9()
+14:10:39 CurrentRobAxisAngles = [25,67,-39,-42,84,126]
+14:10:39 PROC rCalc_Joint_Target_For_MHS()
+14:11:57 PROC rResetCommand_After_MoveHomeSafe()
+14:11:57 PROC rResetposition_in_Coil_box()
+14:11:57 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 14:12:00
+14:12:00 PROC rRunCycle()
+14:12:00 PROC rResetCommands()
+14:12:00 PROC rClear_HMI()
+14:12:00 ***** START CYCLE TIME *****
+14:12:00 *** COIL TRANSPORT BLOCKED ***
+14:12:00 PROC rInit_Received_information()
+14:12:00 rLog_Numeric_Value_TS000_2 =  0
+14:25:18 PROC Main(), Project: P21-100538
+14:25:18 PROC rInit()
+14:25:18 PROC rWorldZones()
+14:25:18 PROC rResetCommands()
+14:25:18 PROC rResetposition_in_home_box()
+14:25:18 PROC rMoveHomeSafe()
+14:25:18 PROC rLog_Current_Rob_Pos_TS000_9()
+14:25:18 CurrentRobAxisAngles = [6,25,41,-63,52,150]
+14:25:18 PROC rCalc_Joint_Target_For_MHS()
+14:31:03 PROC rResetCommand_After_MoveHomeSafe()
+14:31:03 PROC rResetposition_in_Coil_box()
+14:31:03 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 14:31:07
+14:31:07 PROC rRunCycle()
+14:31:07 PROC rResetCommands()
+14:31:07 PROC rClear_HMI()
+14:31:07 ***** START CYCLE TIME *****
+14:31:07 *** COIL TRANSPORT BLOCKED ***
+14:31:07 PROC rInit_Received_information()
+14:31:07 rLog_Numeric_Value_TS000_2 =  0
+14:38:13 PROC Main(), Project: P21-100538
+14:38:13 PROC rInit()
+14:38:13 PROC rWorldZones()
+14:38:13 PROC rResetCommands()
+14:38:13 PROC rResetposition_in_home_box()
+14:38:13 PROC rMoveHomeSafe()
+14:38:13 PROC rLog_Current_Rob_Pos_TS000_9()
+14:38:13 CurrentRobAxisAngles = [6,26,40,-64,52,149]
+14:38:13 PROC rCalc_Joint_Target_For_MHS()
+15:03:20 PROC Main(), Project: P21-100538
+15:03:20 PROC rInit()
+15:03:20 PROC rWorldZones()
+15:03:20 PROC rResetCommands()
+15:03:20 PROC rResetposition_in_home_box()
+15:03:20 PROC rMoveHomeSafe()
+15:03:20 PROC rLog_Current_Rob_Pos_TS000_9()
+15:03:20 CurrentRobAxisAngles = [25,62,-29,-41,82,131]
+15:03:20 PROC rCalc_Joint_Target_For_MHS()
+15:03:33 PROC rResetCommand_After_MoveHomeSafe()
+15:03:33 PROC rResetposition_in_Coil_box()
+15:03:33 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 15:03:35
+15:03:35 PROC rRunCycle()
+15:03:35 PROC rResetCommands()
+15:03:35 PROC rClear_HMI()
+15:03:35 ***** START CYCLE TIME *****
+15:03:35 *** COIL TRANSPORT BLOCKED ***
+15:03:35 PROC rInit_Received_information()
+15:03:35 rLog_Numeric_Value_TS000_2 =  0
+15:11:47 PROC Main(), Project: P21-100538
+15:11:47 PROC rInit()
+15:11:47 PROC rWorldZones()
+15:11:47 PROC rResetCommands()
+15:11:47 PROC rResetposition_in_home_box()
+15:11:47 PROC rMoveHomeSafe()
+15:11:47 PROC rLog_Current_Rob_Pos_TS000_9()
+15:11:47 CurrentRobAxisAngles = [6,25,41,-63,52,149]
+15:11:47 PROC rCalc_Joint_Target_For_MHS()
+15:22:01 PROC rResetCommand_After_MoveHomeSafe()
+15:22:01 PROC rResetposition_in_Coil_box()
+15:22:01 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 15:22:06
+15:22:06 PROC rRunCycle()
+15:22:06 PROC rResetCommands()
+15:22:06 PROC rClear_HMI()
+15:22:06 ***** START CYCLE TIME *****
+15:22:06 *** COIL TRANSPORT BLOCKED ***
+15:22:06 PROC rInit_Received_information()
+15:22:06 rLog_Numeric_Value_TS000_2 =  0
+15:40:33 PROC Main(), Project: P21-100538
+15:40:33 PROC rInit()
+15:40:33 PROC rWorldZones()
+15:40:33 PROC rResetCommands()
+15:40:33 PROC rResetposition_in_home_box()
+15:40:33 PROC rMoveHomeSafe()
+15:40:33 PROC rLog_Current_Rob_Pos_TS000_9()
+15:40:33 CurrentRobAxisAngles = [24,29,27,-45,65,146]
+15:40:33 PROC rCalc_Joint_Target_For_MHS()
+15:44:01 PROC rResetCommand_After_MoveHomeSafe()
+15:44:01 PROC rResetposition_in_Coil_box()
+15:44:01 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 15:44:11
+15:44:11 PROC rRunCycle()
+15:44:11 PROC rResetCommands()
+15:44:11 PROC rClear_HMI()
+15:44:11 ***** START CYCLE TIME *****
+15:44:11 *** COIL TRANSPORT BLOCKED ***
+15:44:11 PROC rInit_Received_information()
+15:44:11 rLog_Numeric_Value_TS000_2 =  0
+15:55:11 PROC Main(), Project: P21-100538
+15:55:11 PROC rInit()
+15:55:11 PROC rWorldZones()
+15:55:11 PROC rResetCommands()
+15:55:11 PROC rResetposition_in_home_box()
+15:55:11 PROC rMoveHomeSafe()
+15:55:11 PROC rLog_Current_Rob_Pos_TS000_9()
+15:55:11 CurrentRobAxisAngles = [12,24,27,-100,16,100]
+15:55:11 PROC rCalc_Joint_Target_For_MHS()
+15:55:33 PROC rResetCommand_After_MoveHomeSafe()
+15:55:33 PROC rResetposition_in_Coil_box()
+15:55:33 PROC rResetErrors()
+
+# Date: 2022-05-02# Time: 15:55:52
+15:55:52 PROC rRunCycle()
+15:55:52 PROC rResetCommands()
+15:55:52 PROC rClear_HMI()
+15:55:52 ***** START CYCLE TIME *****
+15:55:52 *** COIL TRANSPORT BLOCKED ***
+15:55:52 PROC rInit_Received_information()
+15:55:52 rLog_Numeric_Value_TS000_2 =  0
+13:06:55 PROC Main(), Project: P21-100538
+13:06:55 PROC rInit()
+13:06:55 PROC rWorldZones()
+13:06:55 PROC rResetCommands()
+13:06:55 PROC rResetposition_in_home_box()
+13:06:55 PROC rMoveHomeSafe()
+13:06:55 PROC rLog_Current_Rob_Pos_TS000_9()
+13:06:55 CurrentRobAxisAngles = [13,22,28,-99,14,100]
+13:06:55 PROC rCalc_Joint_Target_For_MHS()
+13:11:55 PROC rResetCommand_After_MoveHomeSafe()
+13:11:55 PROC rResetposition_in_Coil_box()
+13:11:55 PROC rResetErrors()
+
+# Date: 2022-05-06# Time: 13:12:05
+13:12:05 PROC rRunCycle()
+13:12:05 PROC rResetCommands()
+13:12:05 PROC rClear_HMI()
+13:12:05 ***** START CYCLE TIME *****
+13:12:05 *** COIL TRANSPORT BLOCKED ***
+13:12:05 PROC rInit_Received_information()
+13:12:05 rLog_Numeric_Value_TS000_2 =  0
+13:24:23 PROC Main(), Project: P21-100538
+13:24:23 PROC rInit()
+13:24:23 PROC rWorldZones()
+13:24:23 PROC rResetCommands()
+13:24:23 PROC rResetposition_in_home_box()
+13:24:23 PROC rMoveHomeSafe()
+13:24:23 PROC rLog_Current_Rob_Pos_TS000_9()
+13:24:23 CurrentRobAxisAngles = [28,56,-15,-243,-72,309]
+13:24:23 PROC rCalc_Joint_Target_For_MHS()
+13:29:25 PROC Main(), Project: P21-100538
+13:29:25 PROC rInit()
+13:29:25 PROC rWorldZones()
+13:29:25 PROC rResetCommands()
+13:29:25 PROC rResetposition_in_home_box()
+13:29:25 PROC rMoveHomeSafe()
+13:29:25 PROC rLog_Current_Rob_Pos_TS000_9()
+13:29:25 CurrentRobAxisAngles = [28,60,-23,118,-72,306]
+13:29:25 PROC rCalc_Joint_Target_For_MHS()
+13:37:38 PROC Main(), Project: P21-100538
+13:37:38 PROC rInit()
+13:37:38 PROC rWorldZones()
+13:37:38 PROC rResetCommands()
+13:37:38 PROC rResetposition_in_home_box()
+13:37:38 PROC rMoveHomeSafe()
+13:37:38 PROC rLog_Current_Rob_Pos_TS000_9()
+13:37:38 CurrentRobAxisAngles = [29,67,-30,295,81,122]
+13:37:38 PROC rCalc_Joint_Target_For_MHS()
+13:42:11 PROC Main(), Project: P21-100538
+13:42:11 PROC rInit()
+13:42:11 PROC rWorldZones()
+13:42:11 PROC rResetCommands()
+13:42:11 PROC rResetposition_in_home_box()
+13:42:11 PROC rMoveHomeSafe()
+13:42:11 PROC rLog_Current_Rob_Pos_TS000_9()
+13:42:11 CurrentRobAxisAngles = [27,57,-20,-58,64,111]
+13:42:11 PROC rCalc_Joint_Target_For_MHS()
+13:45:06 PROC rResetCommand_After_MoveHomeSafe()
+13:45:06 PROC rResetposition_in_Coil_box()
+13:45:06 PROC rResetErrors()
+
+# Date: 2022-05-06# Time: 13:45:11
+13:45:11 PROC rRunCycle()
+13:45:11 PROC rResetCommands()
+13:45:11 PROC rClear_HMI()
+13:45:11 ***** START CYCLE TIME *****
+13:45:11 *** COIL TRANSPORT BLOCKED ***
+13:45:11 PROC rInit_Received_information()
+13:45:11 rLog_Numeric_Value_TS000_2 =  0
+13:57:02 PROC Main(), Project: P21-100538
+13:57:02 PROC rInit()
+13:57:02 PROC rWorldZones()
+13:57:02 PROC rResetCommands()
+13:57:02 PROC rResetposition_in_home_box()
+13:57:02 PROC rMoveHomeSafe()
+13:57:02 PROC rLog_Current_Rob_Pos_TS000_9()
+13:57:02 CurrentRobAxisAngles = [23,26,25,-94,39,89]
+13:57:02 PROC rCalc_Joint_Target_For_MHS()
+13:58:48 PROC rResetCommand_After_MoveHomeSafe()
+13:58:48 PROC rResetposition_in_Coil_box()
+13:58:48 PROC rResetErrors()
+
+# Date: 2022-05-06# Time: 13:58:56
+13:58:56 PROC rRunCycle()
+13:58:56 PROC rResetCommands()
+13:58:56 PROC rClear_HMI()
+13:58:56 ***** START CYCLE TIME *****
+13:58:56 *** COIL TRANSPORT BLOCKED ***
+13:58:56 PROC rInit_Received_information()
+13:58:56 rLog_Numeric_Value_TS000_2 =  0
+09:04:11 PROC Main(), Project: P21-100538
+09:04:24 PROC Main(), Project: P21-100538
+09:04:24 PROC rInit()
+09:04:24 PROC rWorldZones()
+09:05:37 PROC Main(), Project: P21-100538
+09:05:37 PROC rInit()
+09:05:37 PROC rWorldZones()
+09:05:37 PROC rResetCommands()
+09:05:37 PROC rResetposition_in_home_box()
+09:05:37 PROC rMoveHomeSafe()
+09:05:37 PROC rLog_Current_Rob_Pos_TS000_9()
+09:05:37 CurrentRobAxisAngles = [-2,0,-39,0,85,0]
+09:05:37 PROC rCalc_Joint_Target_For_MHS()
+09:30:30 PROC Main(), Project: P21-100538
+09:30:30 PROC rInit()
+09:30:30 PROC rWorldZones()
+09:30:30 PROC rResetCommands()
+09:30:30 PROC rResetposition_in_home_box()
+09:30:30 PROC rMoveHomeSafe()
+09:30:30 PROC rLog_Current_Rob_Pos_TS000_9()
+09:30:30 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+09:30:30 PROC rCalc_Joint_Target_For_MHS()
+09:30:30 PROC rResetCommand_After_MoveHomeSafe()
+09:30:30 PROC rResetposition_in_Coil_box()
+09:30:30 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 09:30:32
+09:30:32 PROC rRunCyclicBrakeCheck()
+09:34:04 PROC Main(), Project: P21-100538
+09:34:04 PROC rInit()
+09:34:04 PROC rWorldZones()
+09:34:04 PROC rResetCommands()
+09:34:04 PROC rResetposition_in_home_box()
+09:34:04 PROC rMoveHomeSafe()
+09:34:04 PROC rLog_Current_Rob_Pos_TS000_9()
+09:34:04 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+09:34:04 PROC rCalc_Joint_Target_For_MHS()
+09:34:04 PROC rResetCommand_After_MoveHomeSafe()
+09:34:04 PROC rResetposition_in_Coil_box()
+09:34:04 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 09:34:06
+09:35:40 PROC Main(), Project: P21-100538
+09:35:40 PROC rInit()
+09:35:40 PROC rWorldZones()
+09:35:40 PROC rResetCommands()
+09:35:40 PROC rResetposition_in_home_box()
+09:35:40 PROC rMoveHomeSafe()
+09:35:40 PROC rLog_Current_Rob_Pos_TS000_9()
+09:35:40 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+09:35:40 PROC rCalc_Joint_Target_For_MHS()
+09:53:23 PROC Main(), Project: P21-100538
+09:53:23 PROC rInit()
+09:53:23 PROC rWorldZones()
+09:53:23 PROC rResetCommands()
+09:53:23 PROC rResetposition_in_home_box()
+09:53:23 PROC rMoveHomeSafe()
+09:53:23 PROC rLog_Current_Rob_Pos_TS000_9()
+09:53:23 CurrentRobAxisAngles = [8,-45,15,-17,31,104]
+09:53:23 PROC rCalc_Joint_Target_For_MHS()
+09:53:55 PROC rResetCommand_After_MoveHomeSafe()
+09:53:55 PROC rResetposition_in_Coil_box()
+09:53:55 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 09:54:03
+09:59:48 PROC Main(), Project: P21-100538
+09:59:48 PROC rInit()
+09:59:48 PROC rWorldZones()
+09:59:48 PROC rResetCommands()
+09:59:48 PROC rResetposition_in_home_box()
+09:59:48 PROC rMoveHomeSafe()
+09:59:48 PROC rLog_Current_Rob_Pos_TS000_9()
+09:59:48 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+09:59:48 PROC rCalc_Joint_Target_For_MHS()
+09:59:48 PROC rResetCommand_After_MoveHomeSafe()
+09:59:48 PROC rResetposition_in_Coil_box()
+09:59:48 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 10:00:01
+10:00:49 PROC Main(), Project: P21-100538
+10:00:49 PROC rInit()
+10:00:49 PROC rWorldZones()
+10:00:49 PROC rResetCommands()
+10:00:49 PROC rResetposition_in_home_box()
+10:00:49 PROC rMoveHomeSafe()
+10:00:49 PROC rLog_Current_Rob_Pos_TS000_9()
+10:00:49 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+10:00:49 PROC rCalc_Joint_Target_For_MHS()
+10:00:49 PROC rResetCommand_After_MoveHomeSafe()
+10:00:49 PROC rResetposition_in_Coil_box()
+10:00:49 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 10:01:03
+
+# Date: 2022-05-19# Time: 10:04:05
+10:25:01 PROC Main(), Project: P21-100538
+10:25:01 PROC rInit()
+10:25:01 PROC rWorldZones()
+10:25:01 PROC rResetCommands()
+10:25:01 PROC rResetposition_in_home_box()
+10:25:01 PROC rMoveHomeSafe()
+10:25:01 PROC rLog_Current_Rob_Pos_TS000_9()
+10:25:01 CurrentRobAxisAngles = [0,12,12,-14,14,193]
+10:25:01 PROC rCalc_Joint_Target_For_MHS()
+10:25:01 *** Not Able To Go To Home Pos ***
+10:25:51 PROC Main(), Project: P21-100538
+10:25:51 PROC rInit()
+10:25:51 PROC rWorldZones()
+10:25:51 PROC rResetCommands()
+10:25:51 PROC rResetposition_in_home_box()
+10:25:51 PROC rMoveHomeSafe()
+10:25:51 PROC rLog_Current_Rob_Pos_TS000_9()
+10:25:51 CurrentRobAxisAngles = [0,-33,5,-14,14,193]
+10:25:51 PROC rCalc_Joint_Target_For_MHS()
+10:25:53 PROC rResetCommand_After_MoveHomeSafe()
+10:25:53 PROC rResetposition_in_Coil_box()
+10:25:53 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 10:26:04
+10:28:53 PROC Main(), Project: P21-100538
+10:28:53 PROC rInit()
+10:28:53 PROC rWorldZones()
+10:28:53 PROC rResetCommands()
+10:28:53 PROC rResetposition_in_home_box()
+10:28:53 PROC rMoveHomeSafe()
+10:28:53 PROC rLog_Current_Rob_Pos_TS000_9()
+10:28:53 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+10:28:53 PROC rCalc_Joint_Target_For_MHS()
+10:28:53 PROC rResetCommand_After_MoveHomeSafe()
+10:28:53 PROC rResetposition_in_Coil_box()
+10:28:53 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 10:28:57
+11:04:19 PROC Main(), Project: P21-100538
+11:04:19 PROC rInit()
+11:04:19 PROC rWorldZones()
+11:04:19 PROC rResetCommands()
+11:04:19 PROC rResetposition_in_home_box()
+11:04:19 PROC rMoveHomeSafe()
+11:04:19 PROC rLog_Current_Rob_Pos_TS000_9()
+11:04:19 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+11:04:19 PROC rCalc_Joint_Target_For_MHS()
+11:04:19 PROC rResetCommand_After_MoveHomeSafe()
+11:04:19 PROC rResetposition_in_Coil_box()
+11:04:19 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 11:04:24
+
+# Date: 2022-05-19# Time: 11:04:24
+
+# Date: 2022-05-19# Time: 11:04:24
+
+# Date: 2022-05-19# Time: 11:04:24
+
+# Date: 2022-05-19# Time: 11:04:25
+
+# Date: 2022-05-19# Time: 11:04:25
+
+# Date: 2022-05-19# Time: 11:04:25
+
+# Date: 2022-05-19# Time: 11:04:25
+
+# Date: 2022-05-19# Time: 11:04:25
+
+# Date: 2022-05-19# Time: 11:04:26
+
+# Date: 2022-05-19# Time: 11:04:26
+
+# Date: 2022-05-19# Time: 11:04:26
+
+# Date: 2022-05-19# Time: 11:04:26
+
+# Date: 2022-05-19# Time: 11:04:26
+
+# Date: 2022-05-19# Time: 11:04:27
+
+# Date: 2022-05-19# Time: 11:04:27
+
+# Date: 2022-05-19# Time: 11:04:27
+
+# Date: 2022-05-19# Time: 11:04:27
+
+# Date: 2022-05-19# Time: 11:04:27
+
+# Date: 2022-05-19# Time: 11:04:28
+
+# Date: 2022-05-19# Time: 11:04:28
+
+# Date: 2022-05-19# Time: 11:04:28
+
+# Date: 2022-05-19# Time: 11:04:28
+
+# Date: 2022-05-19# Time: 11:04:28
+
+# Date: 2022-05-19# Time: 11:04:29
+
+# Date: 2022-05-19# Time: 11:04:29
+
+# Date: 2022-05-19# Time: 11:04:29
+
+# Date: 2022-05-19# Time: 11:04:29
+
+# Date: 2022-05-19# Time: 11:04:29
+
+# Date: 2022-05-19# Time: 11:04:30
+
+# Date: 2022-05-19# Time: 11:04:30
+
+# Date: 2022-05-19# Time: 11:04:30
+
+# Date: 2022-05-19# Time: 11:04:30
+
+# Date: 2022-05-19# Time: 11:04:30
+
+# Date: 2022-05-19# Time: 11:04:31
+
+# Date: 2022-05-19# Time: 11:04:31
+
+# Date: 2022-05-19# Time: 11:04:31
+
+# Date: 2022-05-19# Time: 11:04:31
+
+# Date: 2022-05-19# Time: 11:04:31
+
+# Date: 2022-05-19# Time: 11:04:32
+
+# Date: 2022-05-19# Time: 11:04:32
+
+# Date: 2022-05-19# Time: 11:04:32
+
+# Date: 2022-05-19# Time: 11:04:32
+
+# Date: 2022-05-19# Time: 11:04:32
+
+# Date: 2022-05-19# Time: 11:04:33
+
+# Date: 2022-05-19# Time: 11:04:33
+
+# Date: 2022-05-19# Time: 11:04:33
+
+# Date: 2022-05-19# Time: 11:04:33
+
+# Date: 2022-05-19# Time: 11:04:34
+
+# Date: 2022-05-19# Time: 11:04:34
+
+# Date: 2022-05-19# Time: 11:04:34
+
+# Date: 2022-05-19# Time: 11:04:34
+
+# Date: 2022-05-19# Time: 11:04:34
+
+# Date: 2022-05-19# Time: 11:04:35
+
+# Date: 2022-05-19# Time: 11:04:35
+
+# Date: 2022-05-19# Time: 11:04:35
+
+# Date: 2022-05-19# Time: 11:04:35
+
+# Date: 2022-05-19# Time: 11:04:35
+
+# Date: 2022-05-19# Time: 11:04:36
+
+# Date: 2022-05-19# Time: 11:04:36
+
+# Date: 2022-05-19# Time: 11:04:36
+
+# Date: 2022-05-19# Time: 11:04:36
+
+# Date: 2022-05-19# Time: 11:04:36
+
+# Date: 2022-05-19# Time: 11:04:37
+
+# Date: 2022-05-19# Time: 11:04:37
+
+# Date: 2022-05-19# Time: 11:04:37
+
+# Date: 2022-05-19# Time: 11:04:37
+
+# Date: 2022-05-19# Time: 11:04:37
+
+# Date: 2022-05-19# Time: 11:04:38
+
+# Date: 2022-05-19# Time: 11:04:38
+
+# Date: 2022-05-19# Time: 11:04:38
+
+# Date: 2022-05-19# Time: 11:04:38
+
+# Date: 2022-05-19# Time: 11:04:38
+
+# Date: 2022-05-19# Time: 11:04:39
+
+# Date: 2022-05-19# Time: 11:04:39
+
+# Date: 2022-05-19# Time: 11:04:39
+
+# Date: 2022-05-19# Time: 11:04:39
+
+# Date: 2022-05-19# Time: 11:04:39
+
+# Date: 2022-05-19# Time: 11:04:40
+
+# Date: 2022-05-19# Time: 11:04:40
+
+# Date: 2022-05-19# Time: 11:04:40
+
+# Date: 2022-05-19# Time: 11:04:40
+
+# Date: 2022-05-19# Time: 11:04:40
+
+# Date: 2022-05-19# Time: 11:04:41
+
+# Date: 2022-05-19# Time: 11:04:41
+
+# Date: 2022-05-19# Time: 11:04:41
+
+# Date: 2022-05-19# Time: 11:04:41
+
+# Date: 2022-05-19# Time: 11:04:41
+
+# Date: 2022-05-19# Time: 11:04:42
+
+# Date: 2022-05-19# Time: 11:04:42
+
+# Date: 2022-05-19# Time: 11:04:42
+
+# Date: 2022-05-19# Time: 11:04:42
+
+# Date: 2022-05-19# Time: 11:04:43
+
+# Date: 2022-05-19# Time: 11:04:43
+
+# Date: 2022-05-19# Time: 11:04:43
+
+# Date: 2022-05-19# Time: 11:04:43
+
+# Date: 2022-05-19# Time: 11:04:43
+
+# Date: 2022-05-19# Time: 11:04:44
+
+# Date: 2022-05-19# Time: 11:04:44
+
+# Date: 2022-05-19# Time: 11:04:44
+
+# Date: 2022-05-19# Time: 11:04:44
+
+# Date: 2022-05-19# Time: 11:04:44
+
+# Date: 2022-05-19# Time: 11:04:45
+
+# Date: 2022-05-19# Time: 11:04:45
+
+# Date: 2022-05-19# Time: 11:04:45
+
+# Date: 2022-05-19# Time: 11:04:45
+
+# Date: 2022-05-19# Time: 11:04:45
+
+# Date: 2022-05-19# Time: 11:04:46
+
+# Date: 2022-05-19# Time: 11:04:46
+
+# Date: 2022-05-19# Time: 11:04:46
+
+# Date: 2022-05-19# Time: 11:04:46
+
+# Date: 2022-05-19# Time: 11:04:46
+
+# Date: 2022-05-19# Time: 11:04:47
+
+# Date: 2022-05-19# Time: 11:04:47
+
+# Date: 2022-05-19# Time: 11:04:47
+
+# Date: 2022-05-19# Time: 11:04:47
+
+# Date: 2022-05-19# Time: 11:04:47
+
+# Date: 2022-05-19# Time: 11:04:48
+
+# Date: 2022-05-19# Time: 11:04:48
+
+# Date: 2022-05-19# Time: 11:04:48
+
+# Date: 2022-05-19# Time: 11:04:48
+
+# Date: 2022-05-19# Time: 11:04:48
+
+# Date: 2022-05-19# Time: 11:04:49
+
+# Date: 2022-05-19# Time: 11:04:49
+
+# Date: 2022-05-19# Time: 11:04:49
+
+# Date: 2022-05-19# Time: 11:04:49
+
+# Date: 2022-05-19# Time: 11:04:49
+
+# Date: 2022-05-19# Time: 11:04:50
+
+# Date: 2022-05-19# Time: 11:04:50
+
+# Date: 2022-05-19# Time: 11:04:50
+
+# Date: 2022-05-19# Time: 11:04:50
+
+# Date: 2022-05-19# Time: 11:04:50
+
+# Date: 2022-05-19# Time: 11:04:51
+
+# Date: 2022-05-19# Time: 11:04:51
+
+# Date: 2022-05-19# Time: 11:04:51
+
+# Date: 2022-05-19# Time: 11:04:51
+
+# Date: 2022-05-19# Time: 11:04:51
+
+# Date: 2022-05-19# Time: 11:04:52
+
+# Date: 2022-05-19# Time: 11:04:52
+
+# Date: 2022-05-19# Time: 11:04:52
+
+# Date: 2022-05-19# Time: 11:04:52
+
+# Date: 2022-05-19# Time: 11:04:53
+
+# Date: 2022-05-19# Time: 11:04:53
+
+# Date: 2022-05-19# Time: 11:04:53
+
+# Date: 2022-05-19# Time: 11:04:53
+
+# Date: 2022-05-19# Time: 11:04:53
+
+# Date: 2022-05-19# Time: 11:04:54
+
+# Date: 2022-05-19# Time: 11:04:54
+
+# Date: 2022-05-19# Time: 11:04:54
+
+# Date: 2022-05-19# Time: 11:04:54
+
+# Date: 2022-05-19# Time: 11:04:54
+
+# Date: 2022-05-19# Time: 11:04:55
+
+# Date: 2022-05-19# Time: 11:04:55
+
+# Date: 2022-05-19# Time: 11:04:55
+
+# Date: 2022-05-19# Time: 11:04:55
+
+# Date: 2022-05-19# Time: 11:04:55
+
+# Date: 2022-05-19# Time: 11:04:56
+
+# Date: 2022-05-19# Time: 11:04:56
+
+# Date: 2022-05-19# Time: 11:04:56
+
+# Date: 2022-05-19# Time: 11:04:56
+
+# Date: 2022-05-19# Time: 11:04:56
+
+# Date: 2022-05-19# Time: 11:04:57
+
+# Date: 2022-05-19# Time: 11:04:57
+
+# Date: 2022-05-19# Time: 11:04:57
+
+# Date: 2022-05-19# Time: 11:04:57
+
+# Date: 2022-05-19# Time: 11:04:57
+
+# Date: 2022-05-19# Time: 11:04:58
+
+# Date: 2022-05-19# Time: 11:04:58
+
+# Date: 2022-05-19# Time: 11:04:58
+
+# Date: 2022-05-19# Time: 11:04:58
+
+# Date: 2022-05-19# Time: 11:04:58
+
+# Date: 2022-05-19# Time: 11:04:59
+
+# Date: 2022-05-19# Time: 11:04:59
+
+# Date: 2022-05-19# Time: 11:04:59
+
+# Date: 2022-05-19# Time: 11:04:59
+
+# Date: 2022-05-19# Time: 11:04:59
+
+# Date: 2022-05-19# Time: 11:05:00
+
+# Date: 2022-05-19# Time: 11:05:00
+
+# Date: 2022-05-19# Time: 11:05:00
+
+# Date: 2022-05-19# Time: 11:05:00
+
+# Date: 2022-05-19# Time: 11:05:00
+
+# Date: 2022-05-19# Time: 11:05:01
+
+# Date: 2022-05-19# Time: 11:05:01
+
+# Date: 2022-05-19# Time: 11:05:01
+
+# Date: 2022-05-19# Time: 11:05:01
+
+# Date: 2022-05-19# Time: 11:05:02
+
+# Date: 2022-05-19# Time: 11:05:02
+
+# Date: 2022-05-19# Time: 11:05:02
+
+# Date: 2022-05-19# Time: 11:05:02
+
+# Date: 2022-05-19# Time: 11:05:02
+
+# Date: 2022-05-19# Time: 11:05:03
+
+# Date: 2022-05-19# Time: 11:05:03
+
+# Date: 2022-05-19# Time: 11:05:03
+
+# Date: 2022-05-19# Time: 11:05:03
+
+# Date: 2022-05-19# Time: 11:05:03
+
+# Date: 2022-05-19# Time: 11:05:04
+
+# Date: 2022-05-19# Time: 11:05:04
+
+# Date: 2022-05-19# Time: 11:05:04
+
+# Date: 2022-05-19# Time: 11:05:04
+
+# Date: 2022-05-19# Time: 11:05:04
+
+# Date: 2022-05-19# Time: 11:05:05
+
+# Date: 2022-05-19# Time: 11:05:05
+
+# Date: 2022-05-19# Time: 11:05:05
+
+# Date: 2022-05-19# Time: 11:05:05
+
+# Date: 2022-05-19# Time: 11:05:05
+
+# Date: 2022-05-19# Time: 11:05:06
+
+# Date: 2022-05-19# Time: 11:05:06
+
+# Date: 2022-05-19# Time: 11:05:06
+
+# Date: 2022-05-19# Time: 11:05:06
+
+# Date: 2022-05-19# Time: 11:05:06
+
+# Date: 2022-05-19# Time: 11:05:07
+
+# Date: 2022-05-19# Time: 11:05:07
+
+# Date: 2022-05-19# Time: 11:05:07
+
+# Date: 2022-05-19# Time: 11:05:07
+
+# Date: 2022-05-19# Time: 11:05:07
+
+# Date: 2022-05-19# Time: 11:05:08
+
+# Date: 2022-05-19# Time: 11:05:08
+
+# Date: 2022-05-19# Time: 11:05:08
+
+# Date: 2022-05-19# Time: 11:05:08
+
+# Date: 2022-05-19# Time: 11:05:08
+
+# Date: 2022-05-19# Time: 11:05:09
+
+# Date: 2022-05-19# Time: 11:05:09
+
+# Date: 2022-05-19# Time: 11:05:09
+
+# Date: 2022-05-19# Time: 11:05:09
+
+# Date: 2022-05-19# Time: 11:05:09
+
+# Date: 2022-05-19# Time: 11:05:10
+
+# Date: 2022-05-19# Time: 11:05:10
+
+# Date: 2022-05-19# Time: 11:05:10
+
+# Date: 2022-05-19# Time: 11:05:10
+
+# Date: 2022-05-19# Time: 11:05:10
+
+# Date: 2022-05-19# Time: 11:05:11
+
+# Date: 2022-05-19# Time: 11:05:11
+
+# Date: 2022-05-19# Time: 11:05:11
+
+# Date: 2022-05-19# Time: 11:05:11
+
+# Date: 2022-05-19# Time: 11:05:12
+
+# Date: 2022-05-19# Time: 11:05:12
+
+# Date: 2022-05-19# Time: 11:05:12
+
+# Date: 2022-05-19# Time: 11:05:12
+
+# Date: 2022-05-19# Time: 11:05:12
+
+# Date: 2022-05-19# Time: 11:05:13
+
+# Date: 2022-05-19# Time: 11:05:13
+
+# Date: 2022-05-19# Time: 11:05:13
+
+# Date: 2022-05-19# Time: 11:05:13
+
+# Date: 2022-05-19# Time: 11:05:13
+
+# Date: 2022-05-19# Time: 11:05:14
+
+# Date: 2022-05-19# Time: 11:05:14
+
+# Date: 2022-05-19# Time: 11:05:14
+
+# Date: 2022-05-19# Time: 11:05:14
+
+# Date: 2022-05-19# Time: 11:05:14
+
+# Date: 2022-05-19# Time: 11:05:15
+
+# Date: 2022-05-19# Time: 11:05:15
+
+# Date: 2022-05-19# Time: 11:05:15
+
+# Date: 2022-05-19# Time: 11:05:15
+
+# Date: 2022-05-19# Time: 11:05:15
+
+# Date: 2022-05-19# Time: 11:05:16
+
+# Date: 2022-05-19# Time: 11:05:16
+
+# Date: 2022-05-19# Time: 11:05:16
+
+# Date: 2022-05-19# Time: 11:05:16
+
+# Date: 2022-05-19# Time: 11:05:16
+
+# Date: 2022-05-19# Time: 11:05:17
+
+# Date: 2022-05-19# Time: 11:05:17
+
+# Date: 2022-05-19# Time: 11:05:17
+
+# Date: 2022-05-19# Time: 11:05:17
+
+# Date: 2022-05-19# Time: 11:05:17
+
+# Date: 2022-05-19# Time: 11:05:18
+
+# Date: 2022-05-19# Time: 11:05:18
+
+# Date: 2022-05-19# Time: 11:05:18
+
+# Date: 2022-05-19# Time: 11:05:18
+
+# Date: 2022-05-19# Time: 11:05:18
+
+# Date: 2022-05-19# Time: 11:05:19
+
+# Date: 2022-05-19# Time: 11:05:19
+
+# Date: 2022-05-19# Time: 11:05:19
+
+# Date: 2022-05-19# Time: 11:05:19
+
+# Date: 2022-05-19# Time: 11:05:19
+
+# Date: 2022-05-19# Time: 11:05:20
+
+# Date: 2022-05-19# Time: 11:05:20
+
+# Date: 2022-05-19# Time: 11:05:20
+
+# Date: 2022-05-19# Time: 11:05:20
+
+# Date: 2022-05-19# Time: 11:05:21
+
+# Date: 2022-05-19# Time: 11:05:21
+
+# Date: 2022-05-19# Time: 11:05:21
+
+# Date: 2022-05-19# Time: 11:05:21
+
+# Date: 2022-05-19# Time: 11:05:21
+
+# Date: 2022-05-19# Time: 11:05:22
+
+# Date: 2022-05-19# Time: 11:05:22
+
+# Date: 2022-05-19# Time: 11:05:22
+
+# Date: 2022-05-19# Time: 11:05:22
+
+# Date: 2022-05-19# Time: 11:05:22
+
+# Date: 2022-05-19# Time: 11:05:23
+
+# Date: 2022-05-19# Time: 11:05:23
+
+# Date: 2022-05-19# Time: 11:05:23
+
+# Date: 2022-05-19# Time: 11:05:23
+
+# Date: 2022-05-19# Time: 11:05:23
+
+# Date: 2022-05-19# Time: 11:05:24
+
+# Date: 2022-05-19# Time: 11:05:24
+
+# Date: 2022-05-19# Time: 11:05:24
+
+# Date: 2022-05-19# Time: 11:05:24
+
+# Date: 2022-05-19# Time: 11:05:24
+
+# Date: 2022-05-19# Time: 11:05:25
+
+# Date: 2022-05-19# Time: 11:05:25
+
+# Date: 2022-05-19# Time: 11:05:25
+
+# Date: 2022-05-19# Time: 11:05:25
+
+# Date: 2022-05-19# Time: 11:05:25
+
+# Date: 2022-05-19# Time: 11:05:26
+
+# Date: 2022-05-19# Time: 11:05:26
+
+# Date: 2022-05-19# Time: 11:05:26
+
+# Date: 2022-05-19# Time: 11:05:26
+
+# Date: 2022-05-19# Time: 11:05:26
+
+# Date: 2022-05-19# Time: 11:05:27
+
+# Date: 2022-05-19# Time: 11:05:27
+
+# Date: 2022-05-19# Time: 11:05:27
+
+# Date: 2022-05-19# Time: 11:05:27
+
+# Date: 2022-05-19# Time: 11:05:27
+
+# Date: 2022-05-19# Time: 11:05:28
+
+# Date: 2022-05-19# Time: 11:05:28
+
+# Date: 2022-05-19# Time: 11:05:28
+
+# Date: 2022-05-19# Time: 11:05:28
+
+# Date: 2022-05-19# Time: 11:05:28
+
+# Date: 2022-05-19# Time: 11:05:29
+
+# Date: 2022-05-19# Time: 11:05:29
+
+# Date: 2022-05-19# Time: 11:05:29
+
+# Date: 2022-05-19# Time: 11:05:29
+
+# Date: 2022-05-19# Time: 11:05:29
+
+# Date: 2022-05-19# Time: 11:05:30
+
+# Date: 2022-05-19# Time: 11:05:30
+
+# Date: 2022-05-19# Time: 11:05:30
+
+# Date: 2022-05-19# Time: 11:05:30
+
+# Date: 2022-05-19# Time: 11:05:31
+
+# Date: 2022-05-19# Time: 11:05:31
+
+# Date: 2022-05-19# Time: 11:05:31
+
+# Date: 2022-05-19# Time: 11:05:31
+
+# Date: 2022-05-19# Time: 11:05:31
+
+# Date: 2022-05-19# Time: 11:05:32
+
+# Date: 2022-05-19# Time: 11:05:32
+
+# Date: 2022-05-19# Time: 11:05:32
+
+# Date: 2022-05-19# Time: 11:05:32
+
+# Date: 2022-05-19# Time: 11:05:32
+
+# Date: 2022-05-19# Time: 11:05:33
+
+# Date: 2022-05-19# Time: 11:05:33
+
+# Date: 2022-05-19# Time: 11:05:33
+
+# Date: 2022-05-19# Time: 11:05:33
+
+# Date: 2022-05-19# Time: 11:05:33
+
+# Date: 2022-05-19# Time: 11:05:34
+
+# Date: 2022-05-19# Time: 11:05:34
+
+# Date: 2022-05-19# Time: 11:05:34
+
+# Date: 2022-05-19# Time: 11:05:34
+
+# Date: 2022-05-19# Time: 11:05:34
+
+# Date: 2022-05-19# Time: 11:05:35
+
+# Date: 2022-05-19# Time: 11:05:35
+
+# Date: 2022-05-19# Time: 11:05:35
+
+# Date: 2022-05-19# Time: 11:05:35
+
+# Date: 2022-05-19# Time: 11:05:35
+
+# Date: 2022-05-19# Time: 11:05:36
+
+# Date: 2022-05-19# Time: 11:05:36
+
+# Date: 2022-05-19# Time: 11:05:36
+
+# Date: 2022-05-19# Time: 11:05:36
+
+# Date: 2022-05-19# Time: 11:05:36
+
+# Date: 2022-05-19# Time: 11:05:37
+
+# Date: 2022-05-19# Time: 11:05:37
+
+# Date: 2022-05-19# Time: 11:05:37
+
+# Date: 2022-05-19# Time: 11:05:37
+
+# Date: 2022-05-19# Time: 11:05:37
+
+# Date: 2022-05-19# Time: 11:05:38
+
+# Date: 2022-05-19# Time: 11:05:38
+
+# Date: 2022-05-19# Time: 11:05:38
+
+# Date: 2022-05-19# Time: 11:05:38
+
+# Date: 2022-05-19# Time: 11:05:38
+
+# Date: 2022-05-19# Time: 11:05:39
+
+# Date: 2022-05-19# Time: 11:05:39
+
+# Date: 2022-05-19# Time: 11:05:39
+
+# Date: 2022-05-19# Time: 11:05:39
+
+# Date: 2022-05-19# Time: 11:05:40
+
+# Date: 2022-05-19# Time: 11:05:40
+
+# Date: 2022-05-19# Time: 11:05:40
+
+# Date: 2022-05-19# Time: 11:05:40
+
+# Date: 2022-05-19# Time: 11:05:40
+
+# Date: 2022-05-19# Time: 11:05:41
+
+# Date: 2022-05-19# Time: 11:05:41
+
+# Date: 2022-05-19# Time: 11:05:41
+
+# Date: 2022-05-19# Time: 11:05:41
+
+# Date: 2022-05-19# Time: 11:05:41
+
+# Date: 2022-05-19# Time: 11:05:42
+
+# Date: 2022-05-19# Time: 11:05:42
+
+# Date: 2022-05-19# Time: 11:05:42
+
+# Date: 2022-05-19# Time: 11:05:42
+
+# Date: 2022-05-19# Time: 11:05:42
+
+# Date: 2022-05-19# Time: 11:05:43
+
+# Date: 2022-05-19# Time: 11:05:43
+
+# Date: 2022-05-19# Time: 11:05:43
+
+# Date: 2022-05-19# Time: 11:05:43
+
+# Date: 2022-05-19# Time: 11:05:43
+
+# Date: 2022-05-19# Time: 11:05:44
+
+# Date: 2022-05-19# Time: 11:05:44
+
+# Date: 2022-05-19# Time: 11:05:44
+
+# Date: 2022-05-19# Time: 11:05:44
+
+# Date: 2022-05-19# Time: 11:05:44
+
+# Date: 2022-05-19# Time: 11:05:45
+
+# Date: 2022-05-19# Time: 11:05:45
+
+# Date: 2022-05-19# Time: 11:05:45
+
+# Date: 2022-05-19# Time: 11:05:45
+
+# Date: 2022-05-19# Time: 11:05:45
+
+# Date: 2022-05-19# Time: 11:05:46
+
+# Date: 2022-05-19# Time: 11:05:46
+
+# Date: 2022-05-19# Time: 11:05:46
+
+# Date: 2022-05-19# Time: 11:05:46
+
+# Date: 2022-05-19# Time: 11:05:46
+
+# Date: 2022-05-19# Time: 11:05:47
+
+# Date: 2022-05-19# Time: 11:05:47
+
+# Date: 2022-05-19# Time: 11:05:47
+
+# Date: 2022-05-19# Time: 11:05:47
+
+# Date: 2022-05-19# Time: 11:05:47
+
+# Date: 2022-05-19# Time: 11:05:48
+
+# Date: 2022-05-19# Time: 11:05:48
+
+# Date: 2022-05-19# Time: 11:05:48
+
+# Date: 2022-05-19# Time: 11:05:48
+
+# Date: 2022-05-19# Time: 11:05:49
+
+# Date: 2022-05-19# Time: 11:05:49
+
+# Date: 2022-05-19# Time: 11:05:49
+
+# Date: 2022-05-19# Time: 11:05:49
+
+# Date: 2022-05-19# Time: 11:05:49
+
+# Date: 2022-05-19# Time: 11:05:50
+
+# Date: 2022-05-19# Time: 11:05:50
+
+# Date: 2022-05-19# Time: 11:05:50
+
+# Date: 2022-05-19# Time: 11:05:50
+
+# Date: 2022-05-19# Time: 11:05:50
+
+# Date: 2022-05-19# Time: 11:05:51
+
+# Date: 2022-05-19# Time: 11:05:51
+
+# Date: 2022-05-19# Time: 11:05:51
+
+# Date: 2022-05-19# Time: 11:05:51
+
+# Date: 2022-05-19# Time: 11:05:51
+
+# Date: 2022-05-19# Time: 11:05:52
+
+# Date: 2022-05-19# Time: 11:05:52
+
+# Date: 2022-05-19# Time: 11:05:52
+
+# Date: 2022-05-19# Time: 11:05:52
+
+# Date: 2022-05-19# Time: 11:05:52
+
+# Date: 2022-05-19# Time: 11:05:53
+
+# Date: 2022-05-19# Time: 11:05:53
+
+# Date: 2022-05-19# Time: 11:05:53
+
+# Date: 2022-05-19# Time: 11:05:53
+
+# Date: 2022-05-19# Time: 11:05:53
+
+# Date: 2022-05-19# Time: 11:05:54
+
+# Date: 2022-05-19# Time: 11:05:54
+
+# Date: 2022-05-19# Time: 11:05:54
+
+# Date: 2022-05-19# Time: 11:05:54
+
+# Date: 2022-05-19# Time: 11:05:54
+
+# Date: 2022-05-19# Time: 11:05:55
+
+# Date: 2022-05-19# Time: 11:05:55
+
+# Date: 2022-05-19# Time: 11:05:55
+
+# Date: 2022-05-19# Time: 11:05:55
+
+# Date: 2022-05-19# Time: 11:05:55
+
+# Date: 2022-05-19# Time: 11:05:56
+
+# Date: 2022-05-19# Time: 11:05:56
+
+# Date: 2022-05-19# Time: 11:05:56
+
+# Date: 2022-05-19# Time: 11:05:56
+
+# Date: 2022-05-19# Time: 11:05:56
+
+# Date: 2022-05-19# Time: 11:05:57
+
+# Date: 2022-05-19# Time: 11:05:57
+
+# Date: 2022-05-19# Time: 11:05:57
+
+# Date: 2022-05-19# Time: 11:05:57
+
+# Date: 2022-05-19# Time: 11:05:57
+
+# Date: 2022-05-19# Time: 11:05:58
+
+# Date: 2022-05-19# Time: 11:05:58
+
+# Date: 2022-05-19# Time: 11:05:58
+
+# Date: 2022-05-19# Time: 11:05:58
+
+# Date: 2022-05-19# Time: 11:05:59
+
+# Date: 2022-05-19# Time: 11:05:59
+
+# Date: 2022-05-19# Time: 11:05:59
+
+# Date: 2022-05-19# Time: 11:05:59
+
+# Date: 2022-05-19# Time: 11:05:59
+
+# Date: 2022-05-19# Time: 11:06:00
+
+# Date: 2022-05-19# Time: 11:06:00
+
+# Date: 2022-05-19# Time: 11:06:00
+
+# Date: 2022-05-19# Time: 11:06:00
+
+# Date: 2022-05-19# Time: 11:06:00
+
+# Date: 2022-05-19# Time: 11:06:01
+
+# Date: 2022-05-19# Time: 11:06:01
+
+# Date: 2022-05-19# Time: 11:06:01
+
+# Date: 2022-05-19# Time: 11:06:01
+
+# Date: 2022-05-19# Time: 11:06:01
+
+# Date: 2022-05-19# Time: 11:06:02
+
+# Date: 2022-05-19# Time: 11:06:02
+
+# Date: 2022-05-19# Time: 11:06:02
+
+# Date: 2022-05-19# Time: 11:06:02
+
+# Date: 2022-05-19# Time: 11:06:02
+
+# Date: 2022-05-19# Time: 11:06:03
+
+# Date: 2022-05-19# Time: 11:06:03
+
+# Date: 2022-05-19# Time: 11:06:03
+
+# Date: 2022-05-19# Time: 11:06:03
+
+# Date: 2022-05-19# Time: 11:06:03
+
+# Date: 2022-05-19# Time: 11:06:04
+
+# Date: 2022-05-19# Time: 11:06:04
+
+# Date: 2022-05-19# Time: 11:06:04
+
+# Date: 2022-05-19# Time: 11:06:04
+
+# Date: 2022-05-19# Time: 11:06:04
+
+# Date: 2022-05-19# Time: 11:06:05
+
+# Date: 2022-05-19# Time: 11:06:05
+
+# Date: 2022-05-19# Time: 11:06:05
+
+# Date: 2022-05-19# Time: 11:06:05
+
+# Date: 2022-05-19# Time: 11:06:05
+
+# Date: 2022-05-19# Time: 11:06:06
+
+# Date: 2022-05-19# Time: 11:06:06
+
+# Date: 2022-05-19# Time: 11:06:06
+
+# Date: 2022-05-19# Time: 11:06:06
+
+# Date: 2022-05-19# Time: 11:06:06
+
+# Date: 2022-05-19# Time: 11:06:07
+
+# Date: 2022-05-19# Time: 11:06:07
+
+# Date: 2022-05-19# Time: 11:06:07
+
+# Date: 2022-05-19# Time: 11:06:07
+
+# Date: 2022-05-19# Time: 11:06:08
+
+# Date: 2022-05-19# Time: 11:06:08
+
+# Date: 2022-05-19# Time: 11:06:08
+
+# Date: 2022-05-19# Time: 11:06:08
+
+# Date: 2022-05-19# Time: 11:06:08
+
+# Date: 2022-05-19# Time: 11:06:09
+
+# Date: 2022-05-19# Time: 11:06:09
+
+# Date: 2022-05-19# Time: 11:06:09
+
+# Date: 2022-05-19# Time: 11:06:09
+
+# Date: 2022-05-19# Time: 11:06:09
+
+# Date: 2022-05-19# Time: 11:06:10
+
+# Date: 2022-05-19# Time: 11:06:10
+
+# Date: 2022-05-19# Time: 11:06:10
+
+# Date: 2022-05-19# Time: 11:06:10
+
+# Date: 2022-05-19# Time: 11:06:10
+
+# Date: 2022-05-19# Time: 11:06:11
+
+# Date: 2022-05-19# Time: 11:06:11
+
+# Date: 2022-05-19# Time: 11:06:11
+
+# Date: 2022-05-19# Time: 11:06:11
+
+# Date: 2022-05-19# Time: 11:06:11
+
+# Date: 2022-05-19# Time: 11:06:12
+
+# Date: 2022-05-19# Time: 11:06:12
+
+# Date: 2022-05-19# Time: 11:06:12
+
+# Date: 2022-05-19# Time: 11:06:12
+
+# Date: 2022-05-19# Time: 11:06:12
+
+# Date: 2022-05-19# Time: 11:06:13
+
+# Date: 2022-05-19# Time: 11:06:13
+
+# Date: 2022-05-19# Time: 11:06:13
+
+# Date: 2022-05-19# Time: 11:06:13
+
+# Date: 2022-05-19# Time: 11:06:13
+
+# Date: 2022-05-19# Time: 11:06:14
+
+# Date: 2022-05-19# Time: 11:06:14
+
+# Date: 2022-05-19# Time: 11:06:14
+
+# Date: 2022-05-19# Time: 11:06:14
+
+# Date: 2022-05-19# Time: 11:06:14
+
+# Date: 2022-05-19# Time: 11:06:15
+
+# Date: 2022-05-19# Time: 11:06:15
+
+# Date: 2022-05-19# Time: 11:06:15
+
+# Date: 2022-05-19# Time: 11:06:15
+
+# Date: 2022-05-19# Time: 11:06:15
+
+# Date: 2022-05-19# Time: 11:06:16
+
+# Date: 2022-05-19# Time: 11:06:16
+
+# Date: 2022-05-19# Time: 11:06:16
+
+# Date: 2022-05-19# Time: 11:06:16
+
+# Date: 2022-05-19# Time: 11:06:17
+
+# Date: 2022-05-19# Time: 11:06:17
+
+# Date: 2022-05-19# Time: 11:06:17
+
+# Date: 2022-05-19# Time: 11:06:17
+
+# Date: 2022-05-19# Time: 11:06:17
+
+# Date: 2022-05-19# Time: 11:06:18
+
+# Date: 2022-05-19# Time: 11:06:18
+
+# Date: 2022-05-19# Time: 11:06:18
+
+# Date: 2022-05-19# Time: 11:06:18
+
+# Date: 2022-05-19# Time: 11:06:18
+
+# Date: 2022-05-19# Time: 11:06:19
+
+# Date: 2022-05-19# Time: 11:06:19
+
+# Date: 2022-05-19# Time: 11:06:19
+
+# Date: 2022-05-19# Time: 11:06:19
+
+# Date: 2022-05-19# Time: 11:06:19
+
+# Date: 2022-05-19# Time: 11:06:20
+
+# Date: 2022-05-19# Time: 11:06:20
+
+# Date: 2022-05-19# Time: 11:06:20
+
+# Date: 2022-05-19# Time: 11:06:20
+
+# Date: 2022-05-19# Time: 11:06:20
+
+# Date: 2022-05-19# Time: 11:06:21
+
+# Date: 2022-05-19# Time: 11:06:21
+
+# Date: 2022-05-19# Time: 11:06:21
+
+# Date: 2022-05-19# Time: 11:06:21
+
+# Date: 2022-05-19# Time: 11:06:21
+
+# Date: 2022-05-19# Time: 11:06:22
+
+# Date: 2022-05-19# Time: 11:06:22
+
+# Date: 2022-05-19# Time: 11:06:22
+
+# Date: 2022-05-19# Time: 11:06:22
+
+# Date: 2022-05-19# Time: 11:06:22
+
+# Date: 2022-05-19# Time: 11:06:23
+
+# Date: 2022-05-19# Time: 11:06:23
+
+# Date: 2022-05-19# Time: 11:06:23
+
+# Date: 2022-05-19# Time: 11:06:23
+
+# Date: 2022-05-19# Time: 11:06:23
+
+# Date: 2022-05-19# Time: 11:06:24
+
+# Date: 2022-05-19# Time: 11:06:24
+
+# Date: 2022-05-19# Time: 11:06:24
+
+# Date: 2022-05-19# Time: 11:06:24
+
+# Date: 2022-05-19# Time: 11:06:24
+
+# Date: 2022-05-19# Time: 11:06:25
+
+# Date: 2022-05-19# Time: 11:06:25
+
+# Date: 2022-05-19# Time: 11:06:25
+
+# Date: 2022-05-19# Time: 11:06:25
+
+# Date: 2022-05-19# Time: 11:06:25
+
+# Date: 2022-05-19# Time: 11:06:26
+
+# Date: 2022-05-19# Time: 11:06:26
+
+# Date: 2022-05-19# Time: 11:06:26
+
+# Date: 2022-05-19# Time: 11:06:26
+
+# Date: 2022-05-19# Time: 11:06:27
+
+# Date: 2022-05-19# Time: 11:06:27
+
+# Date: 2022-05-19# Time: 11:06:27
+
+# Date: 2022-05-19# Time: 11:06:27
+
+# Date: 2022-05-19# Time: 11:06:27
+
+# Date: 2022-05-19# Time: 11:06:28
+
+# Date: 2022-05-19# Time: 11:06:28
+
+# Date: 2022-05-19# Time: 11:06:28
+
+# Date: 2022-05-19# Time: 11:06:28
+
+# Date: 2022-05-19# Time: 11:06:28
+
+# Date: 2022-05-19# Time: 11:06:29
+
+# Date: 2022-05-19# Time: 11:06:29
+
+# Date: 2022-05-19# Time: 11:06:29
+
+# Date: 2022-05-19# Time: 11:06:29
+
+# Date: 2022-05-19# Time: 11:06:29
+
+# Date: 2022-05-19# Time: 11:06:30
+
+# Date: 2022-05-19# Time: 11:06:30
+
+# Date: 2022-05-19# Time: 11:06:30
+
+# Date: 2022-05-19# Time: 11:06:30
+
+# Date: 2022-05-19# Time: 11:06:30
+
+# Date: 2022-05-19# Time: 11:06:31
+
+# Date: 2022-05-19# Time: 11:06:31
+
+# Date: 2022-05-19# Time: 11:06:31
+
+# Date: 2022-05-19# Time: 11:06:31
+
+# Date: 2022-05-19# Time: 11:06:31
+
+# Date: 2022-05-19# Time: 11:06:32
+
+# Date: 2022-05-19# Time: 11:06:32
+
+# Date: 2022-05-19# Time: 11:06:32
+
+# Date: 2022-05-19# Time: 11:06:32
+
+# Date: 2022-05-19# Time: 11:06:32
+
+# Date: 2022-05-19# Time: 11:06:33
+
+# Date: 2022-05-19# Time: 11:06:33
+
+# Date: 2022-05-19# Time: 11:06:33
+
+# Date: 2022-05-19# Time: 11:06:33
+
+# Date: 2022-05-19# Time: 11:06:33
+
+# Date: 2022-05-19# Time: 11:06:34
+
+# Date: 2022-05-19# Time: 11:06:34
+
+# Date: 2022-05-19# Time: 11:06:34
+
+# Date: 2022-05-19# Time: 11:06:34
+
+# Date: 2022-05-19# Time: 11:06:34
+
+# Date: 2022-05-19# Time: 11:06:35
+
+# Date: 2022-05-19# Time: 11:06:35
+
+# Date: 2022-05-19# Time: 11:06:35
+
+# Date: 2022-05-19# Time: 11:06:35
+
+# Date: 2022-05-19# Time: 11:06:36
+
+# Date: 2022-05-19# Time: 11:06:36
+
+# Date: 2022-05-19# Time: 11:06:36
+
+# Date: 2022-05-19# Time: 11:06:36
+
+# Date: 2022-05-19# Time: 11:06:36
+
+# Date: 2022-05-19# Time: 11:06:37
+
+# Date: 2022-05-19# Time: 11:06:37
+
+# Date: 2022-05-19# Time: 11:06:37
+
+# Date: 2022-05-19# Time: 11:06:37
+
+# Date: 2022-05-19# Time: 11:06:37
+
+# Date: 2022-05-19# Time: 11:06:38
+
+# Date: 2022-05-19# Time: 11:06:38
+
+# Date: 2022-05-19# Time: 11:06:38
+
+# Date: 2022-05-19# Time: 11:06:38
+11:14:14 PROC Main(), Project: P21-100538
+11:14:14 PROC rInit()
+11:14:14 PROC rWorldZones()
+11:14:14 PROC rResetCommands()
+11:14:14 PROC rResetposition_in_home_box()
+11:14:14 PROC rMoveHomeSafe()
+11:14:14 PROC rLog_Current_Rob_Pos_TS000_9()
+11:14:14 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+11:14:14 PROC rCalc_Joint_Target_For_MHS()
+11:14:14 PROC rResetCommand_After_MoveHomeSafe()
+11:14:14 PROC rResetposition_in_Coil_box()
+11:14:14 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 11:14:18
+
+# Date: 2022-05-19# Time: 11:14:18
+
+# Date: 2022-05-19# Time: 11:14:18
+
+# Date: 2022-05-19# Time: 11:14:18
+
+# Date: 2022-05-19# Time: 11:14:19
+
+# Date: 2022-05-19# Time: 11:14:21
+
+# Date: 2022-05-19# Time: 11:15:03
+
+# Date: 2022-05-19# Time: 11:16:37
+
+# Date: 2022-05-19# Time: 11:18:56
+
+# Date: 2022-05-19# Time: 11:19:51
+
+# Date: 2022-05-19# Time: 11:20:36
+
+# Date: 2022-05-19# Time: 11:21:30
+
+# Date: 2022-05-19# Time: 11:21:30
+
+# Date: 2022-05-19# Time: 11:21:30
+
+# Date: 2022-05-19# Time: 11:21:31
+
+# Date: 2022-05-19# Time: 11:21:31
+
+# Date: 2022-05-19# Time: 11:21:33
+
+# Date: 2022-05-19# Time: 11:27:24
+
+# Date: 2022-05-19# Time: 12:05:18
+
+# Date: 2022-05-19# Time: 12:08:46
+12:16:58 PROC Main(), Project: P21-100538
+12:16:58 PROC rInit()
+12:16:58 PROC rWorldZones()
+12:16:58 PROC rResetCommands()
+12:16:58 PROC rResetposition_in_home_box()
+12:16:58 PROC rMoveHomeSafe()
+12:16:58 PROC rLog_Current_Rob_Pos_TS000_9()
+12:16:58 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+12:16:58 PROC rCalc_Joint_Target_For_MHS()
+12:16:58 PROC rResetCommand_After_MoveHomeSafe()
+12:16:58 PROC rResetposition_in_Coil_box()
+12:16:58 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 12:17:03
+12:28:29 PROC Main(), Project: P21-100538
+12:28:29 PROC rInit()
+12:28:29 PROC rWorldZones()
+12:28:29 PROC rResetCommands()
+12:28:29 PROC rResetposition_in_home_box()
+12:28:29 PROC rMoveHomeSafe()
+12:28:29 PROC rLog_Current_Rob_Pos_TS000_9()
+12:28:29 CurrentRobAxisAngles = [1,-45,15,-5,32,99]
+12:28:29 PROC rCalc_Joint_Target_For_MHS()
+12:28:29 PROC rResetCommand_After_MoveHomeSafe()
+12:28:29 PROC rResetposition_in_Coil_box()
+12:28:29 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 12:28:31
+13:17:21 PROC Main(), Project: P21-100538
+13:17:21 PROC rInit()
+13:17:21 PROC rWorldZones()
+13:17:21 PROC rResetCommands()
+13:17:21 PROC rResetposition_in_home_box()
+13:17:21 PROC rMoveHomeSafe()
+13:17:21 PROC rLog_Current_Rob_Pos_TS000_9()
+13:17:21 CurrentRobAxisAngles = [-23,-7,3,22,54,148]
+13:17:21 PROC rCalc_Joint_Target_For_MHS()
+13:17:21 *** Not Able To Go To Home Pos ***
+13:18:05 PROC Main(), Project: P21-100538
+13:18:05 PROC rInit()
+13:18:05 PROC rResetCommands()
+13:18:05 PROC rResetposition_in_home_box()
+13:18:05 PROC rMoveHomeSafe()
+13:18:05 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:05 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+13:18:05 PROC rCalc_Joint_Target_For_MHS()
+13:18:05 PROC rResetCommand_After_MoveHomeSafe()
+13:18:05 PROC rResetposition_in_Coil_box()
+13:18:05 PROC rResetErrors()
+13:18:54 PROC Main(), Project: P21-100538
+13:18:54 PROC rInit()
+13:18:54 PROC rWorldZones()
+13:18:54 PROC rResetCommands()
+13:18:54 PROC rResetposition_in_home_box()
+13:18:54 PROC rMoveHomeSafe()
+13:18:54 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:54 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+13:18:54 PROC rCalc_Joint_Target_For_MHS()
+13:18:54 PROC rResetCommand_After_MoveHomeSafe()
+13:18:54 PROC rResetposition_in_Coil_box()
+13:18:54 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 13:19:02
+14:29:43 PROC Main(), Project: P21-100538
+14:29:43 PROC rInit()
+14:29:43 PROC rWorldZones()
+14:29:43 PROC rResetCommands()
+14:29:43 PROC rResetposition_in_home_box()
+14:29:43 PROC rMoveHomeSafe()
+14:29:43 PROC rLog_Current_Rob_Pos_TS000_9()
+14:29:44 CurrentRobAxisAngles = [1,-45,16,-3,30,94]
+14:29:44 PROC rCalc_Joint_Target_For_MHS()
+14:29:44 PROC rResetCommand_After_MoveHomeSafe()
+14:29:44 PROC rResetposition_in_Coil_box()
+14:29:44 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 14:32:14
+
+# Date: 2022-05-19# Time: 14:32:14
+
+# Date: 2022-05-19# Time: 14:32:15
+
+# Date: 2022-05-19# Time: 14:32:15
+
+# Date: 2022-05-19# Time: 14:32:15
+
+# Date: 2022-05-19# Time: 14:32:16
+
+# Date: 2022-05-19# Time: 14:32:17
+
+# Date: 2022-05-19# Time: 14:32:17
+
+# Date: 2022-05-19# Time: 14:32:17
+
+# Date: 2022-05-19# Time: 14:32:17
+
+# Date: 2022-05-19# Time: 14:32:17
+
+# Date: 2022-05-19# Time: 14:32:18
+
+# Date: 2022-05-19# Time: 14:32:18
+
+# Date: 2022-05-19# Time: 14:32:18
+
+# Date: 2022-05-19# Time: 14:32:18
+
+# Date: 2022-05-19# Time: 14:32:18
+
+# Date: 2022-05-19# Time: 14:32:19
+
+# Date: 2022-05-19# Time: 14:32:19
+
+# Date: 2022-05-19# Time: 14:32:19
+
+# Date: 2022-05-19# Time: 14:32:19
+
+# Date: 2022-05-19# Time: 14:32:19
+
+# Date: 2022-05-19# Time: 14:32:20
+
+# Date: 2022-05-19# Time: 14:32:20
+
+# Date: 2022-05-19# Time: 14:32:20
+
+# Date: 2022-05-19# Time: 14:32:21
+
+# Date: 2022-05-19# Time: 14:32:21
+14:57:03 PROC Main(), Project: P21-100538
+14:57:03 PROC rInit()
+14:57:03 PROC rWorldZones()
+14:57:03 PROC rResetCommands()
+14:57:03 PROC rResetposition_in_home_box()
+14:57:03 PROC rMoveHomeSafe()
+14:57:03 PROC rLog_Current_Rob_Pos_TS000_9()
+14:57:03 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+14:57:03 PROC rCalc_Joint_Target_For_MHS()
+14:57:03 PROC rResetCommand_After_MoveHomeSafe()
+14:57:03 PROC rResetposition_in_Coil_box()
+14:57:03 PROC rResetErrors()
+
+# Date: 2022-05-19# Time: 14:58:44
+
+# Date: 2022-05-19# Time: 14:58:44
+
+# Date: 2022-05-19# Time: 14:58:44
+
+# Date: 2022-05-19# Time: 14:58:45
+
+# Date: 2022-05-19# Time: 14:58:45
+
+# Date: 2022-05-19# Time: 15:01:00
+
+# Date: 2022-05-19# Time: 15:01:56
+
+# Date: 2022-05-19# Time: 15:05:09
+
+# Date: 2022-05-19# Time: 15:06:06
+
+# Date: 2022-05-19# Time: 15:07:41
+
+# Date: 2022-05-19# Time: 15:08:24
+15:19:44 PROC Main(), Project: P21-100538
+15:19:44 PROC rInit()
+15:19:44 PROC rWorldZones()
+15:19:44 PROC rResetCommands()
+15:19:44 PROC rResetposition_in_home_box()
+15:19:44 PROC rMoveHomeSafe()
+15:19:44 PROC rLog_Current_Rob_Pos_TS000_9()
+15:19:44 CurrentRobAxisAngles = [18,-30,5,-45,18,66]
+15:19:44 PROC rCalc_Joint_Target_For_MHS()
+15:19:44 *** Not Able To Go To Home Pos ***
+15:20:04 PROC Main(), Project: P21-100538
+15:20:04 PROC rInit()
+15:20:04 PROC rResetCommands()
+15:20:04 PROC rResetposition_in_home_box()
+15:20:04 PROC rMoveHomeSafe()
+15:20:04 PROC rLog_Current_Rob_Pos_TS000_9()
+15:20:04 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+15:20:04 PROC rCalc_Joint_Target_For_MHS()
+15:20:04 *** Not Able To Go To Home Pos ***
+15:27:15 PROC Main(), Project: P21-100538
+15:27:15 PROC rInit()
+15:27:15 PROC rWorldZones()
+15:27:15 PROC rResetCommands()
+15:27:15 PROC rResetposition_in_home_box()
+15:27:15 PROC rMoveHomeSafe()
+15:27:15 PROC rLog_Current_Rob_Pos_TS000_9()
+15:27:15 CurrentRobAxisAngles = [-2,-10,-3,49,16,-60]
+15:27:15 PROC rCalc_Joint_Target_For_MHS()
+15:27:15 *** Not Able To Go To Home Pos ***
+15:27:44 PROC Main(), Project: P21-100538
+15:27:44 PROC rInit()
+15:27:44 PROC rResetCommands()
+15:27:44 PROC rResetposition_in_home_box()
+15:27:44 PROC rMoveHomeSafe()
+15:27:44 PROC rLog_Current_Rob_Pos_TS000_9()
+15:27:44 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+15:27:44 PROC rCalc_Joint_Target_For_MHS()
+15:27:44 *** Not Able To Go To Home Pos ***
+06:32:59 PROC Main(), Project: P21-100538
+06:32:59 PROC rInit()
+06:32:59 PROC rWorldZones()
+06:32:59 PROC rResetCommands()
+06:32:59 PROC rResetposition_in_home_box()
+06:32:59 PROC rMoveHomeSafe()
+06:32:59 PROC rLog_Current_Rob_Pos_TS000_9()
+06:32:59 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+06:32:59 PROC rCalc_Joint_Target_For_MHS()
+06:32:59 *** Not Able To Go To Home Pos ***
+06:33:09 PROC Main(), Project: P21-100538
+06:33:09 PROC rInit()
+06:33:09 PROC rResetCommands()
+06:33:09 PROC rResetposition_in_home_box()
+06:33:09 PROC rMoveHomeSafe()
+06:33:09 PROC rLog_Current_Rob_Pos_TS000_9()
+06:33:09 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+06:33:09 PROC rCalc_Joint_Target_For_MHS()
+06:33:09 *** Not Able To Go To Home Pos ***
+06:35:16 PROC Main(), Project: P21-100538
+06:35:16 PROC rInit()
+06:35:16 PROC rWorldZones()
+06:35:16 PROC rResetCommands()
+06:35:16 PROC rResetposition_in_home_box()
+06:35:16 PROC rMoveHomeSafe()
+06:35:16 PROC rLog_Current_Rob_Pos_TS000_9()
+06:35:16 CurrentRobAxisAngles = [-7,-45,15,14,31,78]
+06:35:16 PROC rCalc_Joint_Target_For_MHS()
+06:35:17 PROC rResetCommand_After_MoveHomeSafe()
+06:35:17 PROC rResetposition_in_Coil_box()
+06:35:17 PROC rResetErrors()
+06:43:43 PROC Main(), Project: P21-100538
+06:43:43 PROC rInit()
+06:43:43 PROC rWorldZones()
+06:43:43 PROC rResetCommands()
+06:43:43 PROC rResetposition_in_home_box()
+06:43:43 PROC rMoveHomeSafe()
+06:43:43 PROC rLog_Current_Rob_Pos_TS000_9()
+06:43:43 CurrentRobAxisAngles = [-3,-46,18,10,30,77]
+06:43:43 PROC rCalc_Joint_Target_For_MHS()
+06:43:43 PROC rResetCommand_After_MoveHomeSafe()
+06:43:43 PROC rResetposition_in_Coil_box()
+06:43:43 PROC rResetErrors()
+
+# Date: 2022-05-20# Time: 06:44:00
+06:45:09 PROC Main(), Project: P21-100538
+06:45:09 PROC rInit()
+06:45:09 PROC rWorldZones()
+06:45:09 PROC rResetCommands()
+06:45:09 PROC rResetposition_in_home_box()
+06:45:09 PROC rMoveHomeSafe()
+06:45:09 PROC rLog_Current_Rob_Pos_TS000_9()
+06:45:09 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+06:45:09 PROC rCalc_Joint_Target_For_MHS()
+06:45:09 PROC rResetCommand_After_MoveHomeSafe()
+06:45:09 PROC rResetposition_in_Coil_box()
+06:45:09 PROC rResetErrors()
+
+# Date: 2022-05-20# Time: 06:45:14
+
+# Date: 2022-05-20# Time: 06:45:59
+
+# Date: 2022-05-20# Time: 06:47:03
+
+# Date: 2022-05-20# Time: 06:48:20
+09:51:07 PROC Main(), Project: P21-100538
+09:51:07 PROC rInit()
+09:51:07 PROC rWorldZones()
+09:51:07 PROC rResetCommands()
+09:51:07 PROC rResetposition_in_home_box()
+09:51:07 PROC rMoveHomeSafe()
+09:51:07 PROC rLog_Current_Rob_Pos_TS000_9()
+09:51:07 CurrentRobAxisAngles = [-3,16,28,-87,-75,327]
+09:51:07 PROC rCalc_Joint_Target_For_MHS()
+09:51:07 *** Not Able To Go To Home Pos ***
+09:52:51 PROC Main(), Project: P21-100538
+09:52:51 PROC rInit()
+09:52:51 PROC rWorldZones()
+09:52:51 PROC rResetCommands()
+09:52:51 PROC rResetposition_in_home_box()
+09:52:51 PROC rMoveHomeSafe()
+09:52:51 PROC rLog_Current_Rob_Pos_TS000_9()
+09:52:51 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+09:52:51 PROC rCalc_Joint_Target_For_MHS()
+09:52:51 PROC rResetCommand_After_MoveHomeSafe()
+09:52:51 PROC rResetposition_in_Coil_box()
+09:52:51 PROC rResetErrors()
+08:42:33 PROC Main(), Project: P21-100538
+08:42:33 PROC rInit()
+08:42:33 PROC rWorldZones()
+08:42:33 PROC rResetCommands()
+08:42:33 PROC rResetposition_in_home_box()
+08:42:33 PROC rMoveHomeSafe()
+08:42:33 PROC rLog_Current_Rob_Pos_TS000_9()
+08:42:33 CurrentRobAxisAngles = [-30,32,9,69,19,96]
+08:42:33 PROC rCalc_Joint_Target_For_MHS()
+08:42:33 *** Not Able To Go To Home Pos ***
+08:43:33 PROC Main(), Project: P21-100538
+08:43:33 PROC rInit()
+08:43:33 PROC rWorldZones()
+08:43:33 PROC rResetCommands()
+08:43:33 PROC rResetposition_in_home_box()
+08:43:33 PROC rMoveHomeSafe()
+08:43:33 PROC rLog_Current_Rob_Pos_TS000_9()
+08:43:33 CurrentRobAxisAngles = [-30,32,9,69,19,96]
+08:43:33 PROC rCalc_Joint_Target_For_MHS()
+08:43:33 *** Not Able To Go To Home Pos ***
+11:20:38 PROC rRunCycle()
+11:20:38 PROC rResetCommands()
+11:20:38 PROC rClear_HMI()
+11:20:38 ***** START CYCLE TIME *****
+11:20:38 *** COIL TRANSPORT BLOCKED ***
+11:20:38 PROC rInit_Received_information()
+11:20:38 rLog_Numeric_Value_TS000_2 =  0
+12:20:46 PROC rRunCycle()
+12:20:46 PROC rResetCommands()
+12:20:46 PROC rClear_HMI()
+12:20:46 ***** START CYCLE TIME *****
+12:20:46 *** COIL TRANSPORT BLOCKED ***
+12:20:46 PROC rInit_Received_information()
+12:20:46 rLog_Numeric_Value_TS000_2 =  0
+13:25:38 PROC rRunCycle()
+13:25:38 PROC rResetCommands()
+13:25:38 PROC rClear_HMI()
+13:25:38 ***** START CYCLE TIME *****
+13:25:38 *** COIL TRANSPORT BLOCKED ***
+13:25:38 PROC rInit_Received_information()
+13:25:38 rLog_Numeric_Value_TS000_2 =  0
+08:56:20 10:54:36 PROC rRunCycle()
+10:54:36 PROC rResetCommands()
+10:54:36 PROC rClear_HMI()
+10:54:36 ***** START CYCLE TIME *****
+10:54:36 *** COIL TRANSPORT BLOCKED ***
+10:54:36 PROC rInit_Received_information()
+10:54:36 rLog_Numeric_Value_TS000_2 =  0
+09:09:54 PROC rRunCycle()
+09:09:54 PROC rResetCommands()
+09:09:54 PROC rClear_HMI()
+09:09:54 ***** START CYCLE TIME *****
+09:09:54 *** COIL TRANSPORT BLOCKED ***
+09:09:54 PROC rInit_Received_information()
+09:09:54 rLog_Numeric_Value_TS000_2 =  0
+15:16:18 PROC rRunCycle()
+15:16:18 PROC rResetCommands()
+15:16:18 PROC rClear_HMI()
+15:16:18 ***** START CYCLE TIME *****
+15:16:18 *** COIL TRANSPORT BLOCKED ***
+15:16:18 PROC rInit_Received_information()
+15:16:18 rLog_Numeric_Value_TS000_2 =  0
+15:01:52 PROC rRunCycle()
+15:01:52 PROC rResetCommands()
+15:01:52 PROC rClear_HMI()
+15:01:52 ***** START CYCLE TIME *****
+15:01:52 *** COIL TRANSPORT BLOCKED ***
+15:01:52 PROC rInit_Received_information()
+15:01:52 rLog_Numeric_Value_TS000_2 =  0
+15:03:23 PROC rRunCycle()
+15:03:23 PROC rResetCommands()
+15:03:23 PROC rClear_HMI()
+15:03:23 ***** START CYCLE TIME *****
+15:03:23 *** COIL TRANSPORT BLOCKED ***
+15:03:23 PROC rInit_Received_information()
+15:03:23 rLog_Numeric_Value_TS000_2 =  0
+
+# Date: 2022-06-29# Time: 13:47:25
+13:47:25 PROC rMoveToClamp(1)
+
+# Date: 2022-06-29# Time: 13:47:43
+13:47:43 PROC rMoveToClamp(1)
+
+# Date: 2022-06-29# Time: 13:48:19
+13:48:19 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-29# Time: 13:49:10
+13:49:10 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-29# Time: 13:51:51
+13:51:51 PROC rTemperingCycle(1)
+
+# Date: 2022-06-29# Time: 13:54:02
+13:54:02 PROC rFreerun_FWD(1)
+
+# Date: 2022-06-29# Time: 13:55:32
+13:55:32 PROC rMoveToHome()
+13:59:50 PROC Main(), Project: P21-100538
+13:59:50 PROC rInit()
+13:59:50 PROC rWorldZones()
+13:59:50 PROC rResetCommands()
+13:59:50 PROC rResetposition_in_home_box()
+13:59:50 PROC rMoveHomeSafe()
+13:59:50 PROC rLog_Current_Rob_Pos_TS000_9()
+13:59:50 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+13:59:50 PROC rCalc_Joint_Target_For_MHS()
+13:59:50 PROC rResetCommand_After_MoveHomeSafe()
+13:59:50 PROC rResetposition_in_Coil_box()
+13:59:50 PROC rResetErrors()
+14:01:37 PROC Main(), Project: P21-100538
+14:01:37 PROC rInit()
+14:01:37 PROC rWorldZones()
+14:01:37 PROC rResetCommands()
+14:01:37 PROC rResetposition_in_home_box()
+14:01:37 PROC rMoveHomeSafe()
+14:01:37 PROC rLog_Current_Rob_Pos_TS000_9()
+14:01:37 CurrentRobAxisAngles = [0,-45,15,0,30,90]
+14:01:37 PROC rCalc_Joint_Target_For_MHS()
+14:02:21 PROC rResetCommand_After_MoveHomeSafe()
+14:02:21 PROC rResetposition_in_Coil_box()
+14:02:21 PROC rResetErrors()
+
+# Date: 2022-06-29# Time: 14:03:25
+14:03:25 PROC rMoveToClamp(2)
+
+# Date: 2022-06-29# Time: 14:09:54
+14:09:54 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-29# Time: 14:10:09
+14:10:09 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-29# Time: 14:14:56
+14:14:56 PROC rFreerun_BWD(2)
+
+# Date: 2022-06-29# Time: 14:16:46
+14:16:51 PROC rMoveToClamp(2)
+
+# Date: 2022-06-29# Time: 14:21:43
+14:21:43 PROC rMoveToClamp(2)
+14:21:56 PROC Main(), Project: P21-100538
+14:21:56 PROC rInit()
+14:21:56 PROC rWorldZones()
+14:21:56 PROC rResetCommands()
+14:21:56 PROC rResetposition_in_home_box()
+14:21:56 PROC rMoveHomeSafe()
+14:21:56 PROC rLog_Current_Rob_Pos_TS000_9()
+14:21:56 CurrentRobAxisAngles = [24,30,-1,169,-48,40]
+14:21:56 PROC rCalc_Joint_Target_For_MHS()
+14:21:56 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-29# Time: 14:23:23
+14:23:23 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-29# Time: 14:23:35
+14:23:35 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-29# Time: 14:25:32
+14:25:32 PROC rMoveToHome()
+14:39:47 PROC Main(), Project: P21-100538
+14:39:47 PROC rInit()
+14:39:47 PROC rWorldZones()
+14:39:47 PROC rResetCommands()
+14:39:47 PROC rResetposition_in_home_box()
+14:39:47 PROC rMoveHomeSafe()
+14:39:47 PROC rLog_Current_Rob_Pos_TS000_9()
+14:39:47 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+14:39:47 PROC rCalc_Joint_Target_For_MHS()
+14:39:47 PROC rResetCommand_After_MoveHomeSafe()
+14:39:47 PROC rResetposition_in_Coil_box()
+14:39:47 PROC rResetErrors()
+
+# Date: 2022-06-29# Time: 14:40:02
+14:40:02 PROC rMoveToClamp(1)
+14:43:06 PROC rMoveToClamp(1)
+14:46:51 PROC rMoveToClamp(1)
+14:51:18 PROC rMoveToClamp(1)
+
+# Date: 2022-06-29# Time: 14:54:34
+14:54:34 PROC rMoveToClamp(1)
+14:58:16 PROC Main(), Project: P21-100538
+14:58:16 PROC rInit()
+14:58:16 PROC rWorldZones()
+14:58:16 PROC rResetCommands()
+14:58:16 PROC rResetposition_in_home_box()
+14:58:16 PROC rMoveHomeSafe()
+14:58:16 PROC rLog_Current_Rob_Pos_TS000_9()
+14:58:16 CurrentRobAxisAngles = [27,11,24,-45,16,55]
+14:58:16 PROC rCalc_Joint_Target_For_MHS()
+14:58:16 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-29# Time: 15:07:37
+15:07:37 PROC rMoveToClamp(1)
+
+# Date: 2022-06-29# Time: 15:11:06
+15:11:06 PROC rMoveToClamp(1)
+
+# Date: 2022-06-29# Time: 15:12:34
+15:12:34 PROC rMoveToClamp(1)
+07:35:34 PROC Main(), Project: P21-100538
+07:35:34 PROC rInit()
+07:35:34 PROC rWorldZones()
+07:35:34 PROC rResetCommands()
+07:35:34 PROC rResetposition_in_home_box()
+07:35:34 PROC rMoveHomeSafe()
+07:35:34 PROC rLog_Current_Rob_Pos_TS000_9()
+07:35:34 CurrentRobAxisAngles = [10,53,-48,-5,50,15]
+07:35:34 PROC rCalc_Joint_Target_For_MHS()
+07:35:34 *** Not Able To Go To Home Pos ***
+07:45:31 PROC Main(), Project: P21-100538
+07:45:31 PROC rInit()
+07:45:31 PROC rWorldZones()
+07:45:31 PROC rResetCommands()
+07:45:31 PROC rResetposition_in_home_box()
+07:45:32 PROC rMoveHomeSafe()
+07:45:32 PROC rLog_Current_Rob_Pos_TS000_9()
+07:45:32 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+07:45:32 PROC rCalc_Joint_Target_For_MHS()
+07:47:42 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:03:35
+08:03:35 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:24:12
+08:24:12 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:29:21
+08:29:21 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:30:28
+08:30:28 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:32:00
+08:32:00 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:37:44
+08:37:44 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:41:52
+08:41:52 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:56:02
+08:56:02 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 08:59:23
+08:59:23 PROC rMoveToClamp(1)
+09:09:06 PROC Main(), Project: P21-100538
+09:09:06 PROC rInit()
+09:09:06 PROC rWorldZones()
+09:09:06 PROC rResetCommands()
+09:09:06 PROC rResetposition_in_home_box()
+09:09:06 PROC rMoveHomeSafe()
+09:09:06 PROC rLog_Current_Rob_Pos_TS000_9()
+09:09:06 CurrentRobAxisAngles = [25,22,3,-8,37,15]
+09:09:06 PROC rCalc_Joint_Target_For_MHS()
+09:09:06 *** Not Able To Go To Home Pos ***
+09:10:02 PROC Main(), Project: P21-100538
+09:10:02 PROC rInit()
+09:10:02 PROC rWorldZones()
+09:10:02 PROC rResetCommands()
+09:10:02 PROC rResetposition_in_home_box()
+09:10:02 PROC rMoveHomeSafe()
+09:10:02 PROC rLog_Current_Rob_Pos_TS000_9()
+09:10:02 CurrentRobAxisAngles = [25,22,3,-8,37,15]
+09:10:02 PROC rCalc_Joint_Target_For_MHS()
+09:10:02 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 09:18:11
+09:18:11 PROC rMoveToClamp(2)
+
+# Date: 2022-06-30# Time: 09:30:58
+09:30:58 PROC rMoveToClamp(2)
+10:09:07 PROC Main(), Project: P21-100538
+10:09:07 PROC rInit()
+10:09:07 PROC rWorldZones()
+10:09:07 PROC rResetCommands()
+10:09:07 PROC rResetposition_in_home_box()
+10:09:07 PROC rMoveHomeSafe()
+10:09:07 PROC rLog_Current_Rob_Pos_TS000_9()
+10:09:08 CurrentRobAxisAngles = [-32,11,10,191,-62,-59]
+10:09:08 PROC rCalc_Joint_Target_For_MHS()
+10:09:08 *** Not Able To Go To Home Pos ***
+10:10:24 PROC Main(), Project: P21-100538
+10:10:24 PROC rInit()
+10:10:24 PROC rWorldZones()
+10:10:24 PROC rResetCommands()
+10:10:24 PROC rResetposition_in_home_box()
+10:10:24 PROC rMoveHomeSafe()
+10:10:24 PROC rLog_Current_Rob_Pos_TS000_9()
+10:10:24 CurrentRobAxisAngles = [-30,8,11,183,-56,-54]
+10:10:24 PROC rCalc_Joint_Target_For_MHS()
+10:10:24 *** Not Able To Go To Home Pos ***
+10:12:17 PROC Main(), Project: P21-100538
+10:12:17 PROC rInit()
+10:12:17 PROC rWorldZones()
+10:12:17 PROC rResetCommands()
+10:12:17 PROC rResetposition_in_home_box()
+10:12:17 PROC rMoveHomeSafe()
+10:12:17 PROC rLog_Current_Rob_Pos_TS000_9()
+10:12:17 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+10:12:17 PROC rCalc_Joint_Target_For_MHS()
+10:12:17 PROC rResetCommand_After_MoveHomeSafe()
+10:12:17 PROC rResetposition_in_Coil_box()
+10:12:17 PROC rResetErrors()
+
+# Date: 2022-06-30# Time: 10:12:32
+10:12:32 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 10:14:40
+10:14:40 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 10:14:51
+10:14:51 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 10:18:29
+10:18:29 PROC rMoveToHome()
+
+# Date: 2022-06-30# Time: 10:34:46
+10:34:46 PROC rFreerun_BWD(1)
+10:35:46 PROC Main(), Project: P21-100538
+10:35:46 PROC rInit()
+10:35:46 PROC rWorldZones()
+10:35:46 PROC rResetCommands()
+10:35:46 PROC rResetposition_in_home_box()
+10:35:46 PROC rMoveHomeSafe()
+10:35:46 PROC rLog_Current_Rob_Pos_TS000_9()
+10:35:46 CurrentRobAxisAngles = [-11,22,3,21,42,-41]
+10:35:46 PROC rCalc_Joint_Target_For_MHS()
+10:35:46 *** Not Able To Go To Home Pos ***
+10:36:20 PROC Main(), Project: P21-100538
+10:36:20 PROC rInit()
+10:36:20 PROC rWorldZones()
+10:36:20 PROC rResetCommands()
+10:36:20 PROC rResetposition_in_home_box()
+10:36:20 PROC rMoveHomeSafe()
+10:36:20 PROC rLog_Current_Rob_Pos_TS000_9()
+10:36:20 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+10:36:20 PROC rCalc_Joint_Target_For_MHS()
+10:36:20 PROC rResetCommand_After_MoveHomeSafe()
+10:36:20 PROC rResetposition_in_Coil_box()
+10:36:20 PROC rResetErrors()
+
+# Date: 2022-06-30# Time: 10:36:23
+10:36:23 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 10:39:06
+10:39:06 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 10:39:23
+10:39:23 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 10:41:17
+10:41:17 PROC rMoveToHome()
+10:55:47 PROC Main(), Project: P21-100538
+10:55:47 PROC rInit()
+10:55:47 PROC rWorldZones()
+10:55:47 PROC rResetCommands()
+10:55:47 PROC rResetposition_in_home_box()
+10:55:47 PROC rMoveHomeSafe()
+10:55:47 PROC rLog_Current_Rob_Pos_TS000_9()
+10:55:47 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+10:55:47 PROC rCalc_Joint_Target_For_MHS()
+10:55:47 PROC rResetCommand_After_MoveHomeSafe()
+10:55:47 PROC rResetposition_in_Coil_box()
+10:55:47 PROC rResetErrors()
+
+# Date: 2022-06-30# Time: 10:57:18
+10:57:18 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 10:58:09
+10:58:09 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 10:58:21
+10:58:21 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 11:00:39
+11:00:39 PROC rFreerun_BWD(1)
+
+# Date: 2022-06-30# Time: 11:07:22
+11:07:22 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 11:07:34
+11:07:34 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 11:09:30
+11:09:30 PROC rFreerun_BWD(1)
+
+# Date: 2022-06-30# Time: 11:12:49
+11:12:49 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 11:12:59
+11:12:59 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 11:13:17
+11:13:17 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 11:13:28
+11:13:28 PROC rIdentificationCycle(1)
+12:39:29 PROC Main(), Project: P21-100538
+12:39:29 PROC rInit()
+12:39:29 PROC rWorldZones()
+12:39:29 PROC rResetCommands()
+12:39:29 PROC rResetposition_in_home_box()
+12:39:29 PROC rMoveHomeSafe()
+12:39:29 PROC rLog_Current_Rob_Pos_TS000_9()
+12:39:29 CurrentRobAxisAngles = [25,28,8,-19,28,23]
+12:39:29 PROC rCalc_Joint_Target_For_MHS()
+12:39:29 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 12:39:56
+12:39:56 PROC rMoveToClamp(1)
+12:42:48 PROC Main(), Project: P21-100538
+12:42:48 PROC rInit()
+12:42:48 PROC rWorldZones()
+12:42:48 PROC rResetCommands()
+12:42:48 PROC rResetposition_in_home_box()
+12:42:48 PROC rMoveHomeSafe()
+12:42:48 PROC rLog_Current_Rob_Pos_TS000_9()
+12:42:48 CurrentRobAxisAngles = [23,26,11,-12,23,23]
+12:42:48 PROC rCalc_Joint_Target_For_MHS()
+12:42:48 *** Not Able To Go To Home Pos ***
+12:44:54 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 12:46:04
+12:46:04 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 12:46:41
+12:46:41 PROC rIdentificationCycle(1)
+
+# Date: 2022-06-30# Time: 12:48:45
+12:48:45 PROC rFreerun_BWD(1)
+
+# Date: 2022-06-30# Time: 12:50:43
+12:50:43 PROC rTcpCenteringCycle(1)
+
+# Date: 2022-06-30# Time: 12:52:41
+12:52:41 PROC rMoveToHome()
+
+# Date: 2022-06-30# Time: 12:56:25
+12:56:25 PROC rMoveToClamp(1)
+12:57:40 PROC Main(), Project: P21-100538
+12:57:40 PROC rInit()
+12:57:40 PROC rWorldZones()
+12:57:40 PROC rResetCommands()
+12:57:40 PROC rResetposition_in_home_box()
+12:57:40 PROC rMoveHomeSafe()
+12:57:40 PROC rLog_Current_Rob_Pos_TS000_9()
+12:57:40 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+12:57:40 PROC rCalc_Joint_Target_For_MHS()
+12:57:40 PROC rResetCommand_After_MoveHomeSafe()
+12:57:40 PROC rResetposition_in_Coil_box()
+12:57:40 PROC rResetErrors()
+
+# Date: 2022-06-30# Time: 12:58:26
+12:58:26 PROC rMoveToClamp(1)
+
+# Date: 2022-06-30# Time: 12:59:39
+12:59:39 PROC rMoveToHome()
+13:00:40 PROC Main(), Project: P21-100538
+13:00:40 PROC rInit()
+13:00:40 PROC rWorldZones()
+13:00:40 PROC rResetCommands()
+13:00:40 PROC rResetposition_in_home_box()
+13:00:40 PROC rMoveHomeSafe()
+13:00:40 PROC rLog_Current_Rob_Pos_TS000_9()
+13:00:40 CurrentRobAxisAngles = [17,25,11,-2,25,4]
+13:00:40 PROC rCalc_Joint_Target_For_MHS()
+13:00:40 *** Not Able To Go To Home Pos ***
+13:01:47 PROC Main(), Project: P21-100538
+13:01:47 PROC rInit()
+13:01:47 PROC rWorldZones()
+13:01:47 PROC rResetCommands()
+13:01:47 PROC rResetposition_in_home_box()
+13:01:47 PROC rMoveHomeSafe()
+13:01:47 PROC rLog_Current_Rob_Pos_TS000_9()
+13:01:47 CurrentRobAxisAngles = [0,-30,30,0,0,90]
+13:01:47 PROC rCalc_Joint_Target_For_MHS()
+13:01:47 PROC rResetCommand_After_MoveHomeSafe()
+13:01:47 PROC rResetposition_in_Coil_box()
+13:01:47 PROC rResetErrors()
+
+# Date: 2022-06-30# Time: 13:01:50
+13:01:50 PROC rMoveToClamp(2)
+
+# Date: 2022-06-30# Time: 13:03:43
+13:03:43 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-30# Time: 13:03:56
+13:03:56 PROC rIdentificationCycle(2)
+13:18:57 PROC Main(), Project: P21-100538
+13:18:57 PROC rInit()
+13:18:57 PROC rWorldZones()
+13:18:57 PROC rResetCommands()
+13:18:57 PROC rResetposition_in_home_box()
+13:18:57 PROC rMoveHomeSafe()
+13:18:57 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:57 CurrentRobAxisAngles = [-30,36,-9,184,-79,-41]
+13:18:57 PROC rCalc_Joint_Target_For_MHS()
+13:18:57 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 13:19:48
+13:19:48 PROC rMoveToClamp(2)
+
+# Date: 2022-06-30# Time: 13:21:10
+13:21:10 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-30# Time: 13:21:35
+13:21:35 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-30# Time: 13:23:24
+13:23:24 PROC rTcpCenteringCycle(2)
+13:30:30 PROC Main(), Project: P21-100538
+13:30:30 PROC rInit()
+13:30:30 PROC rWorldZones()
+13:30:30 PROC rResetCommands()
+13:30:30 PROC rResetposition_in_home_box()
+13:30:30 PROC rMoveHomeSafe()
+13:30:30 PROC rLog_Current_Rob_Pos_TS000_9()
+13:30:30 CurrentRobAxisAngles = [-16,-42,31,215,-65,-39]
+13:30:30 PROC rCalc_Joint_Target_For_MHS()
+13:30:30 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 13:31:15
+13:31:15 PROC rMoveToClamp(2)
+
+# Date: 2022-06-30# Time: 13:33:20
+13:33:20 PROC rTcpCenteringCycle(2)
+13:33:54 PROC Main(), Project: P21-100538
+13:33:54 PROC rInit()
+13:33:54 PROC rWorldZones()
+13:33:54 PROC rResetCommands()
+13:33:54 PROC rResetposition_in_home_box()
+13:33:54 PROC rMoveHomeSafe()
+13:33:54 PROC rLog_Current_Rob_Pos_TS000_9()
+13:33:54 CurrentRobAxisAngles = [-30,42,-11,222,-46,-78]
+13:33:54 PROC rCalc_Joint_Target_For_MHS()
+13:33:54 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 13:34:35
+13:34:35 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-30# Time: 13:36:48
+13:36:48 PROC rFreerun_BWD(2)
+
+# Date: 2022-06-30# Time: 13:37:57
+13:37:57 PROC rFreerun_FWD(2)
+
+# Date: 2022-06-30# Time: 13:39:11
+13:39:11 PROC rFreerun_BWD(2)
+
+# Date: 2022-06-30# Time: 13:43:33
+13:43:33 PROC rTcpCenteringCycle(2)
+13:44:14 PROC Main(), Project: P21-100538
+13:44:14 PROC rInit()
+13:44:14 PROC rWorldZones()
+13:44:14 PROC rResetCommands()
+13:44:14 PROC rResetposition_in_home_box()
+13:44:14 PROC rMoveHomeSafe()
+13:44:14 PROC rLog_Current_Rob_Pos_TS000_9()
+13:44:14 CurrentRobAxisAngles = [-29,38,-5,222,-38,-78]
+13:44:14 PROC rCalc_Joint_Target_For_MHS()
+13:44:14 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 13:45:13
+13:45:13 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-30# Time: 13:48:53
+13:48:53 PROC rFreerun_BWD(2)
+
+# Date: 2022-06-30# Time: 13:50:48
+13:50:48 PROC rFreerun_BWD(2)
+13:59:49 PROC Main(), Project: P21-100538
+13:59:49 PROC rInit()
+13:59:49 PROC rWorldZones()
+13:59:49 PROC rResetCommands()
+13:59:49 PROC rResetposition_in_home_box()
+13:59:49 PROC rMoveHomeSafe()
+13:59:49 PROC rLog_Current_Rob_Pos_TS000_9()
+13:59:49 CurrentRobAxisAngles = [-5,28,14,136,-15,50]
+13:59:49 PROC rCalc_Joint_Target_For_MHS()
+13:59:49 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-06-30# Time: 14:13:08
+14:13:08 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-06-30# Time: 14:13:50
+14:13:50 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-30# Time: 14:15:42
+14:15:42 PROC rIdentificationCycle(2)
+
+# Date: 2022-06-30# Time: 14:17:36
+14:17:36 PROC rFreerun_BWD(2)
+08:56:23 PROC Main(), Project: P21-100538
+08:56:23 PROC rInit()
+08:56:23 PROC rWorldZones()
+08:56:23 PROC rResetCommands()
+08:56:23 PROC rResetposition_in_home_box()
+08:56:23 PROC rMoveHomeSafe()
+08:56:23 PROC rLog_Current_Rob_Pos_TS000_9()
+08:56:23 CurrentRobAxisAngles = [23,60,-57,184,-50,-193]
+08:56:23 PROC rCalc_Joint_Target_For_MHS()
+08:56:23 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 08:57:28
+08:57:28 PROC rMoveToClamp(1)
+
+# Date: 2022-07-01# Time: 08:58:07
+08:58:07 PROC rMoveToClamp(2)
+
+# Date: 2022-07-01# Time: 09:01:14
+09:01:14 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 09:01:32
+09:01:32 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 09:02:25
+09:02:25 PROC rMoveToClamp(2)
+
+# Date: 2022-07-01# Time: 09:05:09
+09:05:09 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 09:05:48
+09:05:48 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 09:21:21
+09:21:21 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 09:23:25
+09:23:25 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 09:45:12
+09:45:12 PROC rTcpCenteringCycle(2)
+09:46:23 PROC Main(), Project: P21-100538
+09:46:23 PROC rInit()
+09:46:23 PROC rWorldZones()
+09:46:23 PROC rResetCommands()
+09:46:23 PROC rResetposition_in_home_box()
+09:46:23 PROC rMoveHomeSafe()
+09:46:23 PROC rLog_Current_Rob_Pos_TS000_9()
+09:46:23 CurrentRobAxisAngles = [-29,36,-3,222,-35,-73]
+09:46:23 PROC rCalc_Joint_Target_For_MHS()
+09:46:23 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 09:46:58
+09:46:58 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 09:47:52
+09:47:52 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 09:48:35
+09:48:35 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 09:57:38
+09:57:38 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 09:58:14
+09:58:14 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 09:59:02
+09:59:02 PROC rFreerun_FWD(2)
+09:59:35 PROC Main(), Project: P21-100538
+09:59:35 PROC rInit()
+09:59:35 PROC rWorldZones()
+09:59:35 PROC rResetCommands()
+09:59:35 PROC rResetposition_in_home_box()
+09:59:35 PROC rMoveHomeSafe()
+09:59:35 PROC rLog_Current_Rob_Pos_TS000_9()
+09:59:35 CurrentRobAxisAngles = [-25,41,-14,200,-46,-48]
+09:59:35 PROC rCalc_Joint_Target_For_MHS()
+09:59:35 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 09:59:52
+09:59:52 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:00:15
+10:00:15 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:00:49
+10:00:49 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:01:06
+10:01:06 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:01:25
+10:01:25 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:01:35
+10:01:35 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 10:06:48
+10:06:48 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:07:07
+10:07:07 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:07:23
+10:07:23 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:10:32
+10:10:32 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 10:11:01
+10:11:01 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:11:19
+10:11:19 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:13:58
+10:13:58 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:14:23
+10:14:23 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:14:36
+10:14:36 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:14:59
+10:14:59 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:16:24
+10:16:24 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 10:16:34
+10:16:34 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:16:59
+10:16:59 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:30:01
+10:30:01 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:30:32
+10:30:32 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 10:34:47
+10:34:47 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 10:35:52
+10:35:52 PROC rFreerun_FWD(2)
+10:39:19 PROC Main(), Project: P21-100538
+10:39:19 PROC rInit()
+10:39:19 PROC rWorldZones()
+10:39:19 PROC rResetCommands()
+10:39:19 PROC rResetposition_in_home_box()
+10:39:19 PROC rMoveHomeSafe()
+10:39:19 PROC rLog_Current_Rob_Pos_TS000_9()
+10:39:19 CurrentRobAxisAngles = [-26,34,0,216,-32,-62]
+10:39:19 PROC rCalc_Joint_Target_For_MHS()
+10:39:19 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 10:40:13
+10:40:13 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 10:40:47
+10:40:47 PROC rIdentificationCycle(2)
+11:00:55 PROC Main(), Project: P21-100538
+11:00:55 PROC rInit()
+11:00:55 PROC rWorldZones()
+11:00:55 PROC rResetCommands()
+11:00:55 PROC rResetposition_in_home_box()
+11:00:55 PROC rMoveHomeSafe()
+11:00:55 PROC rLog_Current_Rob_Pos_TS000_9()
+11:00:55 CurrentRobAxisAngles = [-15,67,-60,173,-73,49]
+11:00:55 PROC rCalc_Joint_Target_For_MHS()
+11:00:55 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 11:02:12
+11:02:12 PROC rMoveToClamp(2)
+11:03:05 PROC Main(), Project: P21-100538
+11:03:05 PROC rInit()
+11:03:05 PROC rWorldZones()
+11:03:05 PROC rResetCommands()
+11:03:05 PROC rResetposition_in_home_box()
+11:03:05 PROC rMoveHomeSafe()
+11:03:05 PROC rLog_Current_Rob_Pos_TS000_9()
+11:03:05 CurrentRobAxisAngles = [-15,66,-59,172,-72,48]
+11:03:05 PROC rCalc_Joint_Target_For_MHS()
+11:03:05 *** Not Able To Go To Home Pos ***
+11:04:03 PROC rMoveToClamp(2)
+11:06:46 PROC Main(), Project: P21-100538
+11:06:46 PROC rInit()
+11:06:46 PROC rWorldZones()
+11:06:46 PROC rResetCommands()
+11:06:46 PROC rResetposition_in_home_box()
+11:06:46 PROC rMoveHomeSafe()
+11:06:46 PROC rLog_Current_Rob_Pos_TS000_9()
+11:06:46 CurrentRobAxisAngles = [-26,34,1,217,-31,-62]
+11:06:46 PROC rCalc_Joint_Target_For_MHS()
+11:06:46 *** Not Able To Go To Home Pos ***
+
+# Date: 2022-07-01# Time: 11:07:29
+11:07:29 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 11:08:01
+11:08:01 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 11:10:42
+11:10:42 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 11:11:35
+11:11:35 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 11:12:00
+11:12:00 PROC rIdentificationCycle(2)
+11:52:32 PROC Main(), Project: P21-100538
+11:52:32 PROC rInit()
+11:52:32 PROC rWorldZones()
+11:52:32 PROC rMoveHomeSafe()
+11:52:32 PROC rLog_Current_Rob_Pos_TS000_9()
+11:52:32 CurrentRobAxisAngles = [-29,32,9,249,-26,-95]
+11:52:32 PROC rCalc_Joint_Target_For_MHS()
+11:52:32 PROC rOperatorJogRobotHome
+11:52:38 PROC rResetErrors()
+11:52:56 PROC rLog_Clear_Log_TS000_5()
+12:04:21 PROC Main(), Project: P21-100538
+12:04:21 PROC rInit()
+12:04:21 PROC rWorldZones()
+12:04:21 PROC rMoveHomeSafe()
+12:04:21 PROC rLog_Current_Rob_Pos_TS000_9()
+12:04:21 CurrentRobAxisAngles = [-29,31,10,250,-26,-95]
+12:04:21 PROC rCalc_Joint_Target_For_MHS()
+12:04:21 PROC rOperatorJogRobotHome
+12:04:51 PROC Main(), Project: P21-100538
+12:04:51 PROC rInit()
+12:04:51 PROC rWorldZones()
+12:04:51 PROC rMoveHomeSafe()
+12:04:51 PROC rLog_Current_Rob_Pos_TS000_9()
+12:04:51 CurrentRobAxisAngles = [-18,9,17,192,-17,-61]
+12:04:51 PROC rCalc_Joint_Target_For_MHS()
+12:04:51 PROC rOperatorJogRobotHome
+12:05:23 PROC rResetCommands()
+12:05:23 PROC rResetCycleBoolean()
+12:05:23 PROC rResetposition_in_home_box()
+12:05:23 PROC rResetCommand_After_MoveHomeSafe()
+12:05:23 PROC rResetposition_in_Coil_box()
+12:05:23 PROC rResetErrors()
+12:05:27 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:05:58
+12:05:58 PROC rResetCommands()
+12:05:58 PROC rClear_HMI()
+12:05:58 PROC rInit_Received_information()
+12:05:58 diCP2_Selected_SIM = 1
+12:05:58 nClampPozX{2} =  1522
+12:05:58 nClampAngle{2} =  22.1
+12:05:58 PROC rMoveToClamp(2)
+12:06:46 PROC rResetCycleBoolean()
+12:07:30 PROC Main(), Project: P21-100538
+12:07:30 PROC rInit()
+12:07:30 PROC rWorldZones()
+12:07:30 PROC rMoveHomeSafe()
+12:07:30 PROC rLog_Current_Rob_Pos_TS000_9()
+12:07:30 CurrentRobAxisAngles = [-30,40,-9,222,-44,-79]
+12:07:30 PROC rCalc_Joint_Target_For_MHS()
+12:07:30 PROC rOperatorJogRobotHome
+12:07:34 PROC rResetErrors()
+12:07:34 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:12:47
+12:12:47 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 12:14:04
+12:14:04 PROC rIdentificationCycle(2)
+12:16:31 PROC Main(), Project: P21-100538
+12:16:31 PROC rInit()
+12:16:31 PROC rWorldZones()
+12:16:31 PROC rMoveHomeSafe()
+12:16:31 PROC rLog_Current_Rob_Pos_TS000_9()
+12:16:31 CurrentRobAxisAngles = [-28,30,7,212,-78,-135]
+12:16:31 PROC rCalc_Joint_Target_For_MHS()
+12:16:31 PROC rOperatorJogRobotHome
+12:16:36 PROC rResetErrors()
+12:16:37 PROC rLog_Clear_Log_TS000_5()
+12:17:09 PROC Main(), Project: P21-100538
+12:17:09 PROC rInit()
+12:17:09 PROC rWorldZones()
+12:17:09 PROC rMoveHomeSafe()
+12:17:09 PROC rLog_Current_Rob_Pos_TS000_9()
+12:17:09 CurrentRobAxisAngles = [-28,30,7,212,-78,-135]
+12:17:09 PROC rCalc_Joint_Target_For_MHS()
+12:17:09 PROC rOperatorJogRobotHome
+12:17:14 PROC rResetErrors()
+12:17:15 PROC rLog_Clear_Log_TS000_5()
+12:19:23 PROC Main(), Project: P21-100538
+12:19:23 PROC rInit()
+12:19:23 PROC rWorldZones()
+12:19:23 PROC rMoveHomeSafe()
+12:19:23 PROC rLog_Current_Rob_Pos_TS000_9()
+12:19:23 CurrentRobAxisAngles = [-27,34,1,219,-30,-65]
+12:19:23 PROC rCalc_Joint_Target_For_MHS()
+12:19:23 PROC rOperatorJogRobotHome
+12:19:27 PROC rResetErrors()
+12:19:28 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:19:30
+12:19:30 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 12:19:42
+12:19:42 PROC rIdentificationCycle(2)
+12:21:19 PROC Main(), Project: P21-100538
+12:21:19 PROC rInit()
+12:21:19 PROC rWorldZones()
+12:21:19 PROC rMoveHomeSafe()
+12:21:19 PROC rLog_Current_Rob_Pos_TS000_9()
+12:21:19 CurrentRobAxisAngles = [-28,35,-1,222,-33,-71]
+12:21:19 PROC rCalc_Joint_Target_For_MHS()
+12:21:19 PROC rOperatorJogRobotHome
+12:21:22 PROC rResetErrors()
+12:21:23 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:21:29
+12:21:29 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 12:24:42
+12:24:42 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 12:25:49
+12:25:49 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 12:27:53
+12:27:53 PROC rResetCommands()
+12:27:53 PROC rClear_HMI()
+12:27:53 PROC rInit_Received_information()
+12:27:53 diCP2_Selected_SIM = 1
+12:27:53 nClampPozX{2} =  1522
+12:27:53 nClampAngle{2} =  22.1
+12:27:53 PROC rMoveToClamp(2)
+12:29:34 PROC Main(), Project: P21-100538
+12:29:34 PROC rInit()
+12:29:35 PROC rWorldZones()
+12:29:35 PROC rMoveHomeSafe()
+12:29:35 PROC rLog_Current_Rob_Pos_TS000_9()
+12:29:35 CurrentRobAxisAngles = [-28,35,-1,222,-33,-71]
+12:29:35 PROC rCalc_Joint_Target_For_MHS()
+12:29:35 PROC rOperatorJogRobotHome
+12:29:39 PROC rResetErrors()
+12:29:40 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:29:43
+12:29:43 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 12:29:55
+12:29:55 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 12:39:26
+12:39:26 PROC rResetCommands()
+12:39:26 PROC rClear_HMI()
+12:39:26 PROC rInit_Received_information()
+12:39:26 diCP2_Selected_SIM = 1
+12:39:26 nClampPozX{2} =  1522
+12:39:26 nClampAngle{2} =  22.1
+12:39:26 PROC rMoveToClamp(2)
+12:41:26 PROC Main(), Project: P21-100538
+12:41:26 PROC rInit()
+12:41:26 PROC rWorldZones()
+12:41:26 PROC rMoveHomeSafe()
+12:41:26 PROC rLog_Current_Rob_Pos_TS000_9()
+12:41:26 CurrentRobAxisAngles = [-20,25,12,219,-23,-59]
+12:41:26 PROC rCalc_Joint_Target_For_MHS()
+12:41:26 PROC rOperatorJogRobotHome
+12:41:32 PROC rResetErrors()
+12:41:37 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 12:44:25
+12:44:25 PROC rResetCommands()
+12:44:25 PROC rClear_HMI()
+12:44:25 PROC rInit_Received_information()
+12:44:25 diCP2_Selected_SIM = 1
+12:44:25 nClampPozX{2} =  1522
+12:44:25 nClampAngle{2} =  22.1
+12:44:25 PROC rMoveToClamp(2)
+
+# Date: 2022-07-01# Time: 12:53:59
+12:53:59 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 12:55:16
+12:55:16 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 12:55:54
+12:55:54 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 12:56:19
+12:56:19 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 12:59:03
+12:59:03 PROC rTemperingCycle(2)
+
+# Date: 2022-07-01# Time: 12:59:27
+12:59:27 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 12:59:43
+12:59:43 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:05:23
+13:05:23 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:05:59
+13:05:59 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 13:06:14
+13:06:14 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:06:32
+13:06:32 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:06:33
+13:06:33 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:06:33
+13:06:33 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:06:33
+13:06:33 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:06:33
+13:06:33 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:06:40
+13:06:40 PROC rFreerun_FWD(2)
+
+# Date: 2022-07-01# Time: 13:07:45
+13:07:45 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:08:18
+13:08:18 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:15:23
+13:15:23 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 13:15:35
+13:15:35 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:17:58
+13:17:58 PROC rFreerun_BWD(2)
+13:18:31 PROC Main(), Project: P21-100538
+13:18:31 PROC rInit()
+13:18:31 PROC rWorldZones()
+13:18:31 PROC rMoveHomeSafe()
+13:18:31 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:31 CurrentRobAxisAngles = [-28,37,-3,212,-80,-133]
+13:18:31 PROC rCalc_Joint_Target_For_MHS()
+13:18:31 PROC rOperatorJogRobotHome
+13:18:35 PROC rResetErrors()
+13:18:37 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 13:18:40
+13:18:40 PROC rFreerun_BWD(2)
+13:18:59 PROC Main(), Project: P21-100538
+13:18:59 PROC rInit()
+13:18:59 PROC rWorldZones()
+13:18:59 PROC rMoveHomeSafe()
+13:18:59 PROC rLog_Current_Rob_Pos_TS000_9()
+13:18:59 CurrentRobAxisAngles = [-28,38,-6,215,-77,-127]
+13:18:59 PROC rCalc_Joint_Target_For_MHS()
+13:18:59 PROC rOperatorJogRobotHome
+13:19:04 PROC rResetErrors()
+13:19:05 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 13:19:07
+13:19:07 PROC rFreerun_BWD(2)
+13:20:03 PROC Main(), Project: P21-100538
+13:20:03 PROC rInit()
+13:20:03 PROC rWorldZones()
+13:20:03 PROC rMoveHomeSafe()
+13:20:03 PROC rLog_Current_Rob_Pos_TS000_9()
+13:20:03 CurrentRobAxisAngles = [-28,38,-5,215,-77,-126]
+13:20:03 PROC rCalc_Joint_Target_For_MHS()
+13:20:03 PROC rOperatorJogRobotHome
+13:20:08 PROC rResetErrors()
+13:20:09 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 13:20:11
+13:20:11 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:21:03
+13:21:03 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:23:51
+13:23:51 PROC rIdentificationCycle(2)
+13:29:20 PROC Main(), Project: P21-100538
+13:29:20 PROC rInit()
+13:29:20 PROC rWorldZones()
+13:29:20 PROC rMoveHomeSafe()
+13:29:20 PROC rLog_Current_Rob_Pos_TS000_9()
+13:29:20 CurrentRobAxisAngles = [-30,34,5,245,-31,-95]
+13:29:20 PROC rCalc_Joint_Target_For_MHS()
+13:29:20 PROC rOperatorJogRobotHome
+13:29:24 PROC rResetErrors()
+13:29:24 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 13:29:29
+13:29:29 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 13:29:58
+13:29:58 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:32:27
+13:32:27 PROC rFreerun_BWD(2)
+13:34:47 PROC Main(), Project: P21-100538
+13:34:47 PROC rInit()
+13:34:47 PROC rWorldZones()
+13:34:47 PROC rMoveHomeSafe()
+13:34:47 PROC rLog_Current_Rob_Pos_TS000_9()
+13:34:47 CurrentRobAxisAngles = [-27,37,-7,207,-39,-56]
+13:34:47 PROC rCalc_Joint_Target_For_MHS()
+13:34:47 PROC rOperatorJogRobotHome
+13:34:51 PROC rResetErrors()
+13:34:52 PROC rLog_Clear_Log_TS000_5()
+
+# Date: 2022-07-01# Time: 13:34:59
+13:34:59 PROC rTcpCenteringCycle(2)
+
+# Date: 2022-07-01# Time: 13:35:17
+13:35:17 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:39:37
+13:39:37 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:40:44
+13:40:44 PROC rIdentificationCycle(2)
+
+# Date: 2022-07-01# Time: 13:42:23
+13:42:23 PROC rFreerun_BWD(2)
+
+# Date: 2022-07-01# Time: 13:45:10
+13:45:10 PROC rIdentificationCycle(2)

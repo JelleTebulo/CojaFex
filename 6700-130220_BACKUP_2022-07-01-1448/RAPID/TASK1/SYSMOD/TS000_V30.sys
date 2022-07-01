@@ -1,0 +1,851 @@
+MODULE TS000_V30(SYSMODULE,NOVIEW)
+    !***********************************************************
+    !
+    ! Module:  TS000_V30
+    ! Machine: -
+    ! Project: 17-040XX
+    ! Description:
+    !   Standard routines / functions motion task, Task 1
+    !
+    ! Author: RLZ
+    ! Version: 1.4 
+    ! Date: 14-06-2017
+    ! Modified: 05-07-2017: nCalcDiameter_TS000_31 / log z value
+    ! Modified: 01-08-2017: function 37 & 38 added
+    ! Modified: 09-08-2017: function 33 & 34 added
+    ! Modified: 02-11-2017: function 35 added
+    ! Modified: 29-03-2018: function bSearchLin_TS000_10 modified (Text for logging)
+    ! Modified: 11-04-2018: function bSearchLin_TS000_10 modified (version update)
+    ! Modified: 25-06-2018: function bSearchLin_TS000_11 added 
+    ! Modified: 20-12-2018: function to write robot angles and position at restart.
+    ! Modified: 23-01-2019: function bSearchLin_TS000_12.
+    ! Modified: 07-05-2019: FilePath added
+    ! Modified: 18-10-2019: rLog_Cycle_Time_TS000_8 added 
+    ! Modified: 10-06-2020: bSearchCirculair_TS000_15 added 
+    ! Modified: 10-06-2020: nRandomNumber_TS000_41 added 
+    ! Modified: 16-06-2021: unsigned and signed integers added
+    ! Modified: 09-07-2021: Update unsigned / signed integers
+    ! Modified: 04-04-2022: nRandomNumber_TS000_41 removed, functing RAND() in rapid available
+    !***********************************************************
+    !
+    PERS num nWriteFolder;
+    CONST string StandardFilePath{5}:=["Home:","RemovableDisk1:","","","D:"];
+    PERS String FilePath;
+    VAR iodev ioLogFile;
+
+    PROC rLog_Time_Date_TS000_1()
+        !***********************************************************
+        ! Procedure: rLog_Time_Date_TS000_1
+        ! Machine: -
+        ! Description:
+        ! - Procedure to log the date and time 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017 
+        !***********************************************************
+        !
+        Close ioLogFile;
+        IF RobOs() FilePath:=StandardFilePath{1};
+        IF RobOS()=FALSE FilePath:=StandardFilePath{5};
+        !
+        Open FilePath\File:="/LogFile.txt",ioLogFile\Append;
+        Write ioLogFile,"";
+        Write ioLogFile,"# Date: "\NoNewLine;
+        Write ioLogFile,CDate()\NoNewLine;
+        Write ioLogFile,"# Time: "\NoNewLine;
+        Write ioLogFile,CTime();
+        !
+        Close ioLogFile;
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Numeric_Value_TS000_2(\string Message,num Number)
+        !***********************************************************
+        ! Procedure: rLog_Numeric_Value_TS000_2
+        ! Machine: -
+        ! Description:
+        ! - Procedure to log numeric values
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        Close ioLogFile;
+        IF RobOs() FilePath:=StandardFilePath{1};
+        IF RobOS()=FALSE FilePath:=StandardFilePath{5};
+        Open FilePath\File:="/LogFile.txt",ioLogFile\Append;
+        !
+        Write ioLogFile,CTime()\NoNewLine;
+        Write ioLogFile," "\NoNewLine;
+        Write ioLogFile,Message\NoNewLine;
+        Write ioLogFile," "\Num:=Number;
+        Close ioLogFile;
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Event_Message_TS000_3(\string Message)
+        !***********************************************************
+        ! Procedure: rLog_Event_Message_TS000_3
+        ! Machine: -
+        ! Description:
+        ! - Procedure to log event messages
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        Close ioLogFile;
+        IF RobOs() FilePath:=StandardFilePath{1};
+        IF RobOS()=FALSE FilePath:=StandardFilePath{5};
+        Open FilePath\File:="/LogFile.txt",ioLogFile\Append;
+        !
+        Write ioLogFile,CTime()\NoNewLine;
+        Write ioLogFile," "\NoNewLine;
+        Write ioLogFile,Message;
+        Close ioLogFile;
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Clear_Log_TS000_5()
+        !***********************************************************
+        ! Procedure: rLog_Clear_Log_TS000_5
+        ! Machine: -
+        ! Description:
+        ! - Procedure to check the size of the ioLogFile. If bigger then
+        !   0.5 mb then create old
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        rLog_Event_Message_TS000_3\Message:="PROC rLog_Clear_Log_TS000_5()";
+        !
+        Close ioLogFile;
+        IF RobOs() FilePath:=StandardFilePath{1};
+        IF RobOS()=FALSE FilePath:=StandardFilePath{5};
+        !
+        IF (FileSize(FilePath+"/LogFile.txt")>2500000) THEN
+            !
+            RemoveFile FilePath+"/LogFileOld.txt";
+            !
+            WaitTime 2;
+            CopyFile FilePath+"/LogFile.txt",FilePath+"/LogFileOld.txt";
+            !
+            WaitTime 2;
+            RemoveFile FilePath+"/LogFile.txt";
+            !    
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Cycle_Time_TS000_8(\switch Start|switch Stop)
+        !***********************************************************
+        ! Procedure: rLog_Cycle_Time_TS000_8
+        ! Description:
+        ! - Procedure to log the cycle Time.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 18-10-2018
+        !***********************************************************
+        !
+        VAR num A;
+        rLog_Event_Message_TS000_3\Message:="PROC rLog_Cycle_Time_TS000_8()";
+        !
+        IF Present(Start) THEN
+            ClkReset clock1;
+            ClkStart clock1;
+        ELSE
+            ClkStop clock1;
+            A:=ClkRead(clock1);
+            rLog_Numeric_Value_TS000_2\Message:="Cycle time =",A;
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+
+    PROC rLog_Current_Rob_Pos_TS000_9()
+        !***********************************************************
+        ! Procedure: rLog_Current_Rob_Pos_TS000_9
+        ! Description:
+        ! - Procedure to log the current rob pos, tool, workobject etc.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 20-12-2018
+        !***********************************************************
+        VAR string CurrentRobAxisAngles:="[0,0,0,0,0,0]";
+        VAR jointtarget pActualJoint;
+        !
+        rLog_Event_Message_TS000_3\Message:="PROC rLog_Current_Rob_Pos_TS000_9()";
+        !
+        pActualJoint:=CalcJointT(CRobT(\Tool:=tool0\WObj:=wobj0),tool0\WObj:=WObj0);
+        CurrentRobAxisAngles:="["+numtostr(pActualJoint.robax.rax_1,0)+","+numtostr(pActualJoint.robax.rax_2,0)+","+numtostr(pActualJoint.robax.rax_3,0)+","+numtostr(pActualJoint.robax.rax_4,0)+","+numtostr(pActualJoint.robax.rax_5,0)+","+numtostr(pActualJoint.robax.rax_6,0)+"]";
+        rLog_Event_Message_TS000_3\Message:="CurrentRobAxisAngles = "+CurrentRobAxisAngles;
+        !
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    FUNC bool bSearchLin_TS000_10(VAR signaldi Signal\switch Flanks,INOUT robtarget PosFound,robtarget PosEnd,speeddata Speed,INOUT tooldata Tool\PERS wobjdata WorkObject)
+        !***********************************************************
+        ! Function: bSearchLin_TS000_10
+        ! Machine: -
+        ! Description:
+        ! - Function to search in linear movement for a signal and 
+        !   stop the robot when the signalvalue is changed
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        rLog_Event_Message_TS000_3\Message:="PROC bSearchLin_TS000_10()";
+        !
+        ConfL\Off;
+        IF Present(Flanks) THEN
+            SearchL\SStop,Signal\Flanks,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ELSE
+            SearchL\SStop,Signal,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ENDIF
+    ERROR
+        ConfL\On;
+        IF ERRNO=ERR_WHLSEARCH RETURN FALSE;
+    ENDFUNC
+
+    FUNC bool bSearchLin_TS000_11(VAR signaldi Signal\switch Flanks,INOUT robtarget PosFound,robtarget PosEnd,speeddata Speed,INOUT tooldata Tool\PERS wobjdata WorkObject)
+        !***********************************************************
+        ! Function: bSearchLin_TS000_11
+        ! Machine: -
+        ! Description:
+        ! - Function to search in linear movement for a signal and 
+        !   stop the robot when the signalvalue is changed, if nothing found, skip warning!!!
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 21-06-2018
+        !***********************************************************
+        !
+        rLog_Event_Message_TS000_3\Message:="PROC bSearchLin_TS000_11()";
+        !
+        ConfL\Off;
+        IF Present(Flanks) THEN
+            SearchL\SStop,Signal\Flanks,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ELSE
+            SearchL\SStop,Signal,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ENDIF
+    ERROR
+        ConfL\On;
+        SkipWarn;
+        IF ERRNO=ERR_WHLSEARCH RETURN FALSE;
+    ENDFUNC
+
+    FUNC bool bSearchLin_TS000_12(VAR signaldi Signal\switch Flanks,INOUT robtarget PosFound,robtarget PosEnd,speeddata Speed,INOUT tooldata Tool\PERS wobjdata WorkObject)
+        !***********************************************************
+        ! Function: bSearchLin_TS000_12
+        ! Machine: -
+        ! Description:
+        ! - Function to search in linear movement for a signal and 
+        !   dont stop the robot when the signalvalue is changed
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 03-10-2018
+        !***********************************************************
+        !
+        rLog_Event_Message_TS000_3\Message:="PROC bSearchLin_TS000_12()";
+        !
+        ConfL\Off;
+        IF Present(Flanks) THEN
+            SearchL Signal\Flanks,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ELSE
+            SearchL Signal,PosFound,PosEnd,Speed,Tool\WObj?WorkObject;
+            ConfL\On;
+            RETURN TRUE;
+        ENDIF
+    ERROR
+        ConfL\On;
+        IF ERRNO=ERR_WHLSEARCH RETURN FALSE;
+    ENDFUNC
+
+    FUNC bool bSearchCirculair_TS000_15(VAR signaldi Signal\switch Flanks,INOUT robtarget PosFound,robtarget PosCenter,robtarget PosEnd,speeddata Speed,INOUT tooldata Tool\PERS wobjdata WorkObject)
+        !***********************************************************
+        ! Procedure: bSearchCirculair_TS000_15
+        ! Machine: Dross Robot
+        ! Description: search circulair, robot doesn't stop when signal is 1
+        ! Author: JLG
+        ! Version: 1.0
+        ! Date: 16-04-2020
+        !***********************************************************
+        !
+        IF Present(Flanks) THEN
+            SearchC Signal\Flanks,PosFound,PosCenter,PosEnd,Speed,Tool\WObj?WorkObject;
+            RETURN TRUE;
+        ELSE
+            SearchC Signal,PosFound,PosCenter,PosEnd,Speed,Tool\WObj?WorkObject;
+            RETURN TRUE;
+        ENDIF
+    ERROR
+        IF ERRNO=ERR_WHLSEARCH RETURN FALSE;
+    ENDFUNC
+
+    FUNC bool bCurrentPos_TS000_20(robtarget ComparePos,INOUT tooldata Gripper,num Accuracy\INOUT wobjdata Wobj)
+        !***********************************************************
+        ! Function: bCurrentPos_TS000_20
+        ! Machine: -
+        ! Description:
+        ! - Function to read and compare the actual robot position
+        !   with the given robtarget
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        VAR num Counter:=0;
+        VAR robtarget ActualPos;
+        !
+        IF Present(Wobj) THEN
+            ActualPos:=CRobT(\Tool:=Gripper\WObj:=Wobj);
+        ELSE
+            ActualPos:=CRobT(\Tool:=Gripper\WObj:=wobj0);
+        ENDIF
+        !
+        IF ActualPos.trans.x>ComparePos.trans.x-Accuracy AND ActualPos.trans.x<ComparePos.trans.x+Accuracy Counter:=Counter+1;
+        IF ActualPos.trans.y>ComparePos.trans.y-Accuracy AND ActualPos.trans.y<ComparePos.trans.y+Accuracy Counter:=Counter+1;
+        IF ActualPos.trans.z>ComparePos.trans.z-Accuracy AND ActualPos.trans.z<ComparePos.trans.z+Accuracy Counter:=Counter+1;
+        IF ActualPos.rot.q1>ComparePos.rot.q1-0.1 AND ActualPos.rot.q1<ComparePos.rot.q1+0.1 Counter:=Counter+1;
+        IF ActualPos.rot.q2>ComparePos.rot.q2-0.1 AND ActualPos.rot.q2<ComparePos.rot.q2+0.1 Counter:=Counter+1;
+        IF ActualPos.rot.q3>ComparePos.rot.q3-0.1 AND ActualPos.rot.q3<ComparePos.rot.q3+0.1 Counter:=Counter+1;
+        IF ActualPos.rot.q4>ComparePos.rot.q4-0.1 AND ActualPos.rot.q4<ComparePos.rot.q4+0.1 Counter:=Counter+1;
+        RETURN Counter=7;
+    ENDFUNC
+
+    FUNC bool rCheckSingular_TS000_21()
+        !***********************************************************
+        ! Function: rCheckSingular_TS000_21
+        ! Machine: -
+        ! Description:
+        ! - Checks if the robot is near calibration position. If it is 
+        !   within +/- 3 degrees the robot will move axis 5 to 45 degrees
+        !   to get out of singularity.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 31-05-2017
+        !***********************************************************
+        !
+        VAR jointtarget joints;
+        !
+        joints:=CJointT(\TaskName:="T_ROB1");
+        !
+        IF ABS(joints.robax.rax_1)<3 AND ABS(joints.robax.rax_1)>-3 AND
+            ABS(joints.robax.rax_2)<3 AND ABS(joints.robax.rax_2)>-3 AND
+            ABS(joints.robax.rax_3)<3 AND ABS(joints.robax.rax_3)>-3 AND
+            ABS(joints.robax.rax_4)<3 AND ABS(joints.robax.rax_4)>-3 AND
+            ABS(joints.robax.rax_5)<3 AND ABS(joints.robax.rax_5)>-3 AND
+            ABS(joints.robax.rax_6)<3 AND ABS(joints.robax.rax_6)>-3 THEN
+            !
+            RETURN TRUE;
+        ELSE
+            RETURN FALSE;
+        ENDIF
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_30(num z,num conveyor_Angle)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_30
+        ! Machine: -
+        ! Description:
+        ! - calculate and return coil diameter based on Measured_distance,
+        !   for a angled wConveyor.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 30-05-2017
+        !
+        ! Example: nDiameter:=nCalcDiameter_TS000_30(value, angle)
+        !***********************************************************
+        !
+        VAR num tempdia:=0;
+        !
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_30(num z) = ",z;
+        !
+        tempdia:=(2*z*Cos(conveyor_Angle))/(1+Cos(conveyor_Angle));
+        tempdia:=round(tempdia);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Diameter = ",tempdia;
+        !
+        RETURN tempdia;
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_31(num z,num DistCLCradleRolToConveyor,num RadiusCradleRoll)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_31
+        ! Machine: -
+        ! Description:
+        ! - Calculate the diameter opposite to the top of the cradle 
+        !   roll and returns the diameter of the coil 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 30-05-2017
+        !
+        ! Example: nDiameter:=nCalcDiameter_TS000_31(value, distance, distance)
+        !***********************************************************
+        !
+        VAR num Alpha;
+        VAR num C;
+        VAR num A;
+        VAR num B;
+        VAR num tempdia;
+        ! 
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_31(num z) = ",z;
+        !
+        Alpha:=ATan((DistCLCradleRolToConveyor)/(z+RadiusCradleRoll));
+        C:=Sqrt(Pow((z+RadiusCradleRoll),2)+Pow(DistCLCradleRolToConveyor,2));
+        A:=2*(Pow(C,2)-Pow(RadiusCradleRoll,2));
+        B:=(2*C*Cos(Alpha))+(2*RadiusCradleRoll);
+        tempdia:=A/B;
+        tempdia:=trunc(tempdia);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Coil diameter =",tempdia;
+        !
+        RETURN tempdia;
+        !
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_32(num z,num DistIntersections,num DistCl_AnglePoint)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_32
+        ! Machine: -
+        ! Description:
+        ! - Calculate the diameter if the coil lays on one point 
+        !   and returns the diameter of the coil 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 30-05-2017
+        !
+        ! Example: nDiameter:=nCalcDiameter_TS000_32(value, distance, distance)
+        !***********************************************************
+        !
+        VAR num A;
+        VAR num tempdia;
+        ! 
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_32(num z) = ",z;
+        !
+        A:=z-DistIntersections;
+        !
+        tempdia:=(pow(A,2)+pow(DistCl_AnglePoint,2))/(A);
+        tempdia:=trunc(tempdia);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Coil diameter =",tempdia;
+        !
+        RETURN tempdia;
+        !
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_33(num z,num ConveyorAngle,num MeasureAngle)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_33
+        ! Machine: -
+        ! Description:
+        ! - calculate and return coil diameter based on Measured_distance and measure angle,
+        !   for a angled wConveyor.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 09-08-2017
+        !
+        ! Example: nDiameter:=nCalcDiameter_TS000_33(value, distance, distance)
+        !***********************************************************
+        !
+        VAR num N;
+        VAR num R;
+        VAR num X;
+        VAR num a;
+        VAR num b;
+        VAR num c;
+        VAR num tempdia;
+
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_33(num z) = ",z;
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_33(num ConveyorAngle) = ",ConveyorAngle;
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_33(num MeasureAngle) = ",MeasureAngle;
+        !
+        X:=TAN(MeasureAngle)*z;
+        N:=2*COS(MeasureAngle)*(sqrt((pow(X,2))+((pow(z,2)))));
+        a:=(1-(1/(pow(COS(ConveyorAngle),2))));
+        b:=N/(COS(ConveyorAngle));
+        c:=-1*(pow(x,2)+pow(z,2));
+        R:=(-b+(sqrt(pow(b,2)-(4*a*c))))/(2*a);
+        tempdia:=Trunc(2*R);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Coil diameter =",tempdia;
+        !
+        RETURN tempdia;
+        !
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_34(num z,num ConveyorAngle,num MeasureAngle,num PointToPointDistance)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_34
+        ! Machine: -
+        ! Description:
+        ! - calculate and return coil diameter based on Measured_distance and measure angle,
+        !   for a angled wConveyor.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 09-08-2017
+        !
+        ! Example: nDiameter:=nCalcDiameter_TS000_34(value, distance, distance)
+        !***********************************************************
+        !
+        VAR num M;
+        VAR num R;
+        VAR num X;
+        VAR num Y2;
+        VAR num Q;
+        VAR num tempdia;
+
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_34(num z) = ",z;
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_34(num ConveyorAngle) = ",ConveyorAngle;
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_34(num MeasureAngle) = ",MeasureAngle;
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_34(num PointToPointDistance) = ",PointToPointDistance;
+        !
+        X:=TAN(MeasureAngle)*z;
+        Y2:=tan(ConveyorAngle)*0.5*PointToPointDistance;
+        M:=-1*(pow(X,2)+pow(z,2))+pow(0.5*PointToPointDistance,2)-pow(Y2,2)+(2*Y2*COS(MeasureAngle)*(sqrt(pow(X,2)+pow(z,2))));
+        Q:=(2*Y2)-(2*(sqrt(pow(X,2)+pow(z,2)))*COS(MeasureAngle));
+        R:=sqrt(pow((M/Q),2)+pow(0.5*PointToPointDistance,2));
+        tempdia:=Trunc(2*R);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Coil diameter =",tempdia;
+        !
+        RETURN tempdia;
+        !
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_35(num x,num z,num DistCLCradleRolToConveyor,num RadiusCradleRoll,num MeasureAngle)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_35
+        ! Machine: -
+        ! Description:
+        ! - calculate and return coil diameter based on Measured_distance and measure angle,
+        !   for a cradle roll Conveyor.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 02-11-2017
+        !***********************************************************
+        !
+        VAR num tempdia;
+        !
+        VAR num A;
+        VAR num A2;
+        VAR num X2;
+        VAR num X4;
+        VAR num Y2;
+        VAR num Y4;
+        VAR num B;
+        VAR num B2;
+        VAR num B4;
+        VAR num Rc;
+        VAR num Rc2;
+        VAR num Rc3;
+        VAR num Rc4;
+
+        rLog_Event_Message_TS000_3\Message:="FUNC num nCalcDiameter_TS000_35()";
+        rLog_Numeric_Value_TS000_2\Message:="x                         = ",x;
+        rLog_Numeric_Value_TS000_2\Message:="z                         = ",z;
+        rLog_Numeric_Value_TS000_2\Message:="DistCLCradleRolToConveyor = ",DistCLCradleRolToConveyor;
+        rLog_Numeric_Value_TS000_2\Message:="RadiusCradleRoll          = ",RadiusCradleRoll;
+        rLog_Numeric_Value_TS000_2\Message:="MeasureAngle              = ",MeasureAngle;
+        !
+        B:=DistCLCradleRolToConveyor;
+        Rc:=RadiusCradleRoll;
+        !
+        A:=Cos(MeasureAngle);
+        A2:=Pow(A,2);
+        B2:=Pow(B,2);
+        B4:=Pow(B,4);
+        !
+        X2:=Pow(x,2);
+        X4:=Pow(x,4);
+        Y2:=Pow(z,2);
+        Y4:=Pow(z,4);
+        !
+        Rc2:=Pow(Rc,2);
+        Rc3:=Pow(Rc,3);
+        Rc4:=Pow(Rc,4);
+        !
+        tempdia:=2*((A*POW(((X2+Y2)*(B4+Rc4-2*B2*Rc2+X4-2*B2*X2+Y4-2*B2*Y2-2*Rc2*X2-2*Rc2*Y2+2*X2*Y2+4*B2*X2*A2+4*B2*Y2*A*A)),0.5)-B2*Rc+Rc*X2+Rc*Y2+Rc3-2*Rc*X2*A2-2*Rc*Y2*A2)/(2*(X2*A2+Y2*A2-Rc2)));
+        !
+        rLog_Numeric_Value_TS000_2\Message:="Coil diameter =",tempdia;
+        !
+        RETURN tempdia;
+        !
+    ENDFUNC
+
+
+    FUNC num nCalcMaxValue_TS000_36(num A,num B,num C)
+        !***********************************************************
+        ! Function: nCalcMaxValue_TS000_36
+        ! Machine: -
+        ! Description:
+        ! - Calculate the maximum value out of 3  
+        !   and returns this value
+        !   Is used for calculating the maximum value search coil flat
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 30-05-2017
+        !
+        ! Example: value:=nCalcMaxValue_TS000_36(value_1, value_2, value_3)
+        !***********************************************************
+        !
+        VAR num MAXVALUE;
+        !
+        rLog_Event_Message_TS000_3\Message:="FUNC num nCalcMaxValue_TS000_36()";
+        !
+        IF A>B THEN
+            IF A>C THEN
+                MAXVALUE:=A;
+            ELSE
+                MAXVALUE:=C;
+            ENDIF
+        ELSE
+            IF B>C THEN
+                MAXVALUE:=B;
+            ELSE
+                MAXVALUE:=C;
+            ENDIF
+        ENDIF
+        !
+        MAXVALUE:=Trunc(MAXVALUE);
+        !
+        RETURN MAXVALUE;
+    ENDFUNC
+
+    FUNC num rCalcCirRadi_TS000_37(pos p1,pos p2,pos p3)
+        !***********************************************************
+        ! Function: rCalcCirRadi_TS000_37
+        ! Machine: -
+        ! Description:
+        ! - The radius of a circle is calculated. The circle
+        !   is given with three positions on the circumference.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 01-08-2017
+        !
+        !***********************************************************
+        !
+        VAR pos p12;
+        VAR pos p13;
+        VAR pos p23;
+        VAR num a;
+        VAR num b;
+        VAR num c;
+        VAR num s;
+
+        rLog_Event_Message_TS000_3\Message:="FUNC num rCalcCirRadi_TS000_37()";
+        !
+        p12:=p2-p1;
+        p13:=p3-p1;
+        p23:=p3-p2;
+        a:=Sqrt(p12.x*p12.x+p12.y*p12.y+p12.z*p12.z);
+        b:=Sqrt(p13.x*p13.x+p13.y*p13.y+p13.z*p13.z);
+        c:=Sqrt(p23.x*p23.x+p23.y*p23.y+p23.z*p23.z);
+        s:=(a+b+c)/2;
+        rLog_Numeric_Value_TS000_2\Message:="Radi =",0.25*a*b*c/Sqrt(s*(s-a)*(s-b)*(s-c));
+        !
+        RETURN 0.25*a*b*c/Sqrt(s*(s-a)*(s-b)*(s-c));
+    ENDFUNC
+
+    FUNC robtarget rCalcCirCenter_TS000_38(robtarget p1,robtarget p2,robtarget p3)
+        !***********************************************************
+        ! Function: rCalcCirCenter_TS000_38
+        ! Machine: -
+        ! Description:
+        ! - The centre of a circle  is calculated from three positions on 
+        !   the circumference.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 01-08-2017
+        !
+        !***********************************************************
+        !
+        VAR pos p12;
+        VAR pos p13;
+        VAR pos p23;
+        VAR pos k2;
+        VAR pos pn12;
+        VAR pos pn13;
+        VAR num a;
+        VAR num b;
+        VAR num ai;
+        VAR num bi;
+        VAR num c;
+        VAR num d;
+        VAR num s;
+        VAR num r;
+        VAR num kl;
+        VAR robtarget p0;
+
+        rLog_Event_Message_TS000_3\Message:="FUNC num rCalcCirCenter_TS000_38()";
+        !
+        p12:=p2.trans-p1.trans;
+        p13:=p3.trans-p1.trans;
+        p23:=p3.trans-p2.trans;
+        a:=Sqrt(p12.x*p12.x+p12.y*p12.y+p12.z*p12.z);
+        b:=Sqrt(p13.x*p13.x+p13.y*p13.y+p13.z*p13.z);
+        c:=Sqrt(p23.x*p23.x+p23.y*p23.y+p23.z*p23.z);
+        s:=(a+b+c)/2;
+        ai:=1/a;
+        bi:=1/b;
+        r:=0.25*a*b*c/Sqrt(s*(s-a)*(s-b)*(s-c));
+        IF a>b THEN
+            p23:=p13;
+            p13:=p12;
+            p12:=p23;
+            a:=b;
+        ENDIF
+        pn12:=p12*ai;
+        pn13:=p13*bi;
+        k2:=pn12*pn13*pn12;
+        kl:=1/Sqrt(k2.x*k2.x+k2.y*k2.y+k2.z*k2.z);
+        k2:=kl*k2;
+        d:=Sqrt(r*r-a*a/4);
+        p0:=p1;
+        p0.trans:=p1.trans+0.5*p12+d*k2;
+        RETURN p0;
+    ENDFUNC
+
+    FUNC num nCalcDiameter_TS000_39(num diameter,num conveyor_Angle)
+        !***********************************************************
+        ! Function: nCalcDiameter_TS000_39
+        ! Machine: -
+        ! Description:
+        ! - Calculate the center of th coil, based on the given 
+        !   diameter and conveyor angle.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 20-05-2019
+        !
+        !***********************************************************
+        !
+        VAR num tempcenter:=0;
+        !
+        rLog_Numeric_Value_TS000_2\Message:="PROC nCalcDiameter_TS000_39(num z) = ",diameter;
+        !
+        tempcenter:=((diameter*(1+Cos(conveyor_Angle)))/(2*Cos(conveyor_Angle)))-(0.5*diameter);
+        tempcenter:=round(tempcenter);
+        !
+        rLog_Numeric_Value_TS000_2\Message:="CenterCoil = ",tempcenter;
+        !
+        RETURN tempcenter;
+    ENDFUNC
+
+    FUNC num rPythagorean_theorem_TS000_40(num B,num C)
+        !***********************************************************
+        ! Function: rPythagorean_theorem_TS000_40
+        ! Machine: -
+        ! Description:
+        ! - A^2=B^2+C^2
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 01-08-2017
+        !
+        !***********************************************************
+        !
+        VAR num A;
+        VAR num A2;
+        VAR num B2;
+        VAR num C2;
+
+        B2:=POW(B,2);
+        C2:=POW(C,2);
+        !
+        A2:=B2+C2;
+        A:=Sqrt(A2);
+        !
+        RETURN A;
+    ENDFUNC
+
+    FUNC num nUnsignedToSigned_INT_TS000_50(num UnsignedValue)
+        !***********************************************************
+        ! Function: nUnsignedToSigned_INT_TS000_50
+        ! Machine: -
+        ! Description:
+        !
+        ! Author: RLZ
+        ! Date: 23-04-2020
+        !
+        !***********************************************************
+        VAR num SignedValue;
+        IF (UnsignedValue)>32767 THEN
+            SignedValue:=(UnsignedValue-65536);
+        ELSE
+            SignedValue:=UnsignedValue;
+        ENDIF
+        RETURN Round(SignedValue\Dec:=0);
+    ENDFUNC
+
+    FUNC num nSignedToUnSigned_INT_TS000_51(num SignedValue)
+        !***********************************************************
+        ! Function: nSignedToUnSigned_INT_TS000_51
+        ! Machine: -
+        ! Description:
+        !
+        ! Author: RLZ
+        ! Version: 1.0
+        !
+        !***********************************************************
+        VAR num UnSignedValue;
+        IF (SignedValue)<0 THEN
+            UnSignedValue:=(SignedValue+65536);
+        ELSE
+            UnSignedValue:=SignedValue;
+        ENDIF
+        RETURN Round(UnSignedValue\Dec:=0);
+    ENDFUNC
+ENDMODULE

@@ -1,0 +1,50 @@
+ 00: Robot in home position
+ 01: 
+ 02: 
+ 03: 
+ 04: 
+ 05: 
+ 06: Robot moving to the home position
+ 07: Robot in maintenance position 
+ 08: Robot moving to maintenance position 
+ 09: 
+ 10: 
+ 11: Robot move to clamp #1
+ 12: Robot at clamp #1
+ 13: Robot near clamp #1
+ 14: Robot move to clamp #2
+ 15: Robot at clamp #2
+ 16: Robot near clamp #1
+ 17: 
+ 18: 
+ 19:
+ 20:
+ 21: Robot in TCP centering cycle
+ 22: 
+ 23:
+ 24: Robot in identification cycle
+ 25:
+ 26:
+ 27: Robot in tempering cycle
+ 28:
+ 29: 
+ 30: Robot free run forward
+ 31:
+ 32: 
+ 33: Robot free run backward
+ 34:
+ 35:
+ 36:
+ 37:
+ 38:
+ 39:
+ 40:
+ 41:
+ 42:
+ 43:
+ 44:
+ 45:
+ 46: Robot in calibration position
+ 47: Robot moving to calibration position
+ 48: Robot performing cyclic brake
+ 49: Robot in undefined position

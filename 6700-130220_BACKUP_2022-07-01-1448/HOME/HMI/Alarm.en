@@ -1,0 +1,192 @@
+ 000: No Alarm Active
+ 001: Local emergency stop
+ 002: Remote emergency stop
+ 003: Emergency stop feedback error
+ 004: Emergency stop channels passivated (Press reset button to acknowledge)
+ 005: Safe stop active
+ 006: Area scanner reset required
+ 007: Robot CBC not performed (SafeMove)
+ 008: Robot not synchronized (SafeMove)
+ 009: CBC not OK (Safemove)
+ 010: Robot not able to automatically return to home position
+ 011: Fatal collision
+ 012: Collision
+ 013: Press motors on button on IRC5 to reset EmStop from robot controller
+ 014: Main switches turned off
+ 015: Circuit breaker Robot controller tripped
+ 016: Circuit breaker Safety 24VDC tripped
+ 017: 
+ 018: Unable to start robot motors
+ 019: Robot safety feedback error (Press reset button)
+ 020: Safety configuration unlocked
+ 021: Not in safety supervision mode
+ 022: Robot speed limited (SafeMove)
+ 023: Robot outside programmed area (SafeMove)
+ 024: 
+ 025: 
+ 026: Doorlock feedback error
+ 027: 
+ 028: 
+ 029: 
+ 030: Robot cycle Aborted
+ 031: 
+ 032: 
+ 033: 
+ 034: 
+ 035: AE171 Encoder fault detected
+ 036: AE181 Encoder fault detected
+ 037: AE971 Encoder fault detected
+ 038: AE981 Encoder fault detected
+ 039: 
+ 040: 
+ 041: 
+ 042: 
+ 043: 
+ 044: 
+ 045: 
+ 046: 
+ 047: 
+ 048: 
+ 049: 
+ 050: Object deteced in safety zone 1
+ 051: Object deteced in safety zone 2
+ 052: 
+ 053:  
+ 054: 
+ 055: 
+ 056: 
+ 057: 
+ 058: 
+ 059: 
+ 060: 
+ 061: 
+ 062: 
+ 063: 
+ 064: 
+ 065: Request safestop robot zone 1 active
+ 066: Request safestop robot zone 2 active
+ 067: 
+ 068: 
+ 069:  
+ 070: Communication time-out ROBOT <-> PLC
+ 071: Communication time-out ITG <-> PLC
+ 072: 
+ 073: 
+ 074: 
+ 075: 
+ 076: 
+ 077: 
+ 078: 
+ 079: Robot start at main attempt given while not in homebox
+ 080: 
+ 081: 
+ 082: 
+ 083: 
+ 084: 
+ 085: 
+ 086: 
+ 087: 
+ 088: 
+ 089: 
+ 090: Object deteced in warning zone 1
+ 091: Object deteced in warning zone 2
+ 092: 
+ 093: 
+ 094: 
+ 095: 
+ 096: 
+ 097: 
+ 098: 
+ 099: 
+ 100: 
+ 101: 
+ 102: 
+ 103: 
+ 104: 
+ 105: 
+ 106: 
+ 107: 
+ 108: 
+ 109: 
+ 110: 
+ 111: 
+ 112: 
+ 113: 
+ 114: 
+ 115: AE171 Encoder alarm detected
+ 116: AE181 Encoder alarm detected
+ 117: AE971 Encoder alarm detected
+ 118: AE981 Encoder alarm detected
+ 119: 
+ 120: Robot  cpu fan stopped rotating
+ 121: Robot  smb battery charge is low
+ 122: Robot  temperature warning
+ 123: 
+ 124: 
+ 125: 
+ 126: 
+ 127: 
+ 128: Performing CBC brake test (SafeMove)
+ 129: 
+ 130: 
+ 131: 
+ 132: 
+ 133: 
+ 134: 
+ 135: 
+ 136: 
+ 137: 
+ 138: 
+ 139: 
+ 140: Communication time-out Pulpit PC 1
+ 141: 
+ 142: 
+ 143: 
+ 144: 
+ 145: CBC warning (SafeMove)
+ 146: Prewarning CBC (SafeMove)
+ 147: 
+ 148: 
+ 149: 
+ 150: 
+ 151: 
+ 152: 
+ 153: 
+ 154: 
+ 155: 
+ 156: 
+ 157: 
+ 158: 
+ 159: 
+ 160:  
+ 161: 
+ 162: 
+ 163: 
+ 164: 
+ 165: 
+ 166: 
+ 167: 
+ 168: 
+ 169: 
+ 170: 
+ 171: 
+ 172: 
+ 173: 
+ 174: 
+ 175: 
+ 176: 
+ 177: 
+ 178: 
+ 179: 
+ 180: Speed adjustment flexpendant <100%
+ 181: 
+ 182:
+ 183: 
+ 184: 
+ 185: 
+ 186: 
+ 187: 
+ 188: 
+ 189: 
+ 190: Safestop zone 1 activated without permission
+ 191: Safestop zone 2 activated without permission

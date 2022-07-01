@@ -1,0 +1,818 @@
+MODULE TS050_V10(SYSMODULE,NOVIEW)
+    !***********************************************************
+    !
+    ! Module:  TS050_V10
+    ! Machine: -
+    ! Project: 17-040xx
+    ! Description:
+    !   Standard routines / functions background task, task 2
+    !   Routines/functions can't be modified for the customer
+    !
+    ! Author: rob_lentz
+    ! Version: 1.0
+    ! Date: 20-06-2017
+    !
+    !***********************************************************
+    !
+    PERS bool bAxisOK{6}:=[FALSE,FALSE,FALSE,FALSE,FALSE,FALSE];
+    PERS num nShowInfoScreen:=150;
+    !
+    PERS bool bAlarmbufferOld{24,8};
+    PERS bool bFirstCycle_task2:=FALSE;
+    PERS bool bShow_Groupbox_Alarm:=FALSE;
+    PERS bool bShow_Groupbox_Info:=FALSE;
+    PERS bool bShow_Groupbox_Operator:=TRUE;
+    PERS bool bShow_Groupbox_Service:=FALSE;
+    PERS bool bShow_Groupbox_Service_2:=FALSE;
+    PERS bool bShow_Groupbox_Service_3:=FALSE;
+    !
+    PERS byte BAlarmBuffer{24};
+    PERS byte BAlarmBuffer_Prev_Cycle{24};
+    !
+    VAR iodev ioAlarms;
+    !
+    PERS num nAlarmNumber{12}:=[20,23,30,0,0,0,0,0,0,0,0,0];
+    PERS num nAlarmNumberOld{12}:=[20,23,30,0,0,0,0,0,0,0,0,0];
+    PERS num nHMI_Joint{6}:=[-25,37,-11,187,-67,-103];
+    PERS num nRefreshCounter:=0;
+    PERS num nSelected_Groupbox:=1;
+    !
+    CONST string sRead_HMI_File{11}:=["REFRESH_SCREEN","OPERATOR_SCREEN","START_CONDITIONS","SERVICE_SCREEN","SERVICE_SCREEN_2","ALARM_SCREEN","INFO_SCREEN","EVENTS","EVENTS_2","MODE","STATE"];
+    CONST string sAlarmFile:="ALARM";
+    !
+    PERS string sAlarmLine{12};
+    ! Text for the most important 12 ioAlarms
+    PERS string sHMI_Alarm{192};
+    ! String with all ioAlarms
+    PERS string sHMI_Time_Date;
+    ! HMI time and date on screen
+    PERS string sHMI_ModeLine;
+    ! HMI actual mode on screen
+    PERS string sHMI_Mode{100};
+    ! Variable text mode
+    PERS string sHMI_StateLine;
+    ! HMI actual state on screen
+    PERS string sHMI_State{100};
+    ! Variable text state
+    PERS string sHMI_REFRESH_SCREEN{100};
+    ! Text on the refresh screen
+    PERS string sHMI_OPERATOR_SCREEN{100};
+    ! Text on the operator screen
+    PERS string sHMI_START_CONDITIONS{100};
+    ! Text for the startconditions
+    PERS string sHMI_SERVICE_SCREEN{100};
+    ! Text on the service screen
+    PERS string sHMI_SERVICE_SCREEN_2{100};
+    ! Text on the service screen
+    PERS string sHMI_ALARM_SCREEN{100};
+    ! Text on the alarm screen
+    PERS string sHMI_INFO_SCREEN{100};
+    ! Text on the information screen
+    PERS string sHMI_Events{100};
+    ! Variable event text robot events
+    PERS string sHMI_Events_2{100};
+    ! Variable event text robot events
+    PERS string sLanguage:="en";
+
+    PROC rMachineIndependent_TS050_1(string Standard_Flexpendant_Language)
+        !***********************************************************
+        ! Procedure: rMachineIndependent_TS050_1
+        ! Machine: - / -
+        ! Description:
+        ! - call of machine independent functions
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        Setgo goLife_Counter,giLife_Counter;
+        !
+        IF diHMI_ReadLanguageFiles=1 rReadLanguageFile_TS050_2(Standard_Flexpendant_Language);
+        !
+        rShow_Hmi_Screen_TS050_10;
+        !
+        rWrite_Machine_Mode_TS050_11;
+        !
+        rWrite_Machine_State_TS050_12;
+        !
+        rWrite_Time_Date_TS050_13;
+        !
+        rMachine_Mode_Selector_TS050_20;
+        !
+        rWrite_Speed_Override_TS050_21;
+        !
+        rWrite_Joint_Angles_HMI_TS050_22;
+        !
+        rAlarmRoutine_TS050_30;
+    ERROR
+        IF (ERRNO=ERR_GO_LIM) OR (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rReadLanguageFile_TS050_2(string Standard_Flexpendant_Language)
+        !***********************************************************
+        ! Procedure: rReadLanguageFile_TS050_2
+        ! Machine: - / -
+        ! Description:
+        ! - read text files from the home directory
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        Reset doHMI_ReadLanguageFiles;
+        FOR i FROM 1 TO 11 DO
+            IF rCheckFile_TS050_3(sRead_HMI_File{i},Standard_Flexpendant_Language) THEN
+                sLanguage:=GetSysInfo(\CtrlLang);
+                !
+                IF rCheckFile_TS050_3(sRead_HMI_File{i},sLanguage) THEN
+                    rReadConfigFile_TS050_4 sRead_HMI_File{i},sLanguage;
+                ELSE
+                    rReadConfigFile_TS050_4 sRead_HMI_File{i},Standard_Flexpendant_Language;
+                ENDIF
+            ENDIF
+        ENDFOR
+        !
+        IF rCheckFile_TS050_3(sAlarmFile,Standard_Flexpendant_Language) THEN
+            sLanguage:=GetSysInfo(\CtrlLang);
+            IF rCheckFile_TS050_3(sAlarmFile,sLanguage) THEN
+                rReadAlarmFile_TS050_5 sAlarmFile,sLanguage;
+            ELSE
+                rReadAlarmFile_TS050_5 sAlarmFile,Standard_Flexpendant_Language;
+            ENDIF
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    FUNC bool rCheckFile_TS050_3(string file,string sLanguage)
+        !***********************************************************
+        ! Procedure: rCheckFile_TS050_3
+        ! Machine: - / -
+        ! Description:
+        ! - check if text files exists
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR iodev ConfigFile;
+        !
+        close ConfigFile;
+        Open "HOME:HMI"\File:=file+"."+sLanguage,ConfigFile\Read;
+        close ConfigFile;
+        RETURN TRUE;
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ELSE
+            close Configfile;
+            SKIPWARN;
+            RETURN FALSE;
+        ENDIF
+    ENDFUNC
+
+    PROC rReadConfigFile_TS050_4(string file,string sLanguage)
+        !***********************************************************
+        ! Procedure: rReadConfigFile_TS050_4
+        ! Machine: - / -
+        ! Description:
+        ! - read HMI text files for HMI
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR iodev ConfigFile;
+        VAR string Text;
+        VAR num X;
+        Open "HOME:HMI"\File:=file+"."+sLanguage,ConfigFile\Read;
+        !
+        X:=0;
+        IF (Text<>"EOF") Text:=ReadStr(ConfigFile);
+        WHILE (Text<>"EOF") AND (X<100) DO
+            Incr X;
+            IF file="REFRESH_SCREEN" sHMI_REFRESH_SCREEN{X}:=Text;
+            IF file="OPERATOR_SCREEN" sHMI_OPERATOR_SCREEN{X}:=Text;
+            IF file="START_CONDITIONS" sHMI_START_CONDITIONS{X}:=Text;
+            IF file="SERVICE_SCREEN" sHMI_SERVICE_SCREEN{X}:=Text;
+            IF file="SERVICE_SCREEN_2" sHMI_SERVICE_SCREEN_2{X}:=Text;
+            IF file="ALARM_SCREEN" sHMI_ALARM_SCREEN{X}:=Text;
+            IF file="INFO_SCREEN" sHMI_INFO_SCREEN{X}:=Text;
+            !
+            IF file="EVENTS" sHMI_Events{X}:=Text;
+            !
+            IF file="EVENTS_2" sHMI_Events_2{X}:=Text;
+            IF file="MODE" sHMI_Mode{X}:=Text;
+            IF file="STATE" sHMI_State{X}:=Text;
+            !
+            Text:=ReadStr(ConfigFile);
+        ENDWHILE
+        !
+        Close ConfigFile;
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rReadAlarmFile_TS050_5(string file,string sLanguage)
+        !***********************************************************
+        ! Procedure: rReadAlarmFile_TS050_5
+        ! Machine: - / -
+        ! Description:
+        ! - read alarm text files for HMI
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR iodev ConfigFile;
+        VAR string Text;
+        VAR num Y;
+        !
+        Close ConfigFile;
+        Open "HOME:HMI"\File:=file+"."+sLanguage,ConfigFile\Read;
+        !
+        Y:=1;
+        Text:=ReadStr(ConfigFile);
+        !
+        WHILE (Text<>"EOF") AND (Y<193) DO
+            sHMI_Alarm{Y}:=Text;
+            Incr Y;
+            Text:=ReadStr(ConfigFile);
+        ENDWHILE
+        !
+        Close ConfigFile;
+        !
+        !********************************************************!*!*******!
+        !* Init 	 
+        !*****************************************************************
+        FOR i FROM 1 TO 12 DO
+            nAlarmNumberOld{i}:=-1;
+        ENDFOR
+        !
+        bFirstCycle_task2:=TRUE;
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rInit_Data_TS050_9()
+        !***********************************************************
+        ! Procedure: rInit_Data_TS050_9
+        ! Machine: -/-
+        ! Description:
+        ! - Initialize coil marker variables
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        Reset doDataReceiving;
+        !
+        Set doHMI_ReadLanguageFiles;
+        !
+        bFirstCycle_task2:=TRUE;
+        !
+    ENDPROC
+
+    PROC rShow_Hmi_Screen_TS050_10()
+        !***********************************************************
+        ! Procedure: rShow_Hmi_Screen_TS050_10
+        ! Machine: - / -
+        ! Description:
+        ! - Change from hmi screen on the flexpendant
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        IF (giHMI_Show_Group)<>7 THEN
+            !
+            !One shot show info screen, and refresh every 30 seconds.
+            IF (DOutput(doRobotNotAbleToGoHome)=1) THEN
+                IF nShowInfoScreen=150 THEN
+                    Setgo goHMI_Show_Group,5;
+                    nShowInfoScreen:=0;
+                ELSE
+                    Incr nShowInfoScreen;
+                ENDIF
+            ELSE
+                nShowInfoScreen:=150;
+            ENDIF
+            !
+            TEST GInput(giHMI_Show_Group)
+            CASE 2:
+                bShow_Groupbox_Alarm:=TRUE;
+                bShow_Groupbox_Info:=FALSE;
+                bShow_Groupbox_Operator:=FALSE;
+                bShow_Groupbox_Service:=FALSE;
+                bShow_Groupbox_Service_2:=FALSE;
+                bShow_Groupbox_Service_3:=FALSE;
+                nSelected_Groupbox:=2;
+                !
+            CASE 3:
+                bShow_Groupbox_Alarm:=FALSE;
+                bShow_Groupbox_Info:=FALSE;
+                bShow_Groupbox_Operator:=FALSE;
+                bShow_Groupbox_Service:=TRUE;
+                bShow_Groupbox_Service_2:=FALSE;
+                bShow_Groupbox_Service_3:=FALSE;
+                nSelected_Groupbox:=3;
+            CASE 4:
+                bShow_Groupbox_Alarm:=FALSE;
+                bShow_Groupbox_Info:=FALSE;
+                bShow_Groupbox_Operator:=FALSE;
+                bShow_Groupbox_Service:=FALSE;
+                bShow_Groupbox_Service_2:=TRUE;
+                bShow_Groupbox_Service_3:=FALSE;
+                nSelected_Groupbox:=4;
+            CASE 5:
+                bShow_Groupbox_Alarm:=FALSE;
+                bShow_Groupbox_Info:=TRUE;
+                bShow_Groupbox_Operator:=FALSE;
+                bShow_Groupbox_Service:=FALSE;
+                bShow_Groupbox_Service_2:=FALSE;
+                bShow_Groupbox_Service_3:=FALSE;
+                nSelected_Groupbox:=5;
+            CASE 6:
+                bShow_Groupbox_Alarm:=FALSE;
+                bShow_Groupbox_Info:=FALSE;
+                bShow_Groupbox_Operator:=FALSE;
+                bShow_Groupbox_Service:=FALSE;
+                bShow_Groupbox_Service_2:=FALSE;
+                bShow_Groupbox_Service_3:=TRUE;
+                nSelected_Groupbox:=6;
+            DEFAULT:
+                bShow_Groupbox_Alarm:=FALSE;
+                bShow_Groupbox_Info:=FALSE;
+                bShow_Groupbox_Operator:=TRUE;
+                bShow_Groupbox_Service:=FALSE;
+                bShow_Groupbox_Service_2:=FALSE;
+                bShow_Groupbox_Service_3:=FALSE;
+                nSelected_Groupbox:=1;
+                Setgo goHMI_Show_Group,1;
+            ENDTEST
+        ELSE
+            Incr nRefreshCounter;
+            bShow_Groupbox_Alarm:=FALSE;
+            bShow_Groupbox_Info:=FALSE;
+            bShow_Groupbox_Operator:=FALSE;
+            bShow_Groupbox_Service:=FALSE;
+            bShow_Groupbox_Service_2:=FALSE;
+            bShow_Groupbox_Service_3:=FALSE;
+            !
+            IF nRefreshCounter>3 THEN
+                Setgo goHMI_Show_Group,1;
+                nRefreshCounter:=0;
+            ENDIF
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Machine_Mode_TS050_11()
+        !***********************************************************
+        ! Procedure: rWrite_Machine_Mode_TS050_11
+        ! Machine: - / -
+        ! Description:
+        ! - Display machine mode text and color on HMI 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        IF (siAutoOn)=0 THEN
+            sHMI_ModeLine:=sHMI_Mode{3};
+            SetGo goHMI_MODE,3;
+        ELSEIF (diLocal_Sim=1) THEN
+            sHMI_ModeLine:=sHMI_Mode{2};
+            SetGo goHMI_MODE,2;
+        ELSE
+            sHMI_ModeLine:=sHMI_Mode{1};
+            SetGo goHMI_MODE,1;
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Machine_State_TS050_12()
+        !***********************************************************
+        ! Procedure: rWrite_Machine_State_TS050_12
+        ! Machine: - / -
+        ! Description:
+        ! - Display machine state text and color on HMI 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        IF (Doutput(doInCycle)=1) THEN
+            sHMI_StateLine:=sHMI_State{3};
+            SetGo goHMI_STATE,3;
+        ELSEIF (diReadyForNewCycle=1) THEN
+            sHMI_StateLine:=sHMI_State{2};
+            SetGo goHMI_STATE,2;
+        ELSE
+            sHMI_StateLine:=sHMI_State{1};
+            SetGo goHMI_STATE,1;
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Time_Date_TS050_13()
+        !***********************************************************
+        ! Procedure: rWrite_Time_Date_TS050_13
+        ! Machine: - / -
+        ! Description:
+        ! - Display time and date on HMI 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        sHMI_Time_Date:=(CDate()+", "+strPart(Ctime(),1,5));
+    ENDPROC
+
+    PROC rMachine_Mode_Selector_TS050_20()
+        !***********************************************************
+        ! Procedure: rMachine_Mode_Selector_TS050_20
+        ! Machine: - / -
+        ! Description:
+        ! - Display and change machine mode Local / Remote
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        IF RobOS() THEN
+            IF diLocal=1 THEN
+                Set doLocal_SIM;
+            ELSE
+                Reset doLocal_SIM;
+            ENDIF
+        ELSE
+            IF DOutput(doHMI_Local)=1 THEN
+                Set doLocal_SIM;
+            ELSEIF DOutput(doHMI_Remote)=1 THEN
+                Reset doLocal_SIM;
+            ENDIF
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Speed_Override_TS050_21()
+        !***********************************************************
+        ! Procedure: rWrite_Speed_Override_TS050_21
+        ! Machine: - / -
+        ! Description:
+        ! - Create a alarm when the speed on the flexpendant <100
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR num override;
+        !
+        override:=CSpeedOverride();
+        !
+        IF override<100 THEN
+            Set doSpeedOverride_Error;
+        ELSE
+            Reset doSpeedOverride_Error;
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Joint_Angles_HMI_TS050_22()
+        !***********************************************************
+        ! Procedure: rWrite_Joint_Angles_HMI_TS050_22
+        ! Machine: - / -
+        ! Description:
+        ! - Write actual robot axis angles to the HMI
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR jointtarget joints;
+        joints:=CJointT(\TaskName:="T_ROB1");
+        !
+        nHMI_Joint{1}:=Round(joints.robax.rax_1);
+        nHMI_Joint{2}:=Round(joints.robax.rax_2);
+        nHMI_Joint{3}:=Round(joints.robax.rax_3);
+        nHMI_Joint{4}:=Round(joints.robax.rax_4);
+        nHMI_Joint{5}:=Round(joints.robax.rax_5);
+        nHMI_Joint{6}:=Round(joints.robax.rax_6);
+        !
+        bAxisOK{1}:=ABS(nHMI_Joint{1}-nHMI_Required_Angle_Axis{1})<3;
+        bAxisOK{2}:=ABS(nHMI_Joint{2}-nHMI_Required_Angle_Axis{2})<3;
+        bAxisOK{3}:=ABS(nHMI_Joint{3}-nHMI_Required_Angle_Axis{3})<3;
+        bAxisOK{4}:=ABS(nHMI_Joint{4}-nHMI_Required_Angle_Axis{4})<3;
+        bAxisOK{5}:=ABS(nHMI_Joint{5}-nHMI_Required_Angle_Axis{5})<3;
+        bAxisOK{6}:=ABS(nHMI_Joint{6}-nHMI_Required_Angle_Axis{6})<3;
+        !
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rAlarmRoutine_TS050_30()
+        !***********************************************************
+        ! Procedure: rAlarmRoutine_TS050_30
+        ! Machine: - / -
+        ! Description:
+        ! - Only write and log an alarm when there is a change in 
+        !   the BAlarmBuffer.
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        BAlarmBuffer_Prev_Cycle:=BAlarmBuffer;
+        rReceiveAlarm_TS050_31;
+        !
+        IF BAlarmBuffer_Prev_Cycle<>BAlarmBuffer OR bFirstCycle_task2 THEN
+            !
+            bFirstCycle_task2:=FALSE;
+            rWrite_Current_Alarm_TS050_32;
+            rCreate_alarm_log_TS050_33;
+        ENDIF
+    ENDPROC
+
+    PROC rReceiveAlarm_TS050_31()
+        !***********************************************************
+        ! Procedure: rReceiveAlarm_TS050_31
+        ! Machine: - / -
+        ! Description:
+        ! - Read ioAlarms from plc inputs
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        BAlarmBuffer{1}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_1));
+        BAlarmBuffer{2}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_2));
+        BAlarmBuffer{3}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_3));
+        BAlarmBuffer{4}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_4));
+        BAlarmBuffer{5}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_5));
+        BAlarmBuffer{6}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_6));
+        BAlarmBuffer{7}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_7));
+        BAlarmBuffer{8}:=DnumToNum(GInputDnum(giCriticalAlarms_Byte_8));
+        !
+        BAlarmBuffer{9}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_1));
+        BAlarmBuffer{10}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_2));
+        BAlarmBuffer{11}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_3));
+        BAlarmBuffer{12}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_4));
+        BAlarmBuffer{13}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_5));
+        BAlarmBuffer{14}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_6));
+        BAlarmBuffer{15}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_7));
+        BAlarmBuffer{16}:=DnumToNum(GInputDnum(giNon_CriticalAlarms_Byte_8));
+        !
+        BAlarmBuffer{17}:=DnumToNum(GInputDnum(giWarnings_Byte_1));
+        BAlarmBuffer{18}:=DnumToNum(GInputDnum(giWarnings_Byte_2));
+        BAlarmBuffer{19}:=DnumToNum(GInputDnum(giWarnings_Byte_3));
+        BAlarmBuffer{20}:=DnumToNum(GInputDnum(giWarnings_Byte_4));
+        BAlarmBuffer{21}:=DnumToNum(GInputDnum(giWarnings_Byte_5));
+        BAlarmBuffer{22}:=DnumToNum(GInputDnum(giWarnings_Byte_6));
+        BAlarmBuffer{23}:=DnumToNum(GInputDnum(giWarnings_Byte_7));
+        BAlarmBuffer{24}:=DnumToNum(GInputDnum(giWarnings_Byte_8));
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rWrite_Current_Alarm_TS050_32()
+        !***********************************************************
+        ! Procedure: rWrite_Current_Alarm_TS050_32
+        ! Machine: - / -
+        ! Description:
+        ! - Check the alarm area and derive the first 12 active ioAlarms 
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        VAR num AlarmCount;
+        VAR bool bRefreshAlarm;
+        !
+        AlarmCount:=0;
+        !
+        FOR AlarmByte FROM 1 TO 24 DO
+            IF (BAlarmBuffer{AlarmByte}<>0) AND (AlarmCount<12) THEN
+                FOR AlarmBit FROM 1 TO 8 DO
+                    IF BitCheck(BAlarmBuffer{AlarmByte},AlarmBit) AND (AlarmCount<12) AND ((((AlarmByte-1)*8)+AlarmBit-1)>0) THEN
+                        Incr AlarmCount;
+                        nAlarmNumber{AlarmCount}:=(((AlarmByte-1)*8)+AlarmBit-1);
+                    ENDIF
+                ENDFOR
+            ENDIF
+        ENDFOR
+        ! Remove the ioAlarms if less then 12 ioAlarms are active
+        !
+        !
+        IF AlarmCount<12 THEN
+            FOR i FROM (AlarmCount+1) TO 12 DO
+                nAlarmNumber{i}:=0;
+            ENDFOR
+        ENDIF
+        !
+        !Because sometimes the colour of the alarm in't updated due to switching screens on the flexpendant, the ioAlarms need te be refreshed:
+        !
+        bRefreshAlarm:=FALSE;
+        IF nAlarmNumber{1}<>0 AND giHMI_ALARM=0 bRefreshAlarm:=TRUE;
+        !
+        ! Alarm line 1, also color change
+        !		
+        IF nAlarmNumber{1}<>nAlarmNumberOld{1} OR bRefreshAlarm THEN
+            nAlarmNumberOld{1}:=nAlarmNumber{1};
+            waittime 0.2;
+            sAlarmLine{1}:=sHMI_Alarm{nAlarmNumber{1}+1};
+            waittime 0.2;
+            !
+            ! Color change depending on alarm number
+            IF (nAlarmNumber{1}>127) THEN
+                SetGo goHMI_ALARM,3;
+            ELSEIF (nAlarmNumber{1}>63) THEN
+                SetGo goHMI_ALARM,2;
+            ELSEIF (nAlarmNumber{1}>0) THEN
+                SetGo goHMI_ALARM,1;
+            ELSE
+                SetGo goHMI_ALARM,0;
+            ENDIF
+            bRefreshAlarm:=FALSE;
+        ENDIF
+        !
+        ! Alarm line 2 - 12
+        !
+        FOR i FROM 2 TO 12 DO
+            IF nAlarmNumber{i}<>nAlarmNumberOld{i} THEN
+                nAlarmNumberOld{i}:=nAlarmNumber{i};
+                IF nAlarmNumber{i}<>0 THEN
+                    sAlarmLine{i}:=sHMI_Alarm{nAlarmNumber{i}+1};
+                ELSE
+                    sAlarmLine{i}:="";
+                ENDIF
+            ENDIF
+        ENDFOR
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rCreate_alarm_log_TS050_33()
+        !***********************************************************
+        ! Procedure: rCreate_alarm_log_TS050_33
+        ! Machine: - / -
+        ! Description:
+        ! - Create a alarm log is previous alarm array is unequal to 
+        !   the current alarm array
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        FOR AlarmByte FROM 1 TO 24 DO
+            FOR AlarmBit FROM 1 TO 8 DO
+                IF BitCheck(BAlarmBuffer{AlarmByte},AlarmBit)<>bAlarmbufferOld{AlarmByte,AlarmBit} THEN
+                    IF (bAlarmbufferOld{AlarmByte,AlarmBit}=TRUE) THEN
+                        rLog_Alarm_TS050_34\Message:=sHMI_Alarm{(((AlarmByte-1)*8)+AlarmBit)},TRUE;
+                        rLog_Alarm_TS050_34\Message:=", Reset",FALSE;
+                        bAlarmbufferOld{AlarmByte,AlarmBit}:=FALSE;
+                    ELSE
+                        rLog_Alarm_TS050_34\Message:=sHMI_Alarm{(((AlarmByte-1)*8)+AlarmBit)},TRUE;
+                        rLog_Alarm_TS050_34\Message:=", Set",FALSE;
+                        bAlarmbufferOld{AlarmByte,AlarmBit}:=TRUE;
+                    ENDIF
+                ENDIF
+            ENDFOR
+            IF AlarmByte=8 OR AlarmByte=16 Waittime 0.05;
+        ENDFOR
+        !
+        IF DOutput(doInCycle)=0 rLog_Clear_Log_ALARM_TS050_39;
+    ERROR
+        IF (ERRNO=ERR_NORUNUNIT) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Alarm_TS050_34(\string Message,BOOL NONEWLINE)
+        !***********************************************************
+        ! Procedure: rLog_Alarm_TS050_34
+        ! Machine: - / -
+        ! Description:
+        ! - Log the alarm to a text file
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        Close ioAlarms;
+        IF RobOs() THEN
+            Open "HOME/Alarms.txt",ioAlarms\Append;
+        ELSE
+            Open "D:/Alarms.txt",ioAlarms\Append;
+        ENDIF
+        !
+        IF NONEWLINE=TRUE THEN
+            Write ioAlarms,"Date: "\NoNewLine;
+            Write ioAlarms,CDate()\NoNewLine;
+            Write ioAlarms,", Time: "\NoNewLine;
+            Write ioAlarms,CTime()\NoNewLine;
+            Write ioAlarms,", Alarm: "\NoNewLine;
+            Write ioAlarms,Message\NoNewLine;
+            Close ioAlarms;
+        ELSE
+            Write ioAlarms,Message;
+            Close ioAlarms;
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+
+    PROC rLog_Clear_Log_ALARM_TS050_39()
+        !***********************************************************
+        ! Procedure: rLog_Clear_Log_ALARM_TS050_39
+        ! Machine: - / -
+        ! Description:
+        ! - Procedure to check the size of the ioAlarms. If bigger then
+        !   2.5 mb then create old
+        !
+        ! Author: rob_lentz
+        ! Version: 1.0
+        ! Date: 08-06-2017
+        !***********************************************************
+        !
+        IF (FileSize("HOME/Alarms.txt")>2500000) THEN
+            !
+            RemoveFile "HOME/AlarmsOld.txt";
+            !
+            WaitTime 2;
+            CopyFile "HOME/Alarms.txt","HOME/AlarmsOld.txt";
+            !
+            WaitTime 2;
+            RemoveFile "HOME/Alarms.txt";
+            !    
+        ENDIF
+    ERROR
+        IF (ERRNO=ERR_FILEACC OR ERRNO=ERR_FILEEXIST OR ERRNO=ERR_FILEOPEN OR ERRNO=ERR_FILNOTFND) THEN
+            SKIPWARN;
+            TRYNEXT;
+        ENDIF
+    ENDPROC
+ENDMODULE

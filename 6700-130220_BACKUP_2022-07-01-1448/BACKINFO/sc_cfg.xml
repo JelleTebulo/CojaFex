@@ -1,0 +1,324 @@
+<SafetyConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:abb-robotics-safety-controller-configuration sc_cfg.1.03.01.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" version="1.03.01" xmlns="urn:abb-robotics-safety-controller-configuration">
+  <ConfigurationSeal checksum="BF35D885CDDE31714CA64454815A48F91B9ABAD41ABB5D486146A8F5A8FA3C94" checksumShort="2FF38323" creationDate="2022-07-01T12:48:57.2297678+02:00" createdBy="ServiceTech" systemName="6700-130220" swVersion="1.03.07" RW_Version="6.13.01" RS_Version="22.01.00">
+    <ProtectedElements checksum="F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5" />
+    <SiosCfg version="1.2">
+      <Signal name="RobotInZone_10_INT_0" type="BOOL" default="0" visible="false" />
+      <Signal name="__CONST_True" type="BOOL" default="1" visible="false" />
+      <Signal name="RobotInZone_20_INT_0" type="BOOL" default="0" visible="false" />
+      <Signal name="SafetyEnable" type="BOOL" default="1" visible="true" readonly="false" />
+      <Signal name="AutomaticMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ManualMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ManualFullSpeedMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="DriveEnable" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="DriveEnableFeedback" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="LocalEmergencyStopStatus" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ExternalPowerControlActive" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ExternalPowerControlFeedback" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="AutoIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="ManualIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="ManualFSIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="RobotNotInZone1" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="RobotNotInZone2" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoStop0Status" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoStop1Status" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoASTriggered" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoGSTriggered" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoAutomaticMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoManualMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoDriveEnableFeedback" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoLocalEmergencyStopStatus" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoDriveEnable" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoCommisioningModeActive" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoSynchronized" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoServiceModeActive" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoSafetyControllerOperational" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoConfigurationLocked" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoRobotInSafeToolZone" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoRobotInHomePos" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoRobotInHomeBox" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoRobotInZone1" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoRobotInZone2" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdoSafeStandStill" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdiAutoStopOK" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdiGeneralStopOK" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="sdiSafetyEnable" type="BOOL" default="0" visible="true" readonly="false" />
+      <FuncIOMappings>
+        <AutomaticMode signalName="sdoAutomaticMode" mandatory="true" />
+        <AutoIn signalName="AutoIn" mandatory="true" visible="false" />
+        <CommissioningModeActive signalName="sdoCommisioningModeActive" mandatory="false" visible="true" />
+        <ConfigurationLocked signalName="sdoConfigurationLocked" mandatory="false" visible="true" />
+        <DriveEnable signalName="sdoDriveEnable" mandatory="true" />
+        <LocalEmergencyStopStatus signalName="sdoLocalEmergencyStopStatus" mandatory="true" />
+        <ManualMode signalName="sdoManualMode" mandatory="true" />
+        <ManualIn signalName="ManualIn" mandatory="true" visible="false" />
+        <ManualFullSpeedMode signalName="ManualFullSpeedMode" mandatory="true" />
+        <ManualFSIn signalName="ManualFSIn" mandatory="true" visible="false" />
+        <SafetyEnable signalName="sdiSafetyEnable" mandatory="true" />
+        <ServiceModeActive signalName="sdoServiceModeActive" mandatory="false" visible="true" />
+        <Stop0Status signalName="sdoStop0Status" mandatory="false" visible="true" />
+        <Stop1Status signalName="sdoStop1Status" mandatory="false" visible="true" />
+        <SafetyControllerOperational signalName="sdoSafetyControllerOperational" mandatory="false" visible="true" />
+        <ExternalPowerControlActive signalName="ExternalPowerControlActive" mandatory="true" />
+        <ExternalPowerControlFeedback signalName="ExternalPowerControlFeedback" mandatory="true" />
+        <DriveEnableFeedback signalName="sdoDriveEnableFeedback" mandatory="true" />
+      </FuncIOMappings>
+      <Net name="PNFDevice" visible="true" readonly="false">
+        <Device name="PN_Internal_Device" inSizeBits="64" outSizeBits="64" address="" visible="true" readonly="false">
+          <Module name="SDO_8_bytes" inputSize="0" outputSize="8" sourceAddress="1" destAddress="7" wdTimeout="500" crcLength="3" fParVersion="2" fParIndex="1" slot="3" silLevel="2" blockId="0" iParCrc="0" visible="true" readonly="false" />
+          <Module name="SDI_8_bytes" inputSize="8" outputSize="0" sourceAddress="1" destAddress="8" wdTimeout="500" crcLength="3" fParVersion="2" fParIndex="2" slot="4" silLevel="2" blockId="0" iParCrc="0" visible="true" readonly="false" />
+          <Signal name="sdiAutoStopOK" type="BOOL" default="0" offset="0" width="1" direction="input" />
+          <Signal name="sdiGeneralStopOK" type="BOOL" default="0" offset="1" width="1" direction="input" />
+          <Signal name="sdiSafetyEnable" type="BOOL" default="0" offset="10" width="1" direction="input" />
+          <Signal name="sdoStop0Status" type="BOOL" default="0" offset="2" width="1" direction="output" />
+          <Signal name="sdoStop1Status" type="BOOL" default="0" offset="3" width="1" direction="output" />
+          <Signal name="sdoASTriggered" type="BOOL" default="0" offset="1" width="1" direction="output" />
+          <Signal name="sdoGSTriggered" type="BOOL" default="0" offset="0" width="1" direction="output" />
+          <Signal name="sdoAutomaticMode" type="BOOL" default="0" offset="4" width="1" direction="output" />
+          <Signal name="sdoManualMode" type="BOOL" default="0" offset="5" width="1" direction="output" />
+          <Signal name="sdoDriveEnableFeedback" type="BOOL" default="0" offset="6" width="1" direction="output" />
+          <Signal name="sdoLocalEmergencyStopStatus" type="BOOL" default="0" offset="7" width="1" direction="output" />
+          <Signal name="sdoDriveEnable" type="BOOL" default="0" offset="8" width="1" direction="output" />
+          <Signal name="sdoCommisioningModeActive" type="BOOL" default="0" offset="9" width="1" direction="output" />
+          <Signal name="sdoSynchronized" type="BOOL" default="0" offset="10" width="1" direction="output" />
+          <Signal name="sdoServiceModeActive" type="BOOL" default="0" offset="12" width="1" direction="output" />
+          <Signal name="sdoSafetyControllerOperational" type="BOOL" default="0" offset="13" width="1" direction="output" />
+          <Signal name="sdoConfigurationLocked" type="BOOL" default="0" offset="14" width="1" direction="output" />
+          <Signal name="sdoRobotInSafeToolZone" type="BOOL" default="0" offset="32" width="1" direction="output" />
+          <Signal name="sdoRobotInHomePos" type="BOOL" default="0" offset="33" width="1" direction="output" />
+          <Signal name="sdoRobotInHomeBox" type="BOOL" default="0" offset="34" width="1" direction="output" />
+          <Signal name="sdoRobotInZone1" type="BOOL" default="0" offset="35" width="1" direction="output" />
+          <Signal name="sdoRobotInZone2" type="BOOL" default="0" offset="36" width="1" direction="output" />
+          <Signal name="sdoSafeStandStill" type="BOOL" default="0" offset="30" width="1" direction="output" />
+        </Device>
+      </Net>
+      <Net name="Feedback" visible="true" readonly="false">
+        <Device name="SC_Feedback_Dev" inSizeBits="0" outSizeBits="2048" address="" visible="true" readonly="false">
+          <Signal name="SafetyEnable" type="BOOL" default="1" offset="0" width="1" direction="output" />
+          <Signal name="AutomaticMode" type="BOOL" default="0" offset="1" width="1" direction="output" />
+          <Signal name="ManualMode" type="BOOL" default="0" offset="2" width="1" direction="output" />
+          <Signal name="ManualFullSpeedMode" type="BOOL" default="0" offset="3" width="1" direction="output" />
+          <Signal name="DriveEnable" type="BOOL" default="0" offset="4" width="1" direction="output" />
+          <Signal name="DriveEnableFeedback" type="BOOL" default="0" offset="5" width="1" direction="output" />
+          <Signal name="LocalEmergencyStopStatus" type="BOOL" default="0" offset="6" width="1" direction="output" />
+          <Signal name="ExternalPowerControlActive" type="BOOL" default="0" offset="7" width="1" direction="output" />
+          <Signal name="ExternalPowerControlFeedback" type="BOOL" default="0" offset="8" width="1" direction="output" />
+          <Signal name="RobotNotInZone1" type="BOOL" default="0" offset="9" width="1" direction="output" />
+          <Signal name="RobotNotInZone2" type="BOOL" default="0" offset="10" width="1" direction="output" />
+        </Device>
+      </Net>
+      <Net name="SafeLocalIO" visible="false" readonly="true">
+        <Device name="SafeLocalIODev" inSizeBits="6" outSizeBits="2" address="" visible="false" readonly="true">
+          <FuncIO name="AutoIn" direction="input" visible="false" readonly="true" offset="0" width="1" />
+          <FuncIO name="ManualIn" direction="input" visible="false" readonly="true" offset="1" width="1" />
+          <FuncIO name="ManualFSIn" direction="input" visible="false" readonly="true" offset="2" width="1" />
+          <FuncIO name="DriveEnableFeedback" direction="input" visible="false" readonly="true" offset="3" width="1" />
+          <FuncIO name="LocalEmergencyStopStatus" direction="input" visible="false" readonly="true" offset="4" width="1" />
+          <FuncIO name="ExternalPowerControlFeedback" direction="input" visible="false" readonly="true" offset="5" width="1" />
+          <FuncIO name="DriveEnable" direction="output" visible="false" readonly="true" offset="0" width="1" />
+          <FuncIO name="ExternalPowerControlActive" direction="output" visible="false" readonly="true" offset="1" width="1" />
+        </Device>
+      </Net>
+    </SiosCfg>
+    <ClCfg version="1.2">
+      <Operators>
+        <Operator name="INV1" oper="INVERT">
+          <Resultant name="res1" type="BOOL" />
+          <Actuator name="act1" type="BOOL" />
+        </Operator>
+        <Operator name="AND1" oper="AND">
+          <Resultant name="res1" type="BOOL" />
+          <Actuator name="act1" type="BOOL" />
+          <Actuator name="act2" type="BOOL" />
+        </Operator>
+      </Operators>
+      <PreLogic>
+        <Operation optype="INV1" name="RobotInZone_11">
+          <Resultant opName="res1" sigName="RobotInZone_10_INT_0" />
+          <Actuator opName="act1" sigName="RobotNotInZone1" />
+        </Operation>
+        <Operation optype="AND1" name="RobotInZone_1">
+          <Resultant opName="res1" sigName="sdoRobotInZone1" />
+          <Actuator opName="act1" sigName="__CONST_True" />
+          <Actuator opName="act2" sigName="RobotInZone_10_INT_0" />
+        </Operation>
+        <Operation optype="INV1" name="RobotInZone_21">
+          <Resultant opName="res1" sigName="RobotInZone_20_INT_0" />
+          <Actuator opName="act1" sigName="RobotNotInZone2" />
+        </Operation>
+        <Operation optype="AND1" name="RobotInZone_2">
+          <Resultant opName="res1" sigName="sdoRobotInZone2" />
+          <Actuator opName="act1" sigName="__CONST_True" />
+          <Actuator opName="act2" sigName="RobotInZone_20_INT_0" />
+        </Operation>
+      </PreLogic>
+      <PostLogic />
+    </ClCfg>
+    <SystemCfg version="1.0">
+      <FuncIO name="AutomaticMode" direction="input" />
+      <FuncIO name="CommissioningModeActive" direction="input" />
+      <FuncIO name="ConfigurationLocked" direction="input" />
+      <FuncIO name="DriveEnable" direction="input" />
+      <FuncIO name="ExternalPowerControlActive" direction="input" />
+      <FuncIO name="ExtComShutdownReq" direction="input" />
+      <FuncIO name="ManualMode" direction="input" />
+      <FuncIO name="ManualFullSpeedMode" direction="input" />
+      <FuncIO name="SafetyControllerOperational" direction="input" />
+      <FuncIO name="ServiceModeActive" direction="input" />
+      <FuncIO name="Stop0Status" direction="input" />
+      <FuncIO name="Stop1Status" direction="input" />
+      <FuncIO name="Stop0Status" direction="input" />
+      <FuncIO name="Stop1Status" direction="input" />
+      <FuncIO name="SafetyControllerOperational" direction="input" />
+      <FuncIO name="ServiceModeActive" direction="input" />
+      <FuncIO name="CommissioningModeActive" direction="input" />
+      <FuncIO name="ConfigurationLocked" direction="input" />
+      <FuncIO name="ExtComShutdownReq" direction="input" />
+      <FuncIO name="ExtComShutdownAck" direction="output" />
+    </SystemCfg>
+    <SafetyCfg version="1.0">
+      <StopFunction id="1" emStop="false" mode="Auto" stopType="Category1Stop" name="AutoStop">
+        <PhysicalInput signalName="sdiAutoStopOK" />
+        <StatusFunction signalName="sdoASTriggered" />
+      </StopFunction>
+      <StopFunction id="2" emStop="false" mode="General" stopType="Category1Stop" name="GeneralStop">
+        <PhysicalInput signalName="sdiGeneralStopOK" />
+        <StatusFunction signalName="sdoGSTriggered" />
+      </StopFunction>
+      <DriveModuleConfiguration driveModuleId="1" maxSpeedManualMode="0.25">
+        <Robot name="ROB_1" startSpeedOffset="0.1" movedBy="TMF3">
+          <Baseframe>
+            <Translation x="0" y="0" z="0" />
+            <Quaternion q1="0.707107" q2="0" q3="0" q4="0.707107" />
+          </Baseframe>
+          <ElbowOffset x="-0.268" y="0" z="0.375" />
+          <UpperArmGeometry xs:type="Capsule" name="Capsule" radius="0.3">
+            <Start x="-0.15" y="0" z="0.175" />
+            <End x="1.4" y="0" z="0.175" />
+          </UpperArmGeometry>
+          <Joint id="1" calPosition="0" />
+          <Joint id="2" calPosition="0" />
+          <Joint id="3" calPosition="0" />
+          <Joint id="4" calPosition="0" />
+          <Joint id="5" calPosition="0" />
+          <Joint id="6" calPosition="0" />
+        </Robot>
+        <ExternalAxis name="TMF3" mechUnit="TRACK" axisType="Track">
+          <Baseframe>
+            <Translation x="0" y="0" z="0" />
+            <Quaternion q1="1" q2="0" q3="0" q4="0" />
+          </Baseframe>
+          <Joint jointId="7" servoLag="5" servoDelay="3" calPosition="0" maxSpeedManualMode="56.03">
+            <Transmission transmJoint="1384.27" rotatingMove="false" />
+            <MeasurementChannel node="7" link="1" boardPosition="1" minSquareXYSum="0.2601" maxSquareXYSum="1" />
+            <BrakeRampSupervision delay="200" decel="1" startSpeedOffset="0.1" />
+          </Joint>
+        </ExternalAxis>
+        <Tool id="1" name="tInductionRing">
+          <TCP x="0" y="0" z="0.51" />
+          <ToolOrientation q1="0" q2="0.92388" q3="0" q4="-0.382683" />
+          <ToolGeometry xs:type="Lozenge" name="SSV" radius="0.1" width="1.2" height="0.9">
+            <Pose>
+              <Translation x="0" y="0" z="0.6" />
+              <Quaternion q1="0.5" q2="-0.5" q3="0.5" q4="0.5" />
+            </Pose>
+          </ToolGeometry>
+        </Tool>
+        <SyncCheck syncStatus="sdoSynchronized">
+          <SyncPosition jointId="1" positionValue="0" />
+          <SyncPosition jointId="2" positionValue="0" />
+          <SyncPosition jointId="3" positionValue="0" />
+          <SyncPosition jointId="4" positionValue="0" />
+          <SyncPosition jointId="5" positionValue="0" />
+          <SyncPosition jointId="6" positionValue="0" />
+          <SyncPosition jointId="7" positionValue="0" />
+        </SyncCheck>
+        <CyclicBrakeCheck warningOnly="true" minExpectedControlError="0.02" standstillToleranceCBC="2" testInterval="720" preWarningTime="11">
+          <Joint id="1" enabled="true" />
+          <Joint id="2" enabled="true" />
+          <Joint id="3" enabled="true" />
+          <Joint id="4" enabled="true" />
+          <Joint id="5" enabled="true" />
+          <Joint id="6" enabled="true" />
+          <Joint id="7" enabled="true" />
+        </CyclicBrakeCheck>
+        <SafeZone id="1" name="Safe_Zone" top="5" bottom="-0.55" speedLimitPriority="NORMAL">
+          <Point x="-1" y="-1.5" />
+          <Point x="10.182" y="-1.5" />
+          <Point x="10.182" y="5" />
+          <Point x="-1" y="5" />
+        </SafeZone>
+        <SafeZone id="3" name="Safe_Zone_2" top="5" bottom="-0.55" speedLimitPriority="NORMAL">
+          <Point x="4.581" y="-1.5" />
+          <Point x="10.182" y="-1.5" />
+          <Point x="10.182" y="5" />
+          <Point x="4.581" y="5" />
+        </SafeZone>
+        <SafeZone id="2" name="Safe_Zone_1" top="5" bottom="-0.55" speedLimitPriority="NORMAL">
+          <Point x="-1" y="-1.5" />
+          <Point x="4.581" y="-1.5" />
+          <Point x="4.581" y="5" />
+          <Point x="-1" y="5" />
+        </SafeZone>
+        <SafeZone id="4" name="RobotHomeBox" top="4" bottom="1.5" speedLimitPriority="NORMAL">
+          <Point x="-1" y="-1" />
+          <Point x="10.182" y="-1" />
+          <Point x="10.182" y="3" />
+          <Point x="-1" y="3" />
+        </SafeZone>
+        <SafeRange id="1" name="Safe_Range">
+          <AxisLimit jointId="1" lowerLimit="-0.087266" upperLimit="0.087266" allowInside="true" />
+          <AxisLimit jointId="2" lowerLimit="-0.610865" upperLimit="-0.436332" allowInside="true" />
+          <AxisLimit jointId="3" lowerLimit="0.436332" upperLimit="0.610865" allowInside="true" />
+          <AxisLimit jointId="4" lowerLimit="1.48353" upperLimit="1.658063" allowInside="true" />
+          <AxisLimit jointId="5" lowerLimit="-0.087266" upperLimit="0.087266" allowInside="true" />
+          <AxisLimit jointId="6" lowerLimit="-0.087266" upperLimit="0.087266" allowInside="true" />
+          <AxisLimit jointId="7" lowerLimit="0" upperLimit="9.182" allowInside="true" />
+        </SafeRange>
+        <SafeRange id="2" name="Safe_Range_1">
+          <AxisLimit jointId="1" lowerLimit="-0.750492" upperLimit="1.0472" allowInside="true" />
+          <AxisLimit jointId="2" lowerLimit="-1.13446" upperLimit="1.48353" allowInside="true" />
+          <AxisLimit jointId="3" lowerLimit="-1.396263" upperLimit="1.22173" allowInside="true" />
+          <AxisLimit jointId="4" lowerLimit="-2.18166" upperLimit="5.23599" allowInside="true" />
+          <AxisLimit jointId="5" lowerLimit="-1.8326" upperLimit="1.8326" allowInside="true" />
+          <AxisLimit jointId="6" lowerLimit="-2.79253" upperLimit="2.79253" allowInside="true" />
+          <AxisLimit jointId="7" lowerLimit="-0.002" upperLimit="9.182" allowInside="true" />
+        </SafeRange>
+        <StandstillSupervision id="1" allowInManualMode="true" name="Global_SST">
+          <AxisTolerance jointId="1" tolerance="0.1" />
+          <AxisTolerance jointId="2" tolerance="0.1" />
+          <AxisTolerance jointId="3" tolerance="0.1" />
+          <AxisTolerance jointId="4" tolerance="0.1" />
+          <AxisTolerance jointId="5" tolerance="0.1" />
+          <AxisTolerance jointId="6" tolerance="0.1" />
+          <AxisTolerance jointId="7" tolerance="0.1" />
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="NoStop" signalName="sdoSafeStandStill" />
+        </StandstillSupervision>
+        <ToolPositionSupervision id="1" name="Safe_Zone_TPO" safeZoneId="1" allowInside="true" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" signalName="sdoRobotInSafeToolZone" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="2" name="Safe_Zone_TPO_1" safeZoneId="2" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="NoStop" signalName="RobotNotInZone1" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="3" name="Safe_Zone_TPO_2" safeZoneId="3" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="NoStop" signalName="RobotNotInZone2" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="4" name="RobotHomeBox_TPO" safeZoneId="4" allowInside="true" includeRobot="false">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="NoStop" signalName="sdoRobotInHomeBox" />
+        </ToolPositionSupervision>
+        <AxisPositionSupervision id="1" name="Safe_Range_APO" safeRangeId="1">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="NoStop" signalName="sdoRobotInHomePos" />
+        </AxisPositionSupervision>
+        <AxisPositionSupervision id="2" name="Safe_Range_1_APO" safeRangeId="2">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </AxisPositionSupervision>
+      </DriveModuleConfiguration>
+    </SafetyCfg>
+  </ConfigurationSeal>
+</SafetyConfiguration>
